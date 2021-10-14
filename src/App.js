@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import "./App.css";
+import Nav from "./Komponente/NavBar/Nav";
+import Slider from "./Komponente/Slider/Slider";
+import ProductsSocialNav from "./Komponente/ProductsSocialNav/ProductsSocialNav";
+import LineAnimation from "./Komponente/LineAnimation/LineAnimation";
+import ProductWindow from "./Komponente/ProductWindow/ProductWindow";
+import Inspiration from "./Komponente/Inspiration/Inspiration";
+import CompanyPresentation from "./Komponente/CompanyPresentation/CompanyPresentation";
+import Footer from "./Komponente/Footer/Footer";
 
 function App() {
+  const [scroll, setScroll] = useState(0);
+
+  useEffect(() => {
+    window.onscroll = () => {
+      setScroll(window.scrollY);
+    };
+  }, [scroll]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="App__containerFirst">
+        <Nav />
+        <Slider />
+        <ProductsSocialNav />
+      </div>
+      <LineAnimation header1={"Select your windows"} scroll={scroll} scrollY={200} />
+      <ProductWindow />
+      <LineAnimation header1={"Inspiration"} scroll={scroll} scrollY={800} />
+      <Inspiration />
+      <CompanyPresentation scroll={scroll} scrollY={2200} />
+      <Footer />
     </div>
   );
 }
