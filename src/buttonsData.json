@@ -1,0 +1,28 @@
+{
+  "windows": {
+    "name": "WINDOWS",
+    "buttonSecond": ["PVC WINDOWS", "WOODEN WINDOWS", "WOOD-ALUMINIUM WINDOWS", "ALUMINIUM WINDOWS"]
+  },
+  "doors": {
+    "name": "DOORS",
+    "buttonSecond": ["PVC WINDOWS", "WOODEN WINDOWS", "WOOD-ALUMINIUM WINDOWS", "ALUMINIUM WINDOWS"]
+  },
+  "shutters": {
+    "name": "SHUTTERS"
+  },
+  "exteriorVenetaianBlind": {
+    "name": "EXTERIOR VENETAIAN BLIND"
+  },
+  "facadesWinterGardens": {
+    "name": "FACADES/WINTER GARDENS"
+  },
+  "terraceSystems": {
+    "name": "TERRACE SYSTEMS"
+  },
+  "smartHome": {
+    "name": "SMART HOME"
+  },
+  "additions": {
+    "name": "ADDITIONS"
+  }
+}

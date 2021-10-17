@@ -1,0 +1,21 @@
+.ButtonNavLeft {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  transition: 0.3s;
+}
+
+.ButtonNavLeft img {
+  width: 40px;
+}
+
+.ButtonNavLeft button {
+  height: 50px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.ButtonNavLeft:hover {
+  opacity: 0.5;
+}

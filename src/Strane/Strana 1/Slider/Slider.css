@@ -1,17 +1,11 @@
 .Slider {
   background-color: #272727;
-  max-height: 1100px;
   overflow: hidden;
-  width: 100%;
-  padding-top: 50px;
+  max-width: 100%;
+  position: relative;
 }
 .Slider__animeContainer {
-  max-height: 900px;
-  width: 100vw;
-  overflow: scroll;
-  box-sizing: content-box;
-  margin-right: -100px;
-  padding-right: 100px;
+  max-width: 100%;
 }
 
 .Slider__container {
@@ -33,8 +27,7 @@
   justify-content: center;
   gap: 20px;
   position: absolute;
-  /* top: 60%; */
-  bottom: 20%;
+  top: 80%;
   width: 100%;
 }
 

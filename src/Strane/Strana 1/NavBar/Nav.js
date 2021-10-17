@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./NavBar.css";
-import Logo from "../../Img/logo-43x42.png";
+import Logo from "../../../Img/logo-43x42.png";
 import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
 

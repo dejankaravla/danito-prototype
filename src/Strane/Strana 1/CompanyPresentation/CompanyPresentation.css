@@ -4,11 +4,12 @@
 
 .CompanyPresentation__container img {
   object-fit: contain;
+  width: 100%;
 }
 
 .CompanyPresentation__lineVideo {
   position: absolute;
-  top: 50%;
+  top: 40%;
   background-color: transparent;
   display: flex;
   flex-direction: column;
@@ -34,6 +35,10 @@
   font-weight: bold;
   cursor: pointer;
   transition: 0.5s;
+}
+
+.CompanyPresentation__buttonHidden {
+  opacity: 0;
 }
 
 .CompanyPresentation__lineVideo button:hover {

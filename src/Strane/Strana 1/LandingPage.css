@@ -1,0 +1,16 @@
+.LandingPage {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.LandingPage__containerFirst {
+  /* padding-top: 60px; */
+  /* background-color: #717171; */
+  /* height: 100%; */
+  display: flex;
+}
+
+.LandingPage__right {
+  position: relative;
+}

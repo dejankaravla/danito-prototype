@@ -1,9 +1,10 @@
 import React, { Fragment, useState } from "react";
 import "./Slider.css";
-import SliderImg from "../../Img/bannertop_facebook_1920x940_en.jpg";
+import SliderImg from "../../../Img/bannertop_facebook_1920x940_en.jpg";
 import { useTheme } from "@mui/material/styles";
 import SwipeableViews from "react-swipeable-views";
 import { autoPlay } from "react-swipeable-views-utils";
+import ProductsSocialNav from "../ProductsSocialNav/ProductsSocialNav";
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -54,30 +55,28 @@ function Slider() {
   };
 
   return (
-    <Fragment>
-      <div className="Slider">
-        <AutoPlaySwipeableViews
-          className="Slider__animeContainer"
-          axis={theme.direction === "rtl" ? "x-reverse" : "x"}
-          index={activeStep}
-          onChangeIndex={handleStepChange}
-          enableMouseEvents
-        >
-          {images.map((step, index) => (
-            <div className="Slider__container" key={step.label}>
-              {Math.abs(activeStep - index) <= 2 ? (
-                <div className="img__container">
-                  {step.image ? (
-                    <img src={step.imgPath} alt={step.label} />
-                  ) : (
-                    <video muted={true} autoPlay={true} src={step.imgPath}></video>
-                  )}
-                </div>
-              ) : null}
-            </div>
-          ))}
-        </AutoPlaySwipeableViews>
-      </div>
+    <div className="Slider">
+      <AutoPlaySwipeableViews
+        className="Slider__animeContainer"
+        axis={theme.direction === "rtl" ? "x-reverse" : "x"}
+        index={activeStep}
+        onChangeIndex={handleStepChange}
+        enableMouseEvents
+      >
+        {images.map((step, index) => (
+          <div className="Slider__container" key={step.label}>
+            {Math.abs(activeStep - index) <= 2 ? (
+              <div className="img__container">
+                {step.image ? (
+                  <img src={step.imgPath} alt={step.label} />
+                ) : (
+                  <video muted={true} autoPlay={true} src={step.imgPath}></video>
+                )}
+              </div>
+            ) : null}
+          </div>
+        ))}
+      </AutoPlaySwipeableViews>
       <div className="dotContainer">
         <span className={activeStep === 0 ? "active" : "dot"} onClick={() => setActiveStep(0)}></span>
         <span className={activeStep === 1 ? "active" : "dot"} onClick={() => setActiveStep(1)}></span>
@@ -87,7 +86,8 @@ function Slider() {
         <span className={activeStep === 5 ? "active" : "dot"} onClick={() => setActiveStep(5)}></span>
         <span className={activeStep === 6 ? "active" : "dot"} onClick={() => setActiveStep(6)}></span>
       </div>
-    </Fragment>
+      <ProductsSocialNav />
+    </div>
   );
 }
 

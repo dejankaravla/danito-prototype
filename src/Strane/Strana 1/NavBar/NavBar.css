@@ -1,0 +1,77 @@
+.Nav {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+
+.Nav__header {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+}
+
+.Nav__headerLogo {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.Nav__headerText h3 {
+  font-size: 20px;
+  font-family: "Andada Pro", serif;
+}
+
+.Nav__headerText p {
+  font-size: 10px;
+}
+
+.Nav__headerLogo img {
+  object-fit: contain;
+}
+
+.Nav__header button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.Nav__body {
+  background-color: rgba(255, 255, 255, 0.77);
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  position: sticky;
+  z-index: 1;
+}
+
+.Nav__bodyMenu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.Nav__body svg {
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.Nav__body svg:hover {
+  opacity: 0.5;
+}
+
+.Nav__bodyMenu a {
+  text-decoration: none;
+  color: black;
+  transition: 0.5s ease-in-out;
+}
+.Nav__bodyMenu a:hover {
+  opacity: 0.5;
+}
