@@ -6,6 +6,17 @@ import SearchIcon from "@mui/icons-material/Search";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 
 function NavProducts({ navRightOpen }) {
+  const initialButtonsState = [
+    "WINDOWS",
+    "DOORS",
+    "SHUTTERS",
+    "EXTERIOR VENETIAN BLEND",
+    "FACADES/WINTER GARDENS",
+    "TERRACE SYSTEMS",
+    "SMART HOME",
+    "ADDITIONS",
+  ];
+
   const [selected, setSelected] = useState("");
   const [buttons, setButtons] = useState([
     "WINDOWS",
@@ -28,7 +39,8 @@ function NavProducts({ navRightOpen }) {
   const prevButtons = usePrevious(buttons);
 
   const back = () => {
-    setButtons(prevButtons);
+    setButtons(initialButtonsState);
+    setSelected(null);
   };
 
   console.log(prevButtons);
@@ -65,9 +77,7 @@ function NavProducts({ navRightOpen }) {
     if (selected === windows) {
       setButtons(["PVC WINDOWS", "WOODEN WINDOWS", "WOOD-ALUMINIUM WINDOWS", "ALUMINIUM WINDOWS"]);
     }
-    if (selected === pvcWindows) {
-      setButtons(["IGLO LIGHT", "IGLO ENERGY", "IGLO ENERGY CLASSC", "IGLO 5", "IGLO 5 CLASSIC"]);
-    }
+
     if (selected === doors) {
       setButtons(["DOORS PVC", "WOODEN DOORS", "ALUMINIUM DOORS"]);
     }
@@ -88,6 +98,37 @@ function NavProducts({ navRightOpen }) {
     }
     if (selected === additions) {
       setButtons(["PVC WINDOWS", "WOODEN WINDOWS", "WOOD-ALUMINIUM WINDOWS", "ALUMINIUM WINDOWS"]);
+    }
+
+    if (selected === pvcWindows) {
+      setButtons(["IGLO LIGHT", "IGLO ENERGY", "IGLO ENERGY CLASSC", "IGLO 5", "IGLO 5 CLASSIC"]);
+    }
+
+    if (selected === woodenWindows) {
+      setButtons(["SOFTLINE - 68, 78, 88"]);
+    }
+
+    if (selected === woodAluminiumWindows) {
+      setButtons(["DUOLINE - 68, 78, 88"]);
+    }
+    if (selected === aluminiumWindows) {
+      setButtons(["MB-45", "MB-70", "MB-70HI", "MB-86SI"]);
+    }
+
+    if (selected === pvcDoors) {
+      setButtons(["IGLO 5", "IGLO ENERGY"]);
+    }
+    if (selected === woodenDoors) {
+      setButtons(["SOFTLINE 68"]);
+    }
+    if (selected === aluminiumDoors) {
+      setButtons(["MB-45", "MB-70", "MB-70HI", "MB-78EI FIRE-DOORS", "MB-86SI"]);
+    }
+    if (selected === shuttersAdaptive) {
+      setButtons(["ALUMINIUM SHUTTERS"]);
+    }
+    if (selected === shuttersTopMounted) {
+      setButtons(["PVC SHUTTERS", "ROLLER SHUTTERS WITH STYROFOAM BOX"]);
     }
   }, [selected]);
   console.log(selected);
