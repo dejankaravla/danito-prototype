@@ -8,10 +8,10 @@ function NavFirst() {
       <div className="Nav__header">
         <div className="Nav__headerLogo">
           <img src={Logo} alt="datito logo" />
-          <div className="Nav__headerText">
+          <a href="/" className="Nav__headerText">
             <h3>DANITO</h3>
             <p>ENGINEERED FOR YOU</p>
-          </div>
+          </a>
         </div>
         <button>EN</button>
       </div>

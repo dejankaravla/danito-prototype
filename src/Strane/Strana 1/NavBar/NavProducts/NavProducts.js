@@ -1,148 +1,198 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./NavProducts.css";
 import ButtonNavLeft from "../../../../Komponente/ButtonNavLeft/ButtonNavLeft";
+
+import windowImg from "../../../../Img/ImgProduct/window.png";
+import doorsImg from "../../../../Img/ImgProduct/door.png";
+import roletneImg from "../../../../Img/ImgProduct/roletne.png";
+import fasadeImg from "../../../../Img/ImgProduct/fasade.png";
+import teraseImg from "../../../../Img/ImgProduct/terasniSistemi.png";
+import dodatnoImg from "../../../../Img/ImgProduct/dodatno.png";
+
+import windowPvcImg from "../../../../Img/ImgProduct/windowPVC.png";
+import windowWoodImg from "../../../../Img/ImgProduct/windowWOOD.png";
+import windowWoodAluminiumImg from "../../../../Img/ImgProduct/windowWOODALUMINIUM.png";
+import windowAluminiumImg from "../../../../Img/ImgProduct/windowALUMINIUM.png";
+
+import doorPvcImg from "../../../../Img/ImgProduct/doorPVC.png";
+import doorWoodImg from "../../../../Img/ImgProduct/doorWOOD.png";
+import doorAluminiumImg from "../../../../Img/ImgProduct/doorALUMINIUM.png";
 
 import SearchIcon from "@mui/icons-material/Search";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 
 function NavProducts({ navRightOpen }) {
-  const initialButtonsState = [
-    "WINDOWS",
-    "DOORS",
-    "SHUTTERS",
-    "EXTERIOR VENETIAN BLEND",
-    "FACADES/WINTER GARDENS",
-    "TERRACE SYSTEMS",
-    "SMART HOME",
-    "ADDITIONS",
-  ];
+  const initialButtonsState = ["PROZORI", "VRATA", "ROLETNE", "FASADE", "TERASNI SISTEMI"];
+  const initialImgState = [windowImg, doorsImg, roletneImg, fasadeImg, teraseImg, dodatnoImg];
 
   const [selected, setSelected] = useState("");
-  const [buttons, setButtons] = useState([
-    "WINDOWS",
-    "DOORS",
-    "SHUTTERS",
-    "EXTERIOR VENETIAN BLEND",
-    "FACADES/WINTER GARDENS",
-    "TERRACE SYSTEMS",
-    "SMART HOME",
-    "ADDITIONS",
-  ]);
+  const [buttons, setButtons] = useState(["PROZORI", "VRATA", "ROLETNE", "FASADE", "TERASNI SISTEMI"]);
+  const [img, setImg] = useState([windowImg, doorsImg, roletneImg, fasadeImg, teraseImg, dodatnoImg]);
 
-  function usePrevious(value) {
-    const ref = useRef();
-    useEffect(() => {
-      ref.current = value;
-    });
-    return ref.current;
-  }
-  const prevButtons = usePrevious(buttons);
+  const prozori = "PROZORI";
+  const vrata = "VRATA";
+  const roletne = "ROLETNE";
+  const fasade = "FASADE";
+  const terasniSistemi = "TERASNI SISTEMI";
 
-  const back = () => {
-    setButtons(initialButtonsState);
-    setSelected(null);
-  };
+  const pvcProzori = "PVC PROZORI";
+  const drveniProzori = "DRVENI PROZORI";
+  const drvoAluminiumProzori = "DRVO-ALUMINIUM PROZORI";
+  const aluminiumProzori = "ALUMINIUM PROZORI";
 
-  console.log(prevButtons);
+  const pvcVrata = "PVC VRATA";
+  const drvoVrata = "DRVENA VRATA";
+  const aluminiumVrata = "ALUMINIUM VRATA";
 
-  const windows = "WINDOWS";
-  const doors = "DOORS";
-  const shutters = "SHUTTERS";
-  const exterior = "EXTERIOR VENETIAN BLEND";
-  const facades = "FACADES/WINTER GARDENS";
-  const terrace = "TERRACE SYSTEMS";
-  const smartHome = "SMART HOME";
-  const additions = "ADDITIONS";
+  const pvcRoletne = "PVC ROLETNE";
+  const aluminiumRoletne = "ALUMINIUM ROLETNE";
 
-  const pvcWindows = "PVC WINDOWS";
-  const woodenWindows = "WOODEN WINDOWS";
-  const woodAluminiumWindows = "WOOD-ALUMINIUM WINDOWS";
-  const aluminiumWindows = "ALUMINIUM WINDOWS";
+  const pvcFasade = "PVC FASADE";
+  const aluminiumFasade = "ALUMINIUM FASADE";
 
-  const pvcDoors = "DOORS PVC";
-  const woodenDoors = "WOODEN DOORS";
-  const aluminiumDoors = "ALUMINIUM DOORS";
-
-  const shuttersAdaptive = "ADAPTIVE";
-  const shuttersTopMounted = "TOP-MOUNTED";
-
-  const fasades = "FASADES";
-  const winterGardens = "WINTER GARDENS";
-
-  const liftAndSlideHs = "LIFT AND SLIDE HS";
-  const tiltAndSlidePsk = "TILT AND SLIDE PSK";
-  const foldingDoors = "FOLDING DOORS";
+  const pvcTerase = "PVC TERASNI SISTEMI";
+  const aluminiumTerase = "ALUMINIUM TERASNI SISTEMI";
 
   useEffect(() => {
-    if (selected === windows) {
-      setButtons(["PVC WINDOWS", "WOODEN WINDOWS", "WOOD-ALUMINIUM WINDOWS", "ALUMINIUM WINDOWS"]);
+    // -----------> 2. Stepenik
+
+    // Prozori
+    if (selected === prozori) {
+      setButtons(["PVC PROZORI", "DRVENI PROZORI", "DRVO-ALUMINIUM PROZORI", "ALUMINIUM PROZORI"]);
+      setImg([windowPvcImg, windowWoodImg, windowWoodAluminiumImg, windowAluminiumImg]);
     }
 
-    if (selected === doors) {
-      setButtons(["DOORS PVC", "WOODEN DOORS", "ALUMINIUM DOORS"]);
+    // Vrata
+    if (selected === vrata) {
+      setButtons(["PVC VRATA", "DRVENA VRATA", "ALUMINIUM VRATA"]);
+      setImg([doorPvcImg, doorWoodImg, doorAluminiumImg]);
     }
-    if (selected === shutters) {
-      setButtons(["ADAPTIVE", "TOP-MOUNTED"]);
+    // Roletne
+    if (selected === roletne) {
+      setButtons(["PVC ROLETNE", "ALUMINIUM ROLETNE"]);
     }
-    if (selected === exterior) {
-      setButtons(["PVC WINDOWS", "WOODEN WINDOWS", "WOOD-ALUMINIUM WINDOWS", "ALUMINIUM WINDOWS"]);
+    // Komarnici
+    if (selected === fasade) {
+      setButtons(["PVC FASADE", "ALUMINIUM FASADE"]);
     }
-    if (selected === facades) {
-      setButtons(["FACADES", "WINTER GARDENS"]);
-    }
-    if (selected === terrace) {
-      setButtons(["LIFT AND SLIDE HS", "TILT AND SLIDE PSK", "FOLDING DOORS"]);
-    }
-    if (selected === smartHome) {
-      setButtons(["PVC WINDOWS", "WOODEN WINDOWS", "WOOD-ALUMINIUM WINDOWS", "ALUMINIUM WINDOWS"]);
-    }
-    if (selected === additions) {
-      setButtons(["PVC WINDOWS", "WOODEN WINDOWS", "WOOD-ALUMINIUM WINDOWS", "ALUMINIUM WINDOWS"]);
+    // Paneli
+    if (selected === terasniSistemi) {
+      setButtons(["PVC TERASNI SISTEMI", "ALUMINIUM TERASNI SISTEMI"]);
     }
 
-    if (selected === pvcWindows) {
-      setButtons(["IGLO LIGHT", "IGLO ENERGY", "IGLO ENERGY CLASSC", "IGLO 5", "IGLO 5 CLASSIC"]);
+    // -----------> 3. Stepenik
+
+    // Prozori
+    if (selected === pvcProzori) {
+      setButtons(["PVC PROZOR 1", "PVC PROZOR 2", "PVC PROZOR 3", "PVC PROZOR 4", "PVC PROZOR 5"]);
     }
 
-    if (selected === woodenWindows) {
-      setButtons(["SOFTLINE - 68, 78, 88"]);
+    if (selected === drveniProzori) {
+      setButtons(["DRVENI PROZOR 1", "DRVENI PROZOR 2", "DRVENI PROZOR 3"]);
     }
 
-    if (selected === woodAluminiumWindows) {
-      setButtons(["DUOLINE - 68, 78, 88"]);
+    if (selected === drvoAluminiumProzori) {
+      setButtons(["DRVO ALUMINIUM PROZOR 1", "DRVO ALUMINIUM PROZOR 2", "DRVO ALUMINIUM PROZOR 3"]);
     }
-    if (selected === aluminiumWindows) {
-      setButtons(["MB-45", "MB-70", "MB-70HI", "MB-86SI"]);
+    if (selected === aluminiumProzori) {
+      setButtons(["ALUMINIUM PROZOR 1", "ALUMINIUM PROZOR 2", "ALUMINIUM PROZOR 3", "ALUMINIUM PROZOR 4"]);
     }
 
-    if (selected === pvcDoors) {
-      setButtons(["IGLO 5", "IGLO ENERGY"]);
+    // Vrata
+    if (selected === pvcVrata) {
+      setButtons(["PVC VRATA 1", "PVC VRATA 2"]);
     }
-    if (selected === woodenDoors) {
-      setButtons(["SOFTLINE 68"]);
+    if (selected === drvoVrata) {
+      setButtons(["DRVENA VRATA 1", "DRVENA VRATA 2", "DRVENA VRATA 3", "DRVENA VRATA 4"]);
     }
-    if (selected === aluminiumDoors) {
-      setButtons(["MB-45", "MB-70", "MB-70HI", "MB-78EI FIRE-DOORS", "MB-86SI"]);
+    if (selected === aluminiumVrata) {
+      setButtons(["ALUMINIUM VRATA 1", "ALUMINIUM VRATA 2", "ALUMINIUM VRATA 3", "ALUMINIUM VRATA 4"]);
     }
-    if (selected === shuttersAdaptive) {
-      setButtons(["ALUMINIUM SHUTTERS"]);
+
+    // Roletne
+    if (selected === pvcRoletne) {
+      setButtons(["PVC ROLETNE 1", "PVC ROLETNE 2"]);
     }
-    if (selected === shuttersTopMounted) {
-      setButtons(["PVC SHUTTERS", "ROLLER SHUTTERS WITH STYROFOAM BOX"]);
+    if (selected === aluminiumRoletne) {
+      setButtons(["ALUMINIUM ROLETNE 1", "ALUMINIUM ROLETNE 2", "ALUMINIUM ROLETNE 3", "ALUMINIUM ROLETNE 4"]);
+    }
+
+    // Fasade
+    if (selected === pvcFasade) {
+      setButtons(["PVC FASADE 1", "PVC FASADE 2"]);
+    }
+    if (selected === aluminiumFasade) {
+      setButtons(["ALUMINIUM FASADE 1", "ALUMINIUM FASADE 2", "ALUMINIUM FASADE 3", "ALUMINIUM FASADE 4"]);
+    }
+
+    // Terasni Sistemi
+    if (selected === pvcTerase) {
+      setButtons(["PVC TERASNI SISTEMI 1", "PVC TERASNI SISTEMI 2"]);
+    }
+    if (selected === aluminiumTerase) {
+      setButtons(["ALUMINIUM TERASNI SISTEMI 1", "ALUMINIUM TERASNI SISTEMI 2", "ALUMINIUM TERASNI SISTEMI 3"]);
     }
   }, [selected]);
+
+  const backHandler = () => {
+    setButtons(initialButtonsState);
+    setImg(initialImgState);
+    setSelected(false);
+  };
+
+  const pathButton = [
+    "PVC PROZOR 1",
+    "PVC PROZOR 2",
+    "PVC PROZOR 3",
+    "PVC PROZOR 4",
+    "PVC PROZOR 5",
+    "DRVENI PROZOR 1",
+    "DRVENI PROZOR 2",
+    "DRVENI PROZOR 3",
+    "DRVO ALUMINIUM PROZOR 1",
+    "DRVO ALUMINIUM PROZOR 2",
+    "DRVO ALUMINIUM PROZOR 3",
+    "ALUMINIUM PROZOR 1",
+    "ALUMINIUM PROZOR 2",
+    "ALUMINIUM PROZOR 3",
+    "ALUMINIUM PROZOR 4",
+    "PVC VRATA 1",
+    "PVC VRATA 2",
+    "DRVENA VRATA 1",
+    "DRVENA VRATA 2",
+    "DRVENA VRATA 3",
+    "DRVENA VRATA 4",
+    "ALUMINIUM VRATA 1",
+    "ALUMINIUM VRATA 2",
+    "ALUMINIUM VRATA 3",
+    "ALUMINIUM VRATA 4",
+    "PVC ROLETNE 1",
+    "PVC ROLETNE 2",
+    "ALUMINIUM ROLETNE 1",
+    "ALUMINIUM ROLETNE 2",
+    "ALUMINIUM ROLETNE 3",
+    "ALUMINIUM ROLETNE 4",
+    "PVC FASADE 1",
+    "PVC FASADE 2",
+    "ALUMINIUM FASADE 1",
+    "ALUMINIUM FASADE 2",
+    "ALUMINIUM FASADE 3",
+    "ALUMINIUM FASADE 4",
+    "PVC TERASNI SISTEMI 1",
+    "PVC TERASNI SISTEMI 2",
+    "ALUMINIUM TERASNI SISTEMI 1",
+    "ALUMINIUM TERASNI SISTEMI 2",
+    "ALUMINIUM TERASNI SISTEMI 3",
+  ];
+
   console.log(selected);
 
   return (
     <div className={navRightOpen ? "Nav__productsVisible" : "Nav__productsHiden"}>
       {selected ? (
         <div className="Nav__productsSelected">
-          <ArrowBackIosIcon
-            onClick={() => {
-              back();
-            }}
-            sx={{ fontSize: 35 }}
-          />
+          <ArrowBackIosIcon onClick={backHandler} sx={{ fontSize: 35 }} />
           <p>{selected}</p>
         </div>
       ) : (
@@ -154,8 +204,12 @@ function NavProducts({ navRightOpen }) {
         </div>
       )}
       <div className="Nav__productsContainer">
-        {buttons.map((but) => {
-          return <ButtonNavLeft setSelected={setSelected} buttonName={but} />;
+        {buttons.map((but, i) => {
+          return (
+            <Link to={`/${pathButton.filter((path) => path === but)}`}>
+              <ButtonNavLeft img={img[i]} selected={selected} setSelected={setSelected} buttonName={but} />
+            </Link>
+          );
         })}
       </div>
     </div>

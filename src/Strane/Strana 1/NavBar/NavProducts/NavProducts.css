@@ -72,3 +72,7 @@
   padding: 10px 20px;
   gap: 20px;
 }
+
+.Nav__productsContainer a {
+  text-decoration: none;
+}

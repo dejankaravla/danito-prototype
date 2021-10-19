@@ -1,5 +1,5 @@
 import React from "react";
-import "./ProductPage.css";
+import "./PvcProzor1.css";
 
 function ProductPage() {
   return (

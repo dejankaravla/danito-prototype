@@ -20,6 +20,11 @@
   color: white;
 }
 
+.Nav__headerText {
+  color: white;
+  text-decoration: none;
+}
+
 .Nav__headerText h3 {
   font-size: 20px;
   font-family: "Andada Pro", serif;
