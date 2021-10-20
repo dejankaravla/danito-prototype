@@ -1,14 +1,11 @@
 import React from "react";
-// import { Link } from "react-router-dom";
 import "./ButtonNavLeft.css";
-import WindowSvg from "../../Img/WindowSvg.png";
-import { Link } from "react-router-dom";
 
-function ButtonNavLeft({ buttonName, setSelected, selected, img }) {
+function ButtonNavLeft({ buttonName, setSelected, selected, img, imgClass }) {
   return (
-    <div onClick={(e) => setSelected(buttonName)} className="ButtonNavLeft">
-      <img src={img} alt="window img icon" />
-      <button>{buttonName}</button>
+    <div onClick={(e) => setSelected(buttonName)} className={imgClass || "ButtonNavLeft"}>
+      {img ? <img src={img} alt="window img icon" /> : null}
+      <button className="ButtonNavLeft__button">{buttonName}</button>
     </div>
   );
 }

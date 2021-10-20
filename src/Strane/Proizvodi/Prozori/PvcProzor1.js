@@ -1,10 +1,19 @@
 import React from "react";
 import "./PvcProzor1.css";
 
-function ProductPage() {
+import LineAnimation from "../../../Komponente/LineAnimation/LineAnimation";
+
+import windowCoverImg from "../../../Img/ImgProduct/ImgPageProduct/WindowImg1.jpg";
+
+function ProductPage({ scroll, pageName }) {
   return (
     <div className="ProductPage">
-      <h1>Kolka Je Porcija</h1>
+      <div className="ProductPage__container">
+        <div className="ProductPage__imgContainer">
+          <img src={windowCoverImg} alt="danito window cover" />
+        </div>
+        <LineAnimation pageName={pageName} scroll={scroll} scrollY={200} />
+      </div>
     </div>
   );
 }

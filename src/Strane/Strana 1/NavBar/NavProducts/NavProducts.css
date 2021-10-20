@@ -38,7 +38,7 @@
   transition: 0.5s;
   cursor: pointer;
   gap: 5px;
-  width: 400px;
+  width: 300px;
 }
 
 .Nav__search input {
@@ -55,7 +55,7 @@
   background-color: #eeeff0;
   align-items: center;
   justify-content: center;
-  width: 400px;
+  width: 300px;
 }
 
 .Nav__productsVisible svg {
@@ -69,8 +69,8 @@
 .Nav__productsContainer {
   display: flex;
   flex-direction: column;
-  padding: 10px 20px;
-  gap: 20px;
+  padding: 0px 20px;
+  gap: 10px;
 }
 
 .Nav__productsContainer a {

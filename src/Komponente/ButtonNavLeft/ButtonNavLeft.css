@@ -2,20 +2,27 @@
   display: flex;
   flex-direction: row;
   justify-content: start;
+  align-items: center;
   transition: 0.3s;
+  max-width: 300px;
 }
 
-.ButtonNavLeft img {
-  width: 40px;
+.ButtonNavLeftTopImg {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  transition: 0.3s;
+  max-width: 300px;
 }
 
-.ButtonNavLeft button {
+.ButtonNavLeft__button {
   height: 50px;
   cursor: pointer;
   border: none;
   background-color: transparent;
 }
 
-.ButtonNavLeft:hover {
+.ButtonNavLeft:hover .ButtonNavLeftTopImg:hover {
   opacity: 0.5;
 }

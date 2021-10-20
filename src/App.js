@@ -1,13 +1,13 @@
 import React from "react";
 import "./App.css";
 import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
-import LandingPage from "./Strane/Strana 1/LandingPage";
+import AppSrpiski from "./Strane/Strana 1/AppSrpski";
 import PvcProzori1 from "./Strane/Proizvodi/Prozori/PvcProzor1";
 
 function App() {
   return (
     <div className="App">
-      <Router>
+      {/* <Router>
         <Switch>
           <Route path="/PVC PROZOR 1">
             <PvcProzori1 />
@@ -102,44 +102,47 @@ function App() {
           <Route path="/ALUMINIUM ROLETNE 4">
             <PvcProzori1 />
           </Route>
-          <Route path="/PVC KOMARNICI 1">
+          <Route path="/PVC FASADE 1">
             <PvcProzori1 />
           </Route>
-          <Route path="/PVC KOMARNICI 2">
+          <Route path="/PVC FASADE 2">
             <PvcProzori1 />
           </Route>
-          <Route path="/ALUMINIUM KOMARNICI 1">
+          <Route path="/ALUMINIUM FASADE 1">
             <PvcProzori1 />
           </Route>
-          <Route path="/ALUMINIUM KOMARNICI 2">
+          <Route path="/ALUMINIUM FASADE 2">
             <PvcProzori1 />
           </Route>
-          <Route path="/ALUMINIUM KOMARNICI 3">
+          <Route path="/ALUMINIUM FASADE 3">
             <PvcProzori1 />
           </Route>
-          <Route path="/ALUMINIUM KOMARNICI 4">
+          <Route path="/ALUMINIUM FASADE 4">
             <PvcProzori1 />
           </Route>
-          <Route path="/PVC PANELI 1">
+          <Route path="/PVC TERASNI SISTEMI 1">
             <PvcProzori1 />
           </Route>
-          <Route path="/PVC PANELI 2">
+          <Route path="/PVC TERASNI SISTEMI 2">
             <PvcProzori1 />
           </Route>
-          <Route path="/ALUMINIUM PANELI 1">
+          <Route path="/ALUMINIUM TERASNI SISTEMI 1">
             <PvcProzori1 />
           </Route>
-          <Route path="/ALUMINIUM PANELI 2">
+          <Route path="/ALUMINIUM TERASNI SISTEMI 2">
             <PvcProzori1 />
           </Route>
-          <Route path="/ALUMINIUM PANELI 3">
+          <Route path="/ALUMINIUM TERASNI SISTEMI 3">
+            <PvcProzori1 />
+          </Route>
+          <Route path="/DODATNO">
             <PvcProzori1 />
           </Route>
           <Route path="/">
-            <LandingPage />
           </Route>
         </Switch>
-      </Router>
+      </Router> */}
+      <AppSrpiski />
     </div>
   );
 }
