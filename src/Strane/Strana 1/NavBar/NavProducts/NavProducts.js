@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./NavProducts.css";
 import ButtonNavLeft from "../../../../Komponente/ButtonNavLeft/ButtonNavLeft";
+import { ProductData } from "../../../../ProductData";
 
 import windowImg from "../../../../Img/ImgProduct/window.png";
 import doorsImg from "../../../../Img/ImgProduct/door.png";
@@ -32,7 +33,7 @@ import teraseALUMINIUM from "../../../../Img/ImgProduct/teraseAluminium.png";
 import SearchIcon from "@mui/icons-material/Search";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 
-function NavProducts({ navRightOpen, setPathTo, setPageName }) {
+function NavProducts({ navRightOpen, setPathTo, setPageName, setData }) {
   const initialButtonsState = ["PROZORI", "VRATA", "ROLETNE", "FASADE", "TERASNI SISTEMI"];
   const initialImgState = [windowImg, doorsImg, roletneImg, fasadeImg, teraseImg, dodatnoImg];
 
@@ -228,7 +229,9 @@ function NavProducts({ navRightOpen, setPathTo, setPageName }) {
     "DODATNO",
   ];
 
-  const setProductPath = (value) => {
+  const setProductPath = (value, productDataValue) => {
+    setData(productDataValue);
+
     pathButton.filter((path) => {
       if (path === value) {
         setPathTo(`/${path}`);
@@ -257,7 +260,10 @@ function NavProducts({ navRightOpen, setPathTo, setPageName }) {
       <div className="Nav__productsContainer">
         {buttons.map((but, i) => {
           return (
-            <Link to={`/${pathButton.filter((path) => path === but)}`} onClick={() => setProductPath(but)}>
+            <Link
+              to={`/${pathButton.filter((path) => path === but)}`}
+              onClick={() => setProductPath(but, ProductData[i])}
+            >
               <ButtonNavLeft
                 imgClass={imgClass}
                 img={img[i]}
