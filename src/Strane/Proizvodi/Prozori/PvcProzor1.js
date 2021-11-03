@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./PvcProzor1.css";
 
 import LineAnimation from "../../../Komponente/LineAnimation/LineAnimation";
@@ -11,6 +11,10 @@ import FittingsIcon from "../../../Img/Icons/Fittings.png";
 const icons = [ProfileIcon, GlassIcon, FittingsIcon];
 
 function ProductPage({ scroll, pageName, data }) {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [data]);
+
   return (
     <div className="ProductPage">
       <div className="ProductPage__container">

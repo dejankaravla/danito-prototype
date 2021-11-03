@@ -65,6 +65,7 @@ function NavProducts({ navRightOpen, setPathTo, setPageName, setData }) {
   const aluminiumFasade = "ALUMINIUM FASADE";
 
   const pvcTerase = "PVC TERASNI SISTEMI";
+  const drveneTerase = "DRVENI TERASNI SISTEMI";
   const aluminiumTerase = "ALUMINIUM TERASNI SISTEMI";
 
   useEffect(() => {
@@ -118,12 +119,12 @@ function NavProducts({ navRightOpen, setPathTo, setPageName, setData }) {
     }
 
     if (selected === drveniProzori) {
-      setButtons(["DRVENI PROZOR 1", "DRVENI PROZOR 2", "DRVENI PROZOR 3"]);
+      setButtons(["DRVENI PROZOR 1"]);
       setImg("");
     }
 
     if (selected === drvoAluminiumProzori) {
-      setButtons(["DRVO ALUMINIUM PROZOR 1", "DRVO ALUMINIUM PROZOR 2", "DRVO ALUMINIUM PROZOR 3"]);
+      setButtons(["DRVO ALUMINIUM PROZOR 1"]);
       setImg("");
     }
     if (selected === aluminiumProzori) {
@@ -137,11 +138,17 @@ function NavProducts({ navRightOpen, setPathTo, setPageName, setData }) {
       setImg("");
     }
     if (selected === drvoVrata) {
-      setButtons(["DRVENA VRATA 1", "DRVENA VRATA 2", "DRVENA VRATA 3", "DRVENA VRATA 4"]);
+      setButtons(["DRVENA VRATA 1"]);
       setImg("");
     }
     if (selected === aluminiumVrata) {
-      setButtons(["ALUMINIUM VRATA 1", "ALUMINIUM VRATA 2", "ALUMINIUM VRATA 3", "ALUMINIUM VRATA 4"]);
+      setButtons([
+        "ALUMINIUM VRATA 1",
+        "ALUMINIUM VRATA 2",
+        "ALUMINIUM VRATA 3",
+        "ALUMINIUM VRATA 4",
+        "ALUMINIUM VRATA 5",
+      ]);
       setImg("");
     }
 
@@ -151,27 +158,38 @@ function NavProducts({ navRightOpen, setPathTo, setPageName, setData }) {
       setImg("");
     }
     if (selected === aluminiumRoletne) {
-      setButtons(["ALUMINIUM ROLETNE 1", "ALUMINIUM ROLETNE 2", "ALUMINIUM ROLETNE 3", "ALUMINIUM ROLETNE 4"]);
+      setButtons(["ALUMINIUM ROLETNE 1"]);
       setImg("");
     }
 
     // Fasade
     if (selected === pvcFasade) {
-      setButtons(["PVC FASADE 1", "PVC FASADE 2"]);
+      setButtons(["PVC FASADE 1"]);
       setImg("");
     }
     if (selected === aluminiumFasade) {
-      setButtons(["ALUMINIUM FASADE 1", "ALUMINIUM FASADE 2", "ALUMINIUM FASADE 3", "ALUMINIUM FASADE 4"]);
+      setButtons(["ALUMINIUM FASADE 1"]);
       setImg("");
     }
 
     // Terasni Sistemi
     if (selected === pvcTerase) {
-      setButtons(["PVC TERASNI SISTEMI 1", "PVC TERASNI SISTEMI 2"]);
+      setButtons(["PVC TERASNI SISTEMI 1", "PVC TERASNI SISTEMI 2", "PVC TERASNI SISTEMI 3", "PVC TERASNI SISTEMI 4"]);
+      setImg("");
+    }
+    if (selected === drveneTerase) {
+      setButtons([
+        "DRVENI TERASNI SISTEMI 1",
+        "DRVENI TERASNI SISTEMI 2",
+        "DRVENI TERASNI SISTEMI 3",
+        "DRVENI TERASNI SISTEMI 4",
+        "DRVENI TERASNI SISTEMI 5",
+        "DRVENI TERASNI SISTEMI 6",
+      ]);
       setImg("");
     }
     if (selected === aluminiumTerase) {
-      setButtons(["ALUMINIUM TERASNI SISTEMI 1", "ALUMINIUM TERASNI SISTEMI 2", "ALUMINIUM TERASNI SISTEMI 3"]);
+      setButtons(["ALUMINIUM TERASNI SISTEMI 1", "ALUMINIUM TERASNI SISTEMI 2"]);
       setImg("");
     }
   }, [selected]);
@@ -190,48 +208,49 @@ function NavProducts({ navRightOpen, setPathTo, setPageName, setData }) {
     "PVC PROZOR 4",
     "PVC PROZOR 5",
     "DRVENI PROZOR 1",
-    "DRVENI PROZOR 2",
-    "DRVENI PROZOR 3",
     "DRVO ALUMINIUM PROZOR 1",
-    "DRVO ALUMINIUM PROZOR 2",
-    "DRVO ALUMINIUM PROZOR 3",
     "ALUMINIUM PROZOR 1",
     "ALUMINIUM PROZOR 2",
     "ALUMINIUM PROZOR 3",
     "ALUMINIUM PROZOR 4",
+
     "PVC VRATA 1",
     "PVC VRATA 2",
     "DRVENA VRATA 1",
-    "DRVENA VRATA 2",
-    "DRVENA VRATA 3",
-    "DRVENA VRATA 4",
     "ALUMINIUM VRATA 1",
     "ALUMINIUM VRATA 2",
     "ALUMINIUM VRATA 3",
     "ALUMINIUM VRATA 4",
+    "ALUMINIUM VRATA 5",
+
     "PVC ROLETNE 1",
     "PVC ROLETNE 2",
     "ALUMINIUM ROLETNE 1",
-    "ALUMINIUM ROLETNE 2",
-    "ALUMINIUM ROLETNE 3",
-    "ALUMINIUM ROLETNE 4",
+
     "PVC FASADE 1",
-    "PVC FASADE 2",
     "ALUMINIUM FASADE 1",
-    "ALUMINIUM FASADE 2",
-    "ALUMINIUM FASADE 3",
-    "ALUMINIUM FASADE 4",
+
     "PVC TERASNI SISTEMI 1",
     "PVC TERASNI SISTEMI 2",
+    "PVC TERASNI SISTEMI 3",
+    "PVC TERASNI SISTEMI 4",
+    "DRVENI TERASNI SISTEMI 1",
+    "DRVENI TERASNI SISTEMI 2",
+    "DRVENI TERASNI SISTEMI 3",
+    "DRVENI TERASNI SISTEMI 4",
+    "DRVENI TERASNI SISTEMI 5",
+    "DRVENI TERASNI SISTEMI 6",
     "ALUMINIUM TERASNI SISTEMI 1",
     "ALUMINIUM TERASNI SISTEMI 2",
-    "ALUMINIUM TERASNI SISTEMI 3",
+
     "DODATNO",
   ];
 
-  const setProductPath = (value, productDataValue) => {
-    setData(productDataValue);
-
+  const setProductPath = (value) => {
+    const newData = ProductData.filter((product) => {
+      return product.name === value;
+    });
+    setData(...newData);
     pathButton.filter((path) => {
       if (path === value) {
         setPathTo(`/${path}`);
