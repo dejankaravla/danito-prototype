@@ -1,0 +1,27 @@
+.NewsAndTips__imgContainer img {
+  width: 100%;
+}
+
+.NewsAndTips__articleText {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+  gap: 50px;
+}
+
+.NewsAndTips__text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.NewsAndTips__datePosted {
+  background-color: #272727;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+  width: fit-content;
+}

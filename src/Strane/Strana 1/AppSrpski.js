@@ -8,6 +8,7 @@ import NavSecond from "./NavBar/NavSecond/NavSecond";
 import NavProduct from "./NavBar/NavProducts/NavProducts";
 
 import LandingPage from "./LandingPage/LandingPage";
+import NewsAndTips from "../NewsAndTips/NewsAndTips";
 
 function AppSrpski() {
   const [scroll, setScroll] = useState(0);
@@ -16,6 +17,9 @@ function AppSrpski() {
   const [pathTo, setPathTo] = useState("false");
   const [pageName, setPageName] = useState("");
 
+  const [pathToNewsAndTips, setPathToNewsAndTips] = useState("");
+  const [NewsAndTipsData, setNewsAndTipsData] = useState("");
+
   const [data, setData] = useState("");
 
   useEffect(() => {
@@ -23,8 +27,6 @@ function AppSrpski() {
       setScroll(window.scrollY);
     };
   }, [scroll]);
-
-  // console.log(data);
 
   return (
     <div className="AppSrpski">
@@ -44,8 +46,15 @@ function AppSrpski() {
               <Route path={pathTo}>
                 <PvcProzori1 data={data} pageName={pageName} scroll={scroll} />
               </Route>
+              <Route path="/NewsAndTips">
+                <NewsAndTips scroll={scroll} NewsAndTipsData={NewsAndTipsData} />
+              </Route>
               <Route path="/">
-                <LandingPage scroll={scroll} />
+                <LandingPage
+                  setNewsAndTipsData={setNewsAndTipsData}
+                  setPathToNewsAndTips={setPathToNewsAndTips}
+                  scroll={scroll}
+                />
               </Route>
             </Switch>
           </div>
