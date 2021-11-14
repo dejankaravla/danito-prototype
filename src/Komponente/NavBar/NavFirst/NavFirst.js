@@ -1,6 +1,7 @@
 import React from "react";
 import "./NavFirst.css";
-import Logo from "../../../../Img/logo-43x42.png";
+import Logo from "../../../Img/logo-43x42.png";
+import { Link } from "react-router-dom";
 
 function NavFirst() {
   return (
@@ -13,7 +14,7 @@ function NavFirst() {
             <p>ENGINEERED FOR YOU</p>
           </a>
         </div>
-        <button>EN</button>
+        <a href="/SR">SR</a>
       </div>
     </div>
   );

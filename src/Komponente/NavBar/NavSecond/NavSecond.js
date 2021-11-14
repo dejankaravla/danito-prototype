@@ -1,5 +1,6 @@
 import React from "react";
 import "./NavSecond.css";
+import { Link } from "react-router-dom";
 
 import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
@@ -20,6 +21,7 @@ function NavSecond({ setNavRightOpen, navRightOpen }) {
 
           <a href="/#">O NAMA</a>
           <a href="/#"> GALERIJA</a>
+          <Link to="/kontakt"> KONTAKT</Link>
         </div>
         <SearchIcon onClick={() => setNavRightOpen(!navRightOpen)} sx={{ fontSize: 35 }} />
       </div>

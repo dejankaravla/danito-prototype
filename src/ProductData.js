@@ -1,47 +1,9 @@
-import windowCoverImg1 from "./Img/ImgProduct/ImgPageProduct/WindowImg1.jpg";
-import windowCoverImg2 from "./Img/ImgProduct/ImgPageProduct/WindowImg2.jpg";
-import windowCoverImg3 from "./Img/ImgProduct/ImgPageProduct/WindowImg3.jpg";
-import windowCoverImg4 from "./Img/ImgProduct/ImgPageProduct/WindowImg4.jpg";
-import windowCoverImg5 from "./Img/ImgProduct/ImgPageProduct/WindowImg5.jpg";
-import windowCoverImg6 from "./Img/ImgProduct/ImgPageProduct/WindowImg6.jpg";
-import windowCoverImg7 from "./Img/ImgProduct/ImgPageProduct/WindowImg7.jpg";
-import windowCoverImg8 from "./Img/ImgProduct/ImgPageProduct/WindowImg8.jpg";
-import windowCoverImg9 from "./Img/ImgProduct/ImgPageProduct/WindowImg9.jpg";
-import windowCoverImg10 from "./Img/ImgProduct/ImgPageProduct/WindowImg10.jpg";
-import windowCoverImg11 from "./Img/ImgProduct/ImgPageProduct/WindowImg11.jpg";
-import doorCoverImg1 from "./Img/ImgProduct/ImgPageProduct/DoorImg1.jpg";
-import doorCoverImg2 from "./Img/ImgProduct/ImgPageProduct/DoorImg2.jpg";
-import doorCoverImg3 from "./Img/ImgProduct/ImgPageProduct/DoorImg3.jpg";
-import doorCoverImg4 from "./Img/ImgProduct/ImgPageProduct/DoorImg4.jpg";
-import doorCoverImg5 from "./Img/ImgProduct/ImgPageProduct/DoorImg5.jpg";
-import doorCoverImg6 from "./Img/ImgProduct/ImgPageProduct/DoorImg6.jpg";
-import doorCoverImg7 from "./Img/ImgProduct/ImgPageProduct/DoorImg7.jpg";
-import doorCoverImg8 from "./Img/ImgProduct/ImgPageProduct/DoorImg8.jpg";
-
-import shuttersImg1 from "./Img/ImgProduct/ImgPageProduct/Roletne1.jpg";
-import shuttersImg2 from "./Img/ImgProduct/ImgPageProduct/Roletne2.jpg";
-import shuttersImg3 from "./Img/ImgProduct/ImgPageProduct/Roletne3.jpg";
-
-import facadesImg1 from "./Img/ImgProduct/ImgPageProduct/Fasade1.jpg";
-import facadesImg2 from "./Img/ImgProduct/ImgPageProduct/Fasade2.jpg";
-
-import terasniSistemi1 from "./Img/ImgProduct/ImgPageProduct/TerasniSistemi1.jpg";
-import terasniSistemi2 from "./Img/ImgProduct/ImgPageProduct/TerasniSistemi2.jpg";
-import terasniSistemi3 from "./Img/ImgProduct/ImgPageProduct/TerasniSistemi3.jpg";
-import terasniSistemi4 from "./Img/ImgProduct/ImgPageProduct/TerasniSistemi4.jpg";
-import terasniSistemi5 from "./Img/ImgProduct/ImgPageProduct/TerasniSistemi5.jpg";
-import terasniSistemi6 from "./Img/ImgProduct/ImgPageProduct/TerasniSistemi6.jpg";
-import terasniSistemi7 from "./Img/ImgProduct/ImgPageProduct/TerasniSistemi7.jpg";
-import terasniSistemi8 from "./Img/ImgProduct/ImgPageProduct/TerasniSistemi8.jpg";
-import terasniSistemi9 from "./Img/ImgProduct/ImgPageProduct/TerasniSistemi9.jpg";
-import terasniSistemi10 from "./Img/ImgProduct/ImgPageProduct/TerasniSistemi10.jpg";
-import terasniSistemi11 from "./Img/ImgProduct/ImgPageProduct/TerasniSistemi11.jpg";
-import terasniSistemi12 from "./Img/ImgProduct/ImgPageProduct/TerasniSistemi12.jpg";
+import IMAGE from "./ProductImg";
 
 export const ProductData = [
   {
     name: "PVC PROZOR 1",
-    imgCover: windowCoverImg1,
+    imgCover: IMAGE.pvcProzor1CoverImg,
     imgVideo: "https://www.drutex.eu/media/_upload/produkty/iglo_light/video/iglo_light.mp4",
     options: {
       firstOption:
@@ -66,7 +28,7 @@ export const ProductData = [
   },
   {
     name: "PVC PROZOR 2",
-    imgCover: windowCoverImg2,
+    imgCover: IMAGE.pvcProzor2overImg,
     imgVideo: "https://www.drutex.eu/media/_upload/produkty/IGLO_ENERGY/video/iglo_energy.mp4",
     options: {
       firstOption:
@@ -90,7 +52,7 @@ export const ProductData = [
   },
   {
     name: "PVC PROZOR 3",
-    imgCover: windowCoverImg3,
+    imgCover: IMAGE.pvcProzor3CoverImg,
     imgVideo: "https://www.drutex.eu/media/_upload/produkty/IGLO_ENERGY/video/iglo_energy_anim_hd.mp4",
     options: {
       firstOption: "Modern design, innovative technology and high energy efficiency that ensures lower heating bills!",
@@ -114,7 +76,7 @@ export const ProductData = [
   },
   {
     name: "PVC PROZOR 4",
-    imgCover: windowCoverImg4,
+    imgCover: IMAGE.pvcProzor4CoverImg,
     imgVideo: "https://www.drutex.eu/media/_upload/produkty/iglo5/anim/iglo_5.mp4",
     options: {
       firstOption:
@@ -136,7 +98,7 @@ export const ProductData = [
   },
   {
     name: "PVC PROZOR 5",
-    imgCover: windowCoverImg5,
+    imgCover: IMAGE.pvcProzor5CoverImg,
     imgVideo: "https://www.drutex.eu/media/_upload/produkty/iglo5-classic/video/iglo_5_classic.mp4",
     options: {
       firstOption:
@@ -159,7 +121,7 @@ export const ProductData = [
   },
   {
     name: "DRVENI PROZOR 1",
-    imgCover: windowCoverImg6,
+    imgCover: IMAGE.drveniProzor1CoverImg,
     imgVideo: "https://www.drutex.eu/media/_upload/produkty/SOFTLINE/video/softline-88.mp4",
     options: {
       firstOption: "Investment in top quality, ecological solutions and classic elegance.",
@@ -181,7 +143,7 @@ export const ProductData = [
   },
   {
     name: "DRVO ALUMINIUM PROZOR 1",
-    imgCover: windowCoverImg7,
+    imgCover: IMAGE.drvoAluminiumProzor1CoverImg,
     imgVideo: "https://www.drutex.eu/media/_upload/produkty/DUOLINE/video/duoline.mp4",
     options: {
       firstOption: "Perfect combination of durability and wood aesthetics.",
@@ -203,7 +165,7 @@ export const ProductData = [
   },
   {
     name: "ALUMINIUM PROZOR 1",
-    imgCover: windowCoverImg8,
+    imgCover: IMAGE.aluminiumProzor1CoverImg,
     imgVideo: "https://www.drutex.eu/media/_upload/produkty/mb-45/video-okno/okno_mb_45.mp4",
     options: {
       firstOption: "Modern aluminium system that allows to create diverse interior design.",
@@ -226,7 +188,7 @@ export const ProductData = [
   },
   {
     name: "ALUMINIUM PROZOR 2",
-    imgCover: windowCoverImg9,
+    imgCover: IMAGE.aluminiumProzor2CoverImg,
     imgVideo: "https://www.drutex.eu/media/_upload/produkty/mb-70/video-okno/okno_mb_70.mp4",
     options: {
       firstOption:
@@ -248,7 +210,7 @@ export const ProductData = [
   },
   {
     name: "ALUMINIUM PROZOR 3",
-    imgCover: windowCoverImg10,
+    imgCover: IMAGE.aluminiumProzor3CoverImg,
     imgVideo: "https://www.drutex.eu/media/_upload/produkty/mb-70hi/video-okno/okno_mb_70.mp4",
     options: {
       firstOption:
@@ -271,7 +233,7 @@ export const ProductData = [
   },
   {
     name: "ALUMINIUM PROZOR 4",
-    imgCover: windowCoverImg11,
+    imgCover: IMAGE.aluminiumProzor4CoverImg,
     imgVideo: "https://www.drutex.eu/media/_upload/produkty/mb-86si/okna/anim/mb_86_si_okno.mp4",
     options: {
       firstOption:
@@ -294,8 +256,8 @@ export const ProductData = [
     ],
   },
   {
-    name: "PVC VRATA 1",
-    imgCover: doorCoverImg1,
+    name: "ULAZNA VRATA",
+    imgCover: IMAGE.ulaznaVrataCoverImg,
     imgVideo: "https://www.drutex.eu/media/_upload/produkty/drzwi-iglo5/video/drzwi_iglo_5.mp4",
     options: {
       firstOption: "A perfect combination of modern looks and rounded profile lines.",
@@ -317,8 +279,8 @@ export const ProductData = [
     ],
   },
   {
-    name: "PVC VRATA 2",
-    imgCover: doorCoverImg2,
+    name: "PREGRADNA VRATA",
+    imgCover: IMAGE.pregradnaVrataCoverImg,
     imgVideo: "https://www.drutex.eu/media/_upload/produkty/drzwi-iglo-energy/video/drzwi_iglo_energy.mp4",
     options: {
       firstOption: "Modern design and perfect thermal insulation properties.",
@@ -341,32 +303,8 @@ export const ProductData = [
     ],
   },
   {
-    name: "DRVENA VRATA 1",
-    imgCover: doorCoverImg3,
-    imgVideo: "https://www.drutex.eu/media/_upload/produkty/drzwi-softline/video/drzwi_softline_68.mp4",
-    options: {
-      firstOption: "Perfect combination of high quality and natural beauty",
-      secondOption: [
-        "Elegant design reflected in the beautiful form of the rounded profile with streamline shape. Doors are available in two types of wood: pine, meranti 450.",
-        "High quality achieved through application of top components and the use of selected wood for production.",
-        "Focus on ecology thanks to the application of natural wood and special water-based types of varnish.",
-        "Perfect woodwork durability thanks to the aluminum board that protects the wood against UV rays and water flowing from the glass and  thermos-drip that facilitates water drainage.",
-        "Wide possibilities to customize the interior resulting from great selection of covering and transparent paints.",
-        "Curved doors avaiable.",
-        "High level of energy efficiency provided by the optimum quality of materials used for production, special sealing system and the proper glass package.",
-        "Application of low threshold that ensures easy usage.",
-      ],
-      thirdOption: ["IGLO Energy", "IGLO Energy Classic", "IGLO 5", "IGLO 5 Classic"],
-    },
-    material: [
-      "68mm profile in two types of wood: three -layer solid square timber: meranti 450+,  pine.",
-      "Max. glass package is 32 mm with thermal transmittance of  Ug=0,8. The possibility to apply glass with enhanced sound insulation, tempered, safety, anti-burglary, ornament, solar protection .Wide range of door fillings.",
-      "3-point bolt espagnolette and 3 hinges.",
-    ],
-  },
-  {
-    name: "ALUMINIUM VRATA 1",
-    imgCover: doorCoverImg4,
+    name: "VRATA HLADAN PROFIL",
+    imgCover: IMAGE.vrataHladanProfilCoverImg,
     imgVideo: "https://www.drutex.eu/media/_upload/produkty/mb-45/video-drzwi/drzwi-mb-45.mp4",
     options: {
       firstOption: "Slim and modern door structure.",
@@ -388,8 +326,8 @@ export const ProductData = [
     ],
   },
   {
-    name: "ALUMINIUM VRATA 2",
-    imgCover: doorCoverImg5,
+    name: "VRATA PROFIL SA TERMOPREKIDOM",
+    imgCover: IMAGE.vrataProfilTermoCoverImg,
     imgVideo: "https://www.drutex.eu/media/_upload/produkty/mb-70/video-drzwi/drzwi_mb_70_.mp4",
     options: {
       firstOption: "The modern and resistant aluminum doors that represent elegant design and high safety level.",
@@ -408,8 +346,8 @@ export const ProductData = [
     ],
   },
   {
-    name: "ALUMINIUM VRATA 3",
-    imgCover: doorCoverImg6,
+    name: "VRATA SA SKRIVENIM KRILOM",
+    imgCover: IMAGE.vrataSkrivenoKriloCoverImg,
     imgVideo: "https://www.drutex.eu/media/_upload/produkty/mb-70hi/video-drzwi/drzwi_mb_70_hi.webm",
     options: {
       firstOption: "The modern and resistant aluminum doors stand out for high durability and energy efficiency.",
@@ -428,53 +366,8 @@ export const ProductData = [
     ],
   },
   {
-    name: "ALUMINIUM VRATA 4",
-    imgCover: doorCoverImg7,
-    imgVideo: "https://www.drutex.eu/media/_upload/produkty/mb-86si/drzwi/anim/2020/drzwi_mb86si_2020.mp4",
-    options: {
-      firstOption: "Great fire and smoke insulation that guarantees high structure durability and resistance.",
-      secondOption: [
-        "Good parameters of thermal insulation.",
-        "High level of acoustic insulation. ",
-        "Fire proof class from EI15 to EI60.",
-        "Low heat transmitance coefficient as a result of application i.a. specially profiled thermal separators with 34 mm width.",
-        "Durable and solid structure thanks to the stable aluminum profile.",
-        "Lots of possibilities to customize the interior and exterior design with great selection of colors. ",
-      ],
-      thirdOption: ["MB-70HI", "MB-86SI", "MB-70", "MB-45"],
-    },
-    material: [
-      "The MB-78EI system structure is based on insulated thermal aluminum profiles with  depth 78mm.",
-      "Standard fireproof glass, and multilayered opaque elements consisting of metal sheets and proper panels which enure the required fire protection.",
-      "Fittings that fulfill the fire regulations.",
-    ],
-  },
-  {
-    name: "ALUMINIUM VRATA 5",
-    imgCover: doorCoverImg8,
-    imgVideo: "https://www.drutex.eu/media/_upload/produkty/mb-86si/drzwi/anim/2020/drzwi_mb86si_2020.mp4",
-    options: {
-      firstOption: "Modern and resistant aluminum doors that stand out with high durability.",
-      secondOption: [
-        "Doors in MB86 SI system may be used in both  individual building and aluminum facades.",
-        "Increased thermal insulation of MB-86 SI system achieved thanks to the application of an extra chamber in the thermal break.",
-        "Very good heat transmittance coefficient (U-value) thanks to the application of thermal breaks.",
-        "Big choice of colours in the standard colour range, enables to satisfy the most demanding clients",
-        "The profile shape enables to obtain slim and durable structures of windows and doors.",
-        "Tightness is ensured by the application of special gaskets made of a two-component EPDM synthetic rubber: solid and cellular, which guarantees resistance to ageing during years of exploitation as well as great thermal insulation.",
-        "Wide range of filling thicknesses guarantees the possibility to apply any standard and non-standard glasses. ",
-      ],
-      thirdOption: ["MB-70HI", "MB-70", "MB-45", "MB-78EI Fire-Doors"],
-    },
-    material: [
-      "The system profiles have a three-chamber structure with the structural depth of the door 77  mm with a thermal break made of polyamide, that is reinforced with fiberglass. ",
-      "Glass packages up to 55mm; in standard the one-chamber glass package with heat transfer coefficient Ug = 1,0 W/(m2K) according to the PN-EN674 norm; the possibility to apply a three-glass package with Ug= 0,5 W/(m2K) coefficient or a four-glass package filled with krypton and Ug=0,3 W/(m2K);   the possibility to apply glasses with increased acoustic insulation, tempered, safety, anti-burglary, ornament or solar protective.",
-      "3-point automatic espagnolette MACO; hinges made of aluminum which stands out with great durability. Optionally lock with one point latch bolt.",
-    ],
-  },
-  {
     name: "ALUMINIUM ROLETNE 1",
-    imgCover: shuttersImg1,
+    imgCover: IMAGE.pvcRoletne1Img,
     imgVideo: "https://www.drutex.eu/media/_upload/produkty/rolety-adaptacyjne/video/roleta-pologragla_WmBlhir.mp4",
     options: {
       firstOption: "Perfect solutions for the whole year – Energy efficiency, safety, privacy.",
@@ -497,7 +390,7 @@ export const ProductData = [
   },
   {
     name: "PVC ROLETNE 1",
-    imgCover: shuttersImg2,
+    imgCover: IMAGE.pvcRoletne2Img,
     imgVideo: "https://www.drutex.eu/media/_upload/produkty/rolety-nakladane/video/roleta-pvc.mp4",
     options: {
       firstOption: "Perfect solutions for the whole year – Energy efficiency, safety, privacy.",
@@ -520,7 +413,7 @@ export const ProductData = [
   },
   {
     name: "PVC ROLETNE 2",
-    imgCover: shuttersImg3,
+    imgCover: IMAGE.spoljneRoletneImg,
     imgVideo: "https://www.drutex.eu/media/_upload/produkty/rolety_eps/wideo/animacja_produktow_na_www.mp4",
     options: {
       firstOption:
@@ -543,7 +436,7 @@ export const ProductData = [
   },
   {
     name: "PVC FASADE 1",
-    imgCover: facadesImg1,
+    imgCover: IMAGE.unutrasnjeRoletneImg,
     imgVideo: "https://www.drutex.eu/media/_upload/produkty/s-50/video/mb-sr50n_hi_f.mp4",
     options: {
       firstOption: "Modern glass-aluminium systems distinguished by their high resistance and long-term durability.",
@@ -566,7 +459,7 @@ export const ProductData = [
   },
   {
     name: "ALUMINIUM FASADE 1",
-    imgCover: facadesImg2,
+    imgCover: IMAGE.podvasadneRoletneImg,
     imgVideo: "https://www.drutex.eu/media/_upload/produkty/mb-wg60/video/mb-wg60-002.mp4",
     options: {
       firstOption:
@@ -594,7 +487,7 @@ export const ProductData = [
   },
   {
     name: "PVC TERASNI SISTEMI 1",
-    imgCover: terasniSistemi1,
+    imgCover: IMAGE.FunderFasade,
     imgVideo: "https://www.drutex.eu/media/_upload/produkty/iglo-hs/video/sd/iglo_hs.mp4",
     options: {
       firstOption:
@@ -621,7 +514,7 @@ export const ProductData = [
   },
   {
     name: "PVC TERASNI SISTEMI 2",
-    imgCover: terasniSistemi2,
+    imgCover: IMAGE.VentilFasade,
     imgVideo: "https://www.drutex.eu/media/_upload/produkty/drzwi-mb77-hs/video/mb77hs.mp4",
     options: {
       firstOption:
@@ -646,7 +539,7 @@ export const ProductData = [
   },
   {
     name: "PVC TERASNI SISTEMI 3",
-    imgCover: terasniSistemi3,
+    imgCover: IMAGE.strukovna,
     imgVideo: "https://www.drutex.eu/media/_upload/produkty/duoline-hs/video/duoline_hs.mp4",
     options: {
       firstOption: "Elegant, durable lift and slide doors in wood and aluminum technology.",
@@ -670,7 +563,7 @@ export const ProductData = [
   },
   {
     name: "PVC TERASNI SISTEMI 4",
-    imgCover: terasniSistemi4,
+    imgCover: IMAGE.standardna,
     imgVideo: "https://www.drutex.eu/media/_upload/produkty/softline-hs/video/sl68hs.mp4",
     options: {
       firstOption: "Elegant, wooden lift and slide doors in classic styles!",
@@ -694,7 +587,7 @@ export const ProductData = [
   },
   {
     name: "DRVENI TERASNI SISTEMI 1",
-    imgCover: terasniSistemi5,
+    imgCover: IMAGE.granit,
     imgVideo: "https://www.drutex.eu/media/_upload/produkty/iglo_light_psk/video/iglo_light_uchylno_przesuwne-1.mp4",
     options: {
       firstOption:
@@ -716,7 +609,7 @@ export const ProductData = [
   },
   {
     name: "DRVENI TERASNI SISTEMI 2",
-    imgCover: terasniSistemi6,
+    imgCover: IMAGE.pvcVekaSlide,
     imgVideo: "https://www.drutex.eu/media/_upload/produkty/iglo_pks/video/iglo_uchylno_przesowne.mp4",
     options: {
       firstOption:
@@ -743,7 +636,7 @@ export const ProductData = [
   },
   {
     name: "DRVENI TERASNI SISTEMI 3",
-    imgCover: terasniSistemi7,
+    imgCover: IMAGE.aluUltraGlide,
     imgVideo: "https://www.drutex.eu/media/_upload/produkty/drzwi-iglo5-psk/video/iglo_uchylno_przesowne.mp4",
     options: {
       firstOption:
@@ -766,7 +659,7 @@ export const ProductData = [
   },
   {
     name: "DRVENI TERASNI SISTEMI 4",
-    imgCover: terasniSistemi8,
+    imgCover: IMAGE.pvcVekaSoft,
     imgVideo: "https://www.drutex.eu/media/_upload/produkty/mb-77-up/video/mb_70_uchylno-przesuwne.mp4",
     options: {
       firstOption:
@@ -789,7 +682,7 @@ export const ProductData = [
   },
   {
     name: "DRVENI TERASNI SISTEMI 5",
-    imgCover: terasniSistemi9,
+    imgCover: IMAGE.aluVisoglide,
     imgVideo: "https://www.drutex.eu/media/_upload/produkty/duoline-psk/video/duoline_68_psk.mp4",
     options: {
       firstOption: "Elegant, durable tilt and slide doors in wood and aluminium technology.",
@@ -813,7 +706,7 @@ export const ProductData = [
   },
   {
     name: "DRVENI TERASNI SISTEMI 6",
-    imgCover: terasniSistemi10,
+    imgCover: IMAGE.pvcSmatiaM9800,
     imgVideo: "https://www.drutex.eu/media/_upload/produkty/softline-psk/video/sl_68_uchylno_przesuwne.mp4",
     options: {
       firstOption: "Perfect solution for the modern balcony and terrace glazing for small and big room.",
@@ -837,7 +730,7 @@ export const ProductData = [
   },
   {
     name: "ALUMINIUM TERASNI SISTEMI 1",
-    imgCover: terasniSistemi11,
+    imgCover: IMAGE.pvcSmatiaM1980,
     imgVideo: "https://www.drutex.eu/media/_upload/produkty/harmonijka_mb-86_fold_line/video/harmonijka-mb86.mp4",
     options: {
       firstOption:
@@ -860,7 +753,7 @@ export const ProductData = [
   },
   {
     name: "ALUMINIUM TERASNI SISTEMI 2",
-    imgCover: terasniSistemi12,
+    imgCover: IMAGE.panoramaAliplast,
     imgVideo: "https://www.drutex.eu/media/_upload/produkty/softline-68-h/video/harmonijka_sl68.mp4",
     options: {
       firstOption: "Original and classic design with advanced technical solutions ensure maximal opening width.",

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Slider.css";
-import SliderImg from "../../../../Img/bannertop_facebook_1920x940_en.jpg";
+import SliderImg from "../../../Img/bannertop_facebook_1920x940_en.jpg";
 import { useTheme } from "@mui/material/styles";
 import SwipeableViews from "react-swipeable-views";
 import { autoPlay } from "react-swipeable-views-utils";

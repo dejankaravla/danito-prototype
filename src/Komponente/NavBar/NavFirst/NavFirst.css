@@ -10,6 +10,7 @@
   background-color: black;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 10px 30px;
 }
 
@@ -38,10 +39,11 @@
   object-fit: contain;
 }
 
-.Nav__header button {
+.Nav__header a {
   background-color: transparent;
   color: white;
   border: none;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 18px;
+  text-decoration: none;
 }

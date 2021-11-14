@@ -14,6 +14,7 @@
   align-items: center;
   transition: 0.3s;
   max-width: 300px;
+  text-align: start;
 }
 
 .ButtonNavLeft__button {

@@ -1,8 +1,8 @@
 import React from "react";
-import { NewsData } from "../../../NewsData";
-import { TipsData } from "../../../TipsData";
+import { NewsData } from "../../NewsData";
+import { TipsData } from "../../TipsData";
 import Slider from "./Slider/Slider";
-import LineAnimation from "../../../Komponente/LineAnimation/LineAnimation";
+import LineAnimation from "../../Komponente/LineAnimation/LineAnimation";
 import ProductWindow from "./ProductWindow/ProductWindow";
 import Inspiration from "./Inspiration/Inspiration";
 import CompanyPresentation from "./CompanyPresentation/CompanyPresentation";

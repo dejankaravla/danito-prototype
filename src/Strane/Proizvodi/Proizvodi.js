@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
-import "./PvcProzor1.css";
+import "./Proizvodi.css";
 
-import LineAnimation from "../../../Komponente/LineAnimation/LineAnimation";
-import Options from "../Options/Options";
+import LineAnimation from "../../Komponente/LineAnimation/LineAnimation";
+import Options from "./Options/Options";
 
-import ProfileIcon from "../../../Img/Icons/Profile.png";
-import GlassIcon from "../../../Img/Icons/Glass.png";
-import FittingsIcon from "../../../Img/Icons/Fittings.png";
+import ProfileIcon from "../../Img/Icons/Profile.png";
+import GlassIcon from "../../Img/Icons/Glass.png";
+import FittingsIcon from "../../Img/Icons/Fittings.png";
 
 const icons = [ProfileIcon, GlassIcon, FittingsIcon];
 

@@ -1,16 +1,17 @@
 import React, { useState, useEffect } from "react";
 import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
-import PvcProzori1 from "../Proizvodi/Prozori/PvcProzor1";
-import "./AppSrpski.css";
+import PvcProzori1 from "../Strane/Proizvodi/Proizvodi";
+import "./AppENG.css";
 
-import NavFirst from "./NavBar/NavFirst/NavFirst";
-import NavSecond from "./NavBar/NavSecond/NavSecond";
-import NavProduct from "./NavBar/NavProducts/NavProducts";
+import NavFirst from "../Komponente/NavBar/NavFirst/NavFirst";
+import NavSecond from "../Komponente/NavBar/NavSecond/NavSecond";
+import NavProduct from "../Komponente/NavBar/NavProducts/NavProducts";
 
-import LandingPage from "./LandingPage/LandingPage";
-import NewsAndTips from "../NewsAndTips/NewsAndTips";
+import LandingPage from "../Strane/LandingPage/LandingPage";
+import NewsAndTips from "../Strane/NewsAndTips/NewsAndTips";
+import Kontakt from "../Strane/Kontakt/Kontakt";
 
-function AppSrpski() {
+function AppENG() {
   const [scroll, setScroll] = useState(0);
   const [navRightOpen, setNavRightOpen] = useState(false);
 
@@ -29,10 +30,10 @@ function AppSrpski() {
   }, [scroll]);
 
   return (
-    <div className="AppSrpski">
+    <div className="AppENG">
       <Router>
         <NavFirst />
-        <div className="AppSrpski__containerFirst">
+        <div className="AppENG__containerFirst">
           <NavProduct
             setData={setData}
             setPageName={setPageName}
@@ -40,7 +41,7 @@ function AppSrpski() {
             setPathTo={setPathTo}
             navRightOpen={navRightOpen}
           />
-          <div className="AppSrpski__right">
+          <div className="AppENG__right">
             <NavSecond navRightOpen={navRightOpen} setNavRightOpen={setNavRightOpen} />
             <Switch>
               <Route path={pathTo}>
@@ -48,6 +49,9 @@ function AppSrpski() {
               </Route>
               <Route path="/NewsAndTips">
                 <NewsAndTips scroll={scroll} NewsAndTipsData={NewsAndTipsData} />
+              </Route>
+              <Route path="/kontakt">
+                <Kontakt scroll={scroll} />
               </Route>
               <Route path="/">
                 <LandingPage
@@ -64,4 +68,4 @@ function AppSrpski() {
   );
 }
 
-export default AppSrpski;
+export default AppENG;
