@@ -1,0 +1,32 @@
+import React from "react";
+import "./NavSecond.css";
+import { Link } from "react-router-dom";
+
+import MenuIcon from "@mui/icons-material/Menu";
+import SearchIcon from "@mui/icons-material/Search";
+import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
+
+function NavSecond({ setNavRightOpen, navRightOpen }) {
+  return (
+    <div className="NavSecond">
+      <div className="Nav__body">
+        <div className="Nav__bodyMenu">
+          {navRightOpen ? (
+            <ArrowBackIosIcon onClick={() => setNavRightOpen(!navRightOpen)} sx={{ fontSize: 35 }} />
+          ) : (
+            <MenuIcon onClick={() => setNavRightOpen(!navRightOpen)} sx={{ fontSize: 35 }} />
+          )}
+
+          <button onClick={() => setNavRightOpen(!navRightOpen)}>PRODUCT</button>
+
+          <a href="/#">ABOUT</a>
+          <a href="/#"> GALLERY</a>
+          <Link to="/EN/contact">CONTACT</Link>
+        </div>
+        <SearchIcon onClick={() => setNavRightOpen(!navRightOpen)} sx={{ fontSize: 35 }} />
+      </div>
+    </div>
+  );
+}
+
+export default NavSecond;

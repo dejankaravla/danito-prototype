@@ -1,0 +1,13 @@
+.AppEN {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.AppEN__containerFirst {
+  display: flex;
+}
+
+.AppEN__right {
+  position: relative;
+}

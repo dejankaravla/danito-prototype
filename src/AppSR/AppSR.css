@@ -1,0 +1,13 @@
+.AppSR {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.AppSR__containerFirst {
+  display: flex;
+}
+
+.AppSR__right {
+  position: relative;
+}

@@ -1,0 +1,29 @@
+.NavFirst {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 50px;
+  z-index: 1;
+}
+
+.Nav__header {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+.Nav__header img {
+  object-fit: contain;
+  height: 40px;
+}
+
+.Nav__header a {
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  text-decoration: none;
+}

@@ -1,8 +1,8 @@
 import React from "react";
 import "./App.css";
 import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
-import AppENG from "./AppENG/AppENG";
-import AppSr from "./AppSr";
+import AppSR from "./AppSR/AppSR";
+import AppEN from "./AppEN/AppEN";
 
 function App() {
   return (
@@ -10,10 +10,10 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/">
-            <AppENG />
+            <AppSR />
           </Route>
-          <Route path="/SR">
-            <AppSr />
+          <Route path="/EN">
+            <AppEN />
           </Route>
         </Switch>
       </Router>

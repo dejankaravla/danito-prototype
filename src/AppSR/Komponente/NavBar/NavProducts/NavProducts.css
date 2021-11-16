@@ -1,0 +1,78 @@
+.Nav__productsHiden {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  position: sticky;
+  top: 60px;
+  height: 100%;
+  gap: 20px;
+  width: 0;
+  transition: 0.5s;
+}
+
+.Nav__productsVisible {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  position: sticky;
+  top: 60px;
+  height: 100%;
+  gap: 20px;
+  transition: 0.5s;
+}
+
+.Nav__searchContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: #eeeff0;
+}
+
+.Nav__search {
+  display: flex;
+  flex-direction: row;
+  background-color: #eeeff0;
+  padding: 10px 20px;
+  height: 72px;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  cursor: pointer;
+  gap: 5px;
+  width: 300px;
+}
+
+.Nav__search input {
+  background-color: #eeeff0;
+  border: none;
+  height: 50px;
+  outline: none;
+  font-size: 17px;
+}
+
+.Nav__productsSelected {
+  display: flex;
+  height: 92px;
+  background-color: #eeeff0;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+}
+
+.Nav__productsVisible svg {
+  cursor: pointer;
+  transition: 0.5s;
+}
+.Nav__productsVisible svg:hover {
+  opacity: 0.5;
+}
+
+.Nav__productsContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px;
+  gap: 10px;
+}
+
+.Nav__productsContainer a {
+  text-decoration: none;
+}
