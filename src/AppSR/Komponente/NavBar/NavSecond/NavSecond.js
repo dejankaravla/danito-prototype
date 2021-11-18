@@ -19,7 +19,7 @@ function NavSecond({ setNavRightOpen, navRightOpen }) {
 
           <button onClick={() => setNavRightOpen(!navRightOpen)}>PROIZVODI</button>
 
-          <a href="/#">O NAMA</a>
+          <Link to="/onama">O NAMA</Link>
           <Link to="/galerija"> GALERIJA</Link>
           <Link to="/kontakt"> KONTAKT</Link>
         </div>

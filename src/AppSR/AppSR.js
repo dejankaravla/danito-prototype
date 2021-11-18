@@ -9,6 +9,7 @@ import NavSecond from "./Komponente/NavBar/NavSecond/NavSecond";
 import NavProduct from "./Komponente/NavBar/NavProducts/NavProducts";
 
 import LandingPage from "./Strane/LandingPage/LandingPage";
+import About from "./Strane/About/About";
 import Galerija from "./Strane/Galerija/Galerija";
 import TipsPage from "./Strane/TipsPage/TipsPage";
 import Kontakt from "./Strane/Kontakt/Kontakt";
@@ -52,6 +53,9 @@ function AppSR() {
               </Route>
               <Route path="/galerija">
                 <Galerija />
+              </Route>
+              <Route path="/onama">
+                <About scroll={scroll} />
               </Route>
               <Route path="/TipsPage">
                 <TipsPage scroll={scroll} tipsData={tipsData} />

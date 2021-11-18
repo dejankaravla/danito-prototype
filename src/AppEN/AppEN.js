@@ -8,6 +8,7 @@ import NavSecond from "./Komponente/NavBar/NavSecond/NavSecond";
 import NavProduct from "./Komponente/NavBar/NavProducts/NavProducts";
 
 import LandingPage from "./Strane/LandingPage/LandingPage";
+import Galerija from "./Strane/Galerija/Galerija";
 import Proizvodi from "./Strane/Proizvodi/Proizvodi";
 import TipsPage from "./Strane/TipsPage/TipsPage";
 import Kontakt from "./Strane/Kontakt/Kontakt";
@@ -48,6 +49,9 @@ function AppEN() {
             <Switch>
               <Route path={pathTo}>
                 <Proizvodi data={data} pageName={pageName} scroll={scroll} />
+              </Route>
+              <Route path="/EN/galerija">
+                <Galerija />
               </Route>
               <Route path="/EN/TipsPage">
                 <TipsPage scroll={scroll} tipsData={tipsData} />

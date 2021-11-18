@@ -20,7 +20,7 @@ function NavSecond({ setNavRightOpen, navRightOpen }) {
           <button onClick={() => setNavRightOpen(!navRightOpen)}>PRODUCT</button>
 
           <a href="/#">ABOUT</a>
-          <a href="/#"> GALLERY</a>
+          <Link to="/EN/galerija"> GALLERY</Link>
           <Link to="/EN/contact">CONTACT</Link>
         </div>
         <SearchIcon onClick={() => setNavRightOpen(!navRightOpen)} sx={{ fontSize: 35 }} />
