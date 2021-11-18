@@ -8,17 +8,23 @@ function ProductsSocialNav() {
     <div className="ProductsSocialNav">
       <div className="ProductsSocialNav__container">
         <div className="ProductsSocialNav__navProducts">
-          <button>WINDOW</button>
-          <button>DOORS</button>
-          <button>SHUTTERS</button>
-          <button>FACADES/WINTER GARDERNS</button>
-          <button>TERRACE SYSTEMS</button>
-          <button>SMART HOME</button>
+          <button>PROZORI</button>
+          <button>VRATA</button>
+          <button>ROLETNE</button>
+          <button>FASADE</button>
+          <button>TERASNI SISTEMI</button>
+          <button>DODATNO</button>
         </div>
         <div className="ProductsSocialNav__social">
-          <YouTube sx={{ fontSize: 40 }} />
-          <Instagram sx={{ fontSize: 40 }} />
-          <Facebook sx={{ fontSize: 40 }} />
+          <a rel="noreferrer" target="_blank" href="https://www.instagram.com/danito_pvc/">
+            <Instagram sx={{ fontSize: 40 }} />
+          </a>
+          <a rel="noreferrer" target="_blank" href="https://www.facebook.com/Danito.PVC.ALU.stolarija/">
+            <Facebook sx={{ fontSize: 40 }} />
+          </a>
+          <a rel="noreferrer" target="_blank" href="https://www.youtube.com/">
+            <YouTube sx={{ fontSize: 40 }} />
+          </a>
         </div>
       </div>
     </div>

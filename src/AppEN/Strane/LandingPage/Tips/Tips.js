@@ -23,7 +23,7 @@ function Tips({ setTipsData }) {
               <p>{data.text[0].split(" ").slice(0, 20).join(" ")}...</p>
             </CardContent>
             <div className="Tips__moreDate">
-              <Link onClick={() => setTipsData(data)} to="/TipsPage">
+              <Link onClick={() => setTipsData(data)} to="/EN/TipsPage">
                 Read
               </Link>
               <p>{data.date}</p>

@@ -1,8 +1,8 @@
-.NewsAndTips__imgContainer img {
+.TipsPage__imgContainer img {
   width: 100%;
 }
 
-.NewsAndTips__articleText {
+.TipsPage__articleText {
   width: 60%;
   margin: auto;
   display: flex;
@@ -11,13 +11,13 @@
   gap: 50px;
 }
 
-.NewsAndTips__text {
+.TipsPage__text {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.NewsAndTips__datePosted {
+.TipsPage__datePosted {
   background-color: #272727;
   color: white;
   padding: 5px;

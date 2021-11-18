@@ -39,4 +39,5 @@
 .ProductsSocialNav__social svg {
   cursor: pointer;
   transition: 0.5s ease-in-out;
+  color: black;
 }

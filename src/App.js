@@ -8,6 +8,7 @@ function App() {
   return (
     <div className="App">
       <Router>
+        {/* <ScrollToTop /> */}
         <Switch>
           <Route exact path="/">
             <AppSR />

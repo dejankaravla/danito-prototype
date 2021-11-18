@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
-import PvcProzori1 from "./Strane/Proizvodi/Proizvodi";
+import Proizvodi from "./Strane/Proizvodi/Proizvodi";
 import "./AppSR.css";
+import ScrollToTop from "../ScrollToTop";
 
 import NavFirst from "./Komponente/NavBar/NavFirst/NavFirst";
 import NavSecond from "./Komponente/NavBar/NavSecond/NavSecond";
 import NavProduct from "./Komponente/NavBar/NavProducts/NavProducts";
 
 import LandingPage from "./Strane/LandingPage/LandingPage";
+import Galerija from "./Strane/Galerija/Galerija";
 import TipsPage from "./Strane/TipsPage/TipsPage";
 import Kontakt from "./Strane/Kontakt/Kontakt";
 
@@ -32,6 +34,7 @@ function AppSR() {
   return (
     <div className="AppSR">
       <Router>
+        <ScrollToTop />
         <NavFirst />
         <div className="AppSR__containerFirst">
           <NavProduct
@@ -45,7 +48,10 @@ function AppSR() {
             <NavSecond navRightOpen={navRightOpen} setNavRightOpen={setNavRightOpen} />
             <Switch>
               <Route path={pathTo}>
-                <PvcProzori1 data={data} pageName={pageName} scroll={scroll} />
+                <Proizvodi data={data} pageName={pageName} scroll={scroll} />
+              </Route>
+              <Route path="/galerija">
+                <Galerija />
               </Route>
               <Route path="/TipsPage">
                 <TipsPage scroll={scroll} tipsData={tipsData} />
