@@ -4,7 +4,7 @@ import "react-image-gallery/styles/css/image-gallery.css";
 import "./GaleriFunc.css";
 
 function GalerijaFunc({ ImgObjekti, className }) {
-  return <ReactImageGallery items={ImgObjekti} additionalClass={className} showThumbnails={false} />;
+  return <ReactImageGallery additionalClass={className} items={ImgObjekti} showThumbnails={false} />;
 }
 
 export default GalerijaFunc;

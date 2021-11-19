@@ -15,28 +15,28 @@ function Galerija() {
               <h1>Object Name: Object1</h1>
               <p>Location: Location</p>
             </div>
-            <GalerijaFunc className="Galerija" ImgObjekti={ImgObjekti.objekat1} />
+            <GalerijaFunc className="GalerijaFunc" ImgObjekti={ImgObjekti.objekat1} />
           </div>
           <div className="Galerija__objekat">
             <div className="Galerija__objekatInformacije">
               <h1>Object Name: Object2</h1>
               <p>Location: Location</p>
             </div>
-            <GalerijaFunc className="Galerija" ImgObjekti={ImgObjekti.objekat2} />
+            <GalerijaFunc className="GalerijaFunc" ImgObjekti={ImgObjekti.objekat2} />
           </div>
           <div className="Galerija__objekat">
             <div className="Galerija__objekatInformacije">
               <h1>Object Name: Object3</h1>
               <p>Location: Location</p>
             </div>
-            <GalerijaFunc className="Galerija" ImgObjekti={ImgObjekti.objekat3} />
+            <GalerijaFunc className="GalerijaFunc" ImgObjekti={ImgObjekti.objekat3} />
           </div>
           <div className="Galerija__objekat">
             <div className="Galerija__objekatInformacije">
               <h1>Object Name: Object4</h1>
               <p>Location: Location</p>
             </div>
-            <GalerijaFunc className="Galerija" ImgObjekti={ImgObjekti.objekat4} />
+            <GalerijaFunc className="GalerijaFunc" ImgObjekti={ImgObjekti.objekat4} />
           </div>
         </div>
       </div>

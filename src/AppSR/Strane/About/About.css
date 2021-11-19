@@ -13,11 +13,13 @@
 
 .About__companyProfile {
   padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 
 .About__aboutDanito {
   display: flex;
-  /* width: 100%; */
 }
 
 .About__aboutDanito img {
@@ -25,9 +27,9 @@
 }
 
 .About__companyInfo {
-  width: 50%;
+  width: 65%;
+  padding: 0 50px;
   margin: auto;
-  padding-right: 50px;
   text-align: justify;
   font-size: 18px;
   display: flex;

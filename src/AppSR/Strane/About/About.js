@@ -5,7 +5,6 @@ import LineAnimation from "../../Komponente/LineAnimation/LineAnimation";
 import GalerijaFunc from "../Galerija/GalerijaFunc/GalerijaFunc";
 import ImgCompany from "../../../ImgCompany";
 import CompanyImgCover from "../../../Img/ShowRoom/19.jpg";
-import HeaderImg from "../../../Img/Company/20.jpg";
 function About({ scroll }) {
   return (
     <div className="About">
