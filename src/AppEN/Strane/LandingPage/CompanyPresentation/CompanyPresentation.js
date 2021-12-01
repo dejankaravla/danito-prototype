@@ -1,5 +1,5 @@
 import React from "react";
-import "./CompanyPresentation.css";
+import "../../../../Styles/CompanyPresentation/CompanyPresentation.css";
 import LineAnimation from "../../../Komponente/LineAnimation/LineAnimation";
 
 function CompanyPresentation({ scroll, scrollY }) {

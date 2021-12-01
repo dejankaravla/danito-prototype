@@ -1,5 +1,5 @@
 import React from "react";
-import "./Inspiration.css";
+import "../../../../Styles/Inspiration/Inspiration.css";
 
 function Inspiration() {
   return (

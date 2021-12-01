@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
-import "./AppEN.css";
+import "../Styles/AppLang/AppLang.css";
 import ScrollToTop from "../ScrollToTop";
 
 import NavFirst from "./Komponente/NavBar/NavFirst/NavFirst";
@@ -32,11 +32,11 @@ function AppEN() {
   }, [scroll]);
 
   return (
-    <div className="AppEN">
+    <div className="AppLang">
       <Router>
         <ScrollToTop />
         <NavFirst />
-        <div className="AppEN__containerFirst">
+        <div className="AppLang__containerFirst">
           <NavProduct
             setData={setData}
             setPageName={setPageName}
@@ -44,7 +44,7 @@ function AppEN() {
             setPathTo={setPathTo}
             navRightOpen={navRightOpen}
           />
-          <div className="AppEN__right">
+          <div className="AppLang__right">
             <NavSecond navRightOpen={navRightOpen} setNavRightOpen={setNavRightOpen} />
             <Switch>
               <Route path={pathTo}>

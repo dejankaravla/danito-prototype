@@ -1,7 +1,6 @@
 import React from "react";
-import "./NavSecond.css";
+import "../../../../Styles/NavSecond/NavSecond.css";
 import { Link } from "react-router-dom";
-
 import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";

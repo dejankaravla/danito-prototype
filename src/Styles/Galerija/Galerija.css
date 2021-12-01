@@ -1,0 +1,25 @@
+.Galerija__container img {
+  width: 100%;
+}
+
+.Galerija__objekti {
+  padding: 20px;
+  gap: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Galerija__objekat {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Galerija__objekatInformacije {
+  width: 50%;
+  text-align: center;
+}/*# sourceMappingURL=Galerija.css.map */

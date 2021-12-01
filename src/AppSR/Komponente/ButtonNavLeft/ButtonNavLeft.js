@@ -1,5 +1,5 @@
 import React from "react";
-import "./ButtonNavLeft.css";
+import "../../../Styles/ButtonNavLeft/ButtonNavLeft.css";
 
 function ButtonNavLeft({ buttonName, setSelected, img, imgClass }) {
   return (

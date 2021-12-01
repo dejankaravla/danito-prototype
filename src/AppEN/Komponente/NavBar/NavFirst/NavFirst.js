@@ -1,5 +1,5 @@
 import React from "react";
-import "./NavFirst.css";
+import "../../../../Styles/NavFirst/NavFirst.css";
 import Logo from "../../../../Img/Danito_logo.jpg";
 
 function NavFirst() {

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Kontakt.css";
+import "../../../Styles/Kontakt/Kontakt.css";
 import kontaktImg from "../../../Img/kontakt/kontakt.jpg";
 import Logo from "../../../Img/Danito_logo.jpg";
 import LineAnimation from "../../Komponente/LineAnimation/LineAnimation";

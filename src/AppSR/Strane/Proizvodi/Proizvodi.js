@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
-import "./Proizvodi.css";
+import "../../../Styles/Proizvodi/Proizvodi.css";
 
 import LineAnimation from "../../Komponente/LineAnimation/LineAnimation";
-import Options from "./Options/Options";
+import Options from "./Options";
 
 import ProfileIcon from "../../../Img/Icons/Profile.png";
 import GlassIcon from "../../../Img/Icons/Glass.png";

@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import "./Slider.css";
+import "../../../../Styles/Slider/Slider.css";
 import SliderImg from "../../../../Img/bannertop_facebook_1920x940_en.jpg";
 import { useTheme } from "@mui/material/styles";
 import SwipeableViews from "react-swipeable-views";
 import { autoPlay } from "react-swipeable-views-utils";
-import ProductsSocialNav from "../ProductsSocialNav/ProductsSocialNav";
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -86,7 +85,6 @@ function Slider() {
         <span className={activeStep === 5 ? "active" : "dot"} onClick={() => setActiveStep(5)}></span>
         <span className={activeStep === 6 ? "active" : "dot"} onClick={() => setActiveStep(6)}></span>
       </div>
-      <ProductsSocialNav />
     </div>
   );
 }

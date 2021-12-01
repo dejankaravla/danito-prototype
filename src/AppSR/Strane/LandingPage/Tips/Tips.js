@@ -1,5 +1,5 @@
 import * as React from "react";
-import "./Tips.css";
+import "../../../../Styles/Tips/Tips.css";
 import { TipsData } from "../../../TipsData";
 import { Link } from "react-router-dom";
 import Card from "@mui/material/Card";

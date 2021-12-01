@@ -1,5 +1,5 @@
 import React from "react";
-import "./LineAnimation.css";
+import "../../../Styles/LineAnimation/LineAnimation.css";
 
 function LineAnimation(props) {
   return (

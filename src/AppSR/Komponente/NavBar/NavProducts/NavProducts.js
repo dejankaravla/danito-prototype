@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import "./NavProducts.css";
+import "../../../../Styles/NavProducts/NavProducs.css";
 import ButtonNavLeft from "../../../Komponente/ButtonNavLeft/ButtonNavLeft";
 import { ProductData } from "../../../ProductData";
 
-import SearchIcon from "@mui/icons-material/Search";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
+import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 
 // Importovanje naziva svih proizvoda iz ProductNames
 import PRODUCTS from "./ProductNames";
@@ -212,8 +212,8 @@ function NavProducts({ navRightOpen, setPathTo, setPageName, setData }) {
       ) : (
         <div className="Nav__searchContainer">
           <div className="Nav__search">
-            <SearchIcon sx={{ fontSize: 35 }} />
-            <input autoFocus placeholder="Search" />
+            <ArrowDownwardIcon />
+            <p>Izaberite proizvod</p>
           </div>
         </div>
       )}

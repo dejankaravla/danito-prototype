@@ -1,5 +1,5 @@
 import React from "react";
-import "./TipsPage.css";
+import "../../../Styles/TipsPage/TipsPage.css";
 import LineAnimation from "../../Komponente/LineAnimation/LineAnimation";
 
 function TipsPage({ tipsData, scroll }) {

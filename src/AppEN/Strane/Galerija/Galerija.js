@@ -1,6 +1,6 @@
 import React from "react";
-import "./Galerija.css";
-import GalerijaFunc from "./GalerijaFunc/GalerijaFunc";
+import "../../../Styles/Galerija/Galerija.css";
+import GalerijaFunc from "./GalerijaFunc";
 import ImgObjekti from "../../../ImgObjekti";
 import ImgCover from "../../../Img/ImgProduct/ImgPageProduct/DoorImg1.jpg";
 

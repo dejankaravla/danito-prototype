@@ -1,8 +1,8 @@
 import React from "react";
-import "./About.css";
+import "../../../Styles/About/About.css";
 
 import LineAnimation from "../../Komponente/LineAnimation/LineAnimation";
-import GalerijaFunc from "../Galerija/GalerijaFunc/GalerijaFunc";
+import GalerijaFunc from "../Galerija/GalerijaFunc";
 import ImgCompany from "../../../ImgCompany";
 import CompanyImgCover from "../../../Img/ShowRoom/19.jpg";
 function About({ scroll }) {
@@ -17,7 +17,6 @@ function About({ scroll }) {
         </p>
         <div className="About__companyProfile">
           <div className="About__aboutDanito">
-            {/* <img src={HeaderImg} alt="header img" /> */}
             <GalerijaFunc className="AboutPage" ImgObjekti={ImgCompany.company1} />
             <div className="About__companyInfo">
               <h2>O nama</h2>

@@ -1,5 +1,5 @@
 import React from "react";
-import "./ProductWindow.css";
+import "../../../../Styles/ProductWindow/ProductWindow.css";
 
 function ProductWindow() {
   return (
