@@ -2,9 +2,6 @@ import React from "react";
 import "../../../Styles/LineAnimation/LineAnimation.css";
 
 function LineAnimation(props) {
-  console.log(props.scroll);
-  console.log(props.scrollY);
-
   return (
     <div className="LineAnimation">
       <div className="LineAnimation__container">

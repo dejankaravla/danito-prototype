@@ -52,7 +52,7 @@ function AppSR() {
                 <Proizvodi data={data} pageName={pageName} scroll={scroll} />
               </Route>
               <Route path="/galerija">
-                <Galerija />
+                <Galerija scroll={scroll} />
               </Route>
               <Route path="/onama">
                 <About scroll={scroll} />
