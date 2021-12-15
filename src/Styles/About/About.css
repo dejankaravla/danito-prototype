@@ -20,10 +20,12 @@
 
 .About__aboutDanito {
   display: flex;
+  flex-direction: column;
 }
 
 .About__aboutDanito img {
-  width: 50%;
+  width: 150px;
+  cursor: pointer;
 }
 
 .About__companyInfo {

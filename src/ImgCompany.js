@@ -1,6 +1,5 @@
 const Company = {
   company1: [
-    { original: require("./Img/Company/1.jpg").default, thumbnail: require("./Img/Company/1.jpg").default },
     { original: require("./Img/Company/2.jpg").default, thumbnail: require("./Img/Company/2.jpg").default },
     { original: require("./Img/Company/3.jpg").default, thumbnail: require("./Img/Company/3.jpg").default },
     { original: require("./Img/Company/4.jpg").default, thumbnail: require("./Img/Company/4.jpg").default },

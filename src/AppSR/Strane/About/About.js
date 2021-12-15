@@ -17,7 +17,6 @@ function About({ scroll }) {
         </p>
         <div className="About__companyProfile">
           <div className="About__aboutDanito">
-            <GalerijaFunc className="AboutPage" ImgObjekti={ImgCompany.company1} />
             <div className="About__companyInfo">
               <h2>O nama</h2>
               <p>
@@ -34,6 +33,7 @@ function About({ scroll }) {
                 gde će mu detaljno biti prikazne sve sitnice koje čine da prozor od dobrog pređe u najbolji.
               </p>
             </div>
+            <GalerijaFunc className="AboutPage" ImgObjekti={ImgCompany.company1} />
           </div>
           <div className="About__aboutDanito">
             <div className="About__companyInfo">
@@ -43,7 +43,6 @@ function About({ scroll }) {
                 poslovanjem bez reklamacije.
               </p>
             </div>
-            <GalerijaFunc className={"AboutPage"} ImgObjekti={ImgCompany.company1} />
           </div>
         </div>
       </div>
