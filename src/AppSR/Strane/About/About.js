@@ -5,7 +5,6 @@ import LineAnimation from "../../Komponente/LineAnimation/LineAnimation";
 import GalerijaFunc from "../Galerija/GalerijaFunc";
 import ImgCompany from "../../../ImgCompany";
 import CompanyImgCover from "../../../Img/ShowRoom/19.jpg";
-import GoogleMaps from "../../../GoogleMaps/GoogleMaps";
 function About({ scroll }) {
   return (
     <div className="About">
@@ -48,7 +47,6 @@ function About({ scroll }) {
           </div>
         </div>
       </div>
-      {/* <GoogleMaps /> */}
     </div>
   );
 }

@@ -1,9 +1,13 @@
 import React from "react";
-import ReactImageGallery from "react-image-gallery";
-import "react-image-gallery/styles/css/image-gallery.css";
 
-function GalerijaFunc({ ImgObjekti, className }) {
-  return <ReactImageGallery items={ImgObjekti} additionalClass={className} showThumbnails={false} />;
+function GalerijaFunc({ ImgObjekti }) {
+  return (
+    <div className="Images">
+      {ImgObjekti.map((item) => {
+        return <img alt="objekti images" src={item.original}></img>;
+      })}
+    </div>
+  );
 }
 
 export default GalerijaFunc;
