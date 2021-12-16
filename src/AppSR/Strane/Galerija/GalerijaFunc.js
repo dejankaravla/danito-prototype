@@ -4,7 +4,7 @@ import "../../../Styles/GalerijaFunc/GalerijaFunc.css";
 import Backdrop from "@mui/material/Backdrop";
 
 function GalerijaFunc({ ImgObjekti }) {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
   const handleClose = () => setOpen(false);
   const [imageModal, setImageModal] = useState("");
 
@@ -18,6 +18,7 @@ function GalerijaFunc({ ImgObjekti }) {
       {ImgObjekti.map((item) => {
         return (
           <img
+            className="Images__rowImg"
             onClick={() => setModalOpenImage(item.original)}
             key={item.original}
             alt="objekti images"

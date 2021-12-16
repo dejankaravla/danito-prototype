@@ -186,6 +186,7 @@ export const ProductData = [
       "In standard, one-chamber glass package with thermal transmittance Ug = 1,0 W/(m2K)  according to the PN-EN674 norn,  the possibility to apply three-glass package with Ug = 0,6 W/(m2K)  coefficient; the possibility to apply glasses with enhanced sound insulation, tempered, safety, anti-burglary, ornament or solar protective. Wide range of door fillings.",
       "3-point automatic bolt espagnolette; 3 hinges.",
     ],
+    profiles: true,
   },
   {
     name: PRODUCTS.allProducts.pregradnaVrata,

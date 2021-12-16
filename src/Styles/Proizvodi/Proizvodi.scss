@@ -33,3 +33,36 @@
   width: 300px;
   background-color: yellow;
 }
+
+.ProductPage__profiles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  background-color: #272727;
+  gap: 20px;
+
+  img {
+    width: 150px;
+  }
+  .ProductPage__profile {
+    background-color: #ffff;
+    width: 75%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    gap: 20px;
+    border-radius: 40px;
+    box-shadow: 5px 5px 15px 5px #000000;
+    h3 {
+      border-bottom: 2px solid yellow;
+      display: inline;
+      padding-bottom: 5px;
+    }
+    p {
+      padding-top: 20px;
+    }
+  }
+}

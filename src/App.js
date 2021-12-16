@@ -8,13 +8,12 @@ function App() {
   return (
     <div className="App">
       <Router>
-        {/* <ScrollToTop /> */}
         <Switch>
-          <Route exact path="/">
-            <AppSR />
-          </Route>
           <Route path="/EN">
             <AppEN />
+          </Route>
+          <Route path="/">
+            <AppSR />
           </Route>
         </Switch>
       </Router>

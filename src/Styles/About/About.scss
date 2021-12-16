@@ -21,23 +21,25 @@
 .About__aboutDanito {
   display: flex;
   flex-direction: column;
+  gap: 50px;
+  width: 80%;
+  padding: 0 50px;
+  margin: auto;
 }
 
 .About__aboutDanito img {
-  // padding-right: 5px;
   width: 150px;
   cursor: pointer;
 }
 
 .About__companyInfo {
-  width: 65%;
-  padding: 0 50px;
-  margin: auto;
   text-align: justify;
   font-size: 18px;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  padding: 50px;
+  border-radius: 10px;
 }
 
 .About__companyInfo h2 {
