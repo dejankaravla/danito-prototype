@@ -1,3 +1,13 @@
+.ProductWindow__Accordion {
+  background-color: none;
+  color: white;
+  h2 {
+    color: white;
+    // font-size: 200px;
+    // display: none;
+  }
+}
+
 .ProductWindow__container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;

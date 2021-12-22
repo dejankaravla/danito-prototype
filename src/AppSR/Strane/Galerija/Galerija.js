@@ -9,7 +9,7 @@ function Galerija({ scroll }) {
   return (
     <div className="Galerija">
       <div className="Galerija__container">
-        <img src={ImgCover} alt="some img" />
+        {/* <img src={ImgCover} alt="some img" /> */}
         <LineAnimation header1={"Galerija"} scroll={scroll} scrollY={400} />
         <div className="Galerija__objekti">
           <div className="Galerija__objekat">

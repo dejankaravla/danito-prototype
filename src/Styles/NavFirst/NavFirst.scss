@@ -19,11 +19,30 @@
   height: 40px;
 }
 
-.Nav__header a {
+.Nav__headerLogo,
+a {
   background-color: transparent;
   color: white;
   border: none;
   cursor: pointer;
   font-size: 18px;
   text-decoration: none;
+  display: flex;
+  gap: 7px;
+
+  h3 {
+    font-size: 19px;
+    font-family: "Merriweather", serif;
+    letter-spacing: 2px;
+  }
+  p {
+    font-size: 11px;
+    padding-left: 38px;
+    font-family: "Merriweather", serif;
+    letter-spacing: 2px;
+  }
+  .Nav__headerLogoText {
+    line-height: 15px;
+    padding-top: 18px;
+  }
 }

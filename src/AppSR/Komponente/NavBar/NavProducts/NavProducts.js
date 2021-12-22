@@ -19,16 +19,8 @@ function NavProducts({ navRightOpen, setPathTo, setPageName, setData }) {
     PRODUCTS.roletne,
     PRODUCTS.fasade,
     PRODUCTS.klizniSistemi,
-    PRODUCTS.dodatno,
   ];
-  const initialImgState = [
-    IMAGES.windowImg,
-    IMAGES.doorsImg,
-    IMAGES.roletneImg,
-    IMAGES.fasadeImg,
-    IMAGES.teraseImg,
-    IMAGES.dodatnoImg,
-  ];
+  const initialImgState = [IMAGES.windowImg, IMAGES.doorsImg, IMAGES.roletneImg, IMAGES.fasadeImg, IMAGES.teraseImg];
 
   const [selected, setSelected] = useState("");
   const [buttons, setButtons] = useState([
@@ -37,7 +29,6 @@ function NavProducts({ navRightOpen, setPathTo, setPageName, setData }) {
     PRODUCTS.roletne,
     PRODUCTS.fasade,
     PRODUCTS.klizniSistemi,
-    PRODUCTS.dodatno,
   ]);
   const [img, setImg] = useState([
     IMAGES.windowImg,
@@ -45,7 +36,6 @@ function NavProducts({ navRightOpen, setPathTo, setPageName, setData }) {
     IMAGES.roletneImg,
     IMAGES.fasadeImg,
     IMAGES.teraseImg,
-    IMAGES.dodatnoImg,
   ]);
   const [imgClass, setImgClass] = useState("");
 
@@ -85,12 +75,6 @@ function NavProducts({ navRightOpen, setPathTo, setPageName, setData }) {
     if (selected === PRODUCTS.klizniSistemi) {
       setButtons([PRODUCTS.podnoKlizni, PRODUCTS.uskocnoKlizni, PRODUCTS.acordianHarmonika]);
       setImg([IMAGES.terasePVC, IMAGES.teraseDRVO, IMAGES.teraseALUMINIUM]);
-      setImgClass("ButtonNavLeftTopImg");
-    }
-    // Dodatno
-    if (selected === PRODUCTS.dodatno) {
-      setButtons([PRODUCTS.dodatno]);
-      setImg([IMAGES.dodatnoImg]);
       setImgClass("ButtonNavLeftTopImg");
     }
 

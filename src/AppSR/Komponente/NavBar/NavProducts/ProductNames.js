@@ -8,7 +8,7 @@ const PRODUCTS = {
 
   pvcProzori: "PVC PROZORI",
   drveniProzori: "DRVENI PROZORI",
-  drvoAluminiumProzori: "DRVO-ALUMINIUM PROZORI",
+  drvoAluminiumProzori: "ALUMINIUM DRVO PROZORI",
   aluminiumProzori: "ALUMINIUM PROZORI",
 
   pvcVrata: "PVC VRATA",
@@ -28,8 +28,8 @@ const PRODUCTS = {
   acordianHarmonika: "ACORDION-HARMONIKA",
   allProducts: {
     // PVC Prozori
-    pvcProzor1: "Veka 70 Petokomorni profil sa dvoslojnim staklom",
-    pvcProzor2: "Veka 82 Sedmokomorni profil sa troslojnim staklom",
+    pvcProzor1: "Veka 70",
+    pvcProzor2: "Veka 82",
 
     //Drvo Aluminium Prozori
     drvoAluminiumProzor1: "DRVO ALUMINIUM PROZOR 1",
@@ -60,8 +60,8 @@ const PRODUCTS = {
     standardna: "STANDARDNA",
     granit: "GRANIT FASADE",
     // Terasni Sistemi
-    pvcVekaSlide: "PVC - Veka slide 82 (video iglo-hs)",
-    aluUltraGlide: "ALU - Ultra glide aliplast (video iglo-hs)",
+    pvcVekaSlide: "PVC - Veka slide 82",
+    aluUltraGlide: "ALU - Ultra glide aliplast",
     pvcVekaSoft: "PVC - VEKA SOFTLINE 70/82",
     aluVisoglide: "ALU - VISOGLIDE ALIPLAST",
     pvcSmatiaM9800: "PVC SMARTIA M9800",

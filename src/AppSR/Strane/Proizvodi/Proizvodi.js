@@ -31,7 +31,7 @@ function ProductPage({ scroll, pageName, data }) {
             <Options optionsContent={data.options} pageName={pageName} />
           </div>
         </div>
-        <LineAnimation header1={"Features"} scroll={scroll} scrollY={1000} />
+        <LineAnimation header1={"Karakteristike"} scroll={scroll} scrollY={1000} />
         <div className="ProductPage__materialContainer">
           {data.material.map((data, i) => {
             return (
@@ -43,7 +43,7 @@ function ProductPage({ scroll, pageName, data }) {
             );
           })}
         </div>
-        {data.profiles ? <LineAnimation header1={"Color range"} scroll={scroll} scrollY={1600} /> : null}
+        {data.profiles ? <LineAnimation header1={"Paneli"} scroll={scroll} scrollY={1600} /> : null}
         {data.profiles ? (
           <div className="ProductPage__profiles">
             {IMAGESprofile.map((data) => {

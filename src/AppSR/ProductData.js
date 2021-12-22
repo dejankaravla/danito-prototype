@@ -211,6 +211,7 @@ export const ProductData = [
       "Glazing - maximal glazing thickness 48 mm; glass package  4/18/4/18/4 with thermal transmittance of Ug = 0,5 W/(m2K) in standard; the possibility to apply four-glass package filled with krypton with Ug = 0,3 W/(m2K); the possibility to apply glasses with enhanced sound insulation, tempered, safety, anti-burglary, ornament and solar protecticve; a wide range of door fillings.",
       "3-point automatic espagnolette MACO; hinges made of aluminum which stands out with great durability.",
     ],
+    profiles: true,
   },
   {
     name: PRODUCTS.allProducts.vrataHladanProfil,
@@ -234,6 +235,7 @@ export const ProductData = [
       "Available glass packages up to 24mm; the possibility to apply glasses with enhanced sound insulation, tempered, safety, anti-burglary, ornament, or solar protective. Wide range of door fillings.",
       "3-point automatic espagnolette MACO; hinges made of aluminum which stands out with great durability. Optionally lock with one point latch bolt.",
     ],
+    profiles: true,
   },
   {
     name: PRODUCTS.allProducts.vrataProfilTermo,
@@ -254,6 +256,7 @@ export const ProductData = [
       "Glass packages are available with thickness up to 50mm; one-chamber glass package with thermal transmittance Ug = 1,0 W/(m2K) according to the PN-EN674 norm in standard; the possibility to apply a three-glass package with Ug = 0,5 W/(m2K) or four-glass with krypton with Ug = 0,3 W/(m2K); the possibility to apply glasses with enhanced sound insulation, tempered,  safety, anti-burglary, ornament or solar protective. Wide range of door fillings is available.",
       "3-point automatic espagnolette MACO; hinges made of aluminum which stands out with great durability. Optionally lock with one point latch bolt.",
     ],
+    profiles: true,
   },
   {
     name: PRODUCTS.allProducts.vrataSkrivenoKrilo,
@@ -274,6 +277,7 @@ export const ProductData = [
       "Glass packages are available with thickness up to 50mm; one-chamber glass package with thermal transmittance Ug = 1,0 W/(m2K) according to the PN-EN674 norm in standard; the possibility to apply a three-glass package with Ug = 0,5 W/(m2K) or four-glass with krypton with Ug = 0,3 W/(m2K); the possibility to apply glasses with enhanced sound insulation, tempered,  safety, anti-burglary, ornament or solar protective. Wide range of door fillings is available.",
       "3-point automatic espagnolette MACO; hinges made of aluminum which stands out with great durability. Optionally lock with one point latch bolt.",
     ],
+    profiles: true,
   },
   {
     name: PRODUCTS.allProducts.celicnaVrata,
@@ -298,6 +302,7 @@ export const ProductData = [
       "Max. glass package is 32 mm with thermal transmittance of  Ug=0,8. The possibility to apply glass with enhanced sound insulation, tempered, safety, anti-burglary, ornament, solar protection .Wide range of door fillings.",
       "3-point bolt espagnolette and 3 hinges.",
     ],
+    profiles: true,
   },
   {
     name: PRODUCTS.allProducts.pvcRoletne1,

@@ -1,6 +1,6 @@
 import React from "react";
 import "../../../Styles/Kontakt/Kontakt.css";
-import kontaktImg from "../../../Img/kontakt/kontakt.jpg";
+import kontaktImg from "../../../Img/ShowRoom/19.jpg";
 import Logo from "../../../Img/Danito_logo.jpg";
 import LineAnimation from "../../Komponente/LineAnimation/LineAnimation";
 
