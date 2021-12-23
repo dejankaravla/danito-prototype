@@ -34,6 +34,7 @@
   width: 100%;
   opacity: 0;
   transition: 0.3s;
+  gap: 10px;
 }
 .ProductWindow__ButtonsContainer .ProductWindow__Buttons {
   display: flex;
@@ -41,15 +42,29 @@
   align-items: center;
   justify-content: center;
 }
+.ProductWindow__ButtonsContainer .ProductWindow__Buttons .buttonOpen {
+  border-bottom: #fed542 2px solid;
+}
 .ProductWindow__ButtonsContainer .ProductWindow__Buttons .ProductWindow__ButtonsSecond {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 50px;
 }
 .ProductWindow__ButtonsContainer .ProductWindow__Buttons .ProductWindow__ButtonsSecond button {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: normal;
+  border: none;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease-in-out;
+  border: 2px solid transparent;
+}
+.ProductWindow__ButtonsContainer .ProductWindow__Buttons .ProductWindow__ButtonsSecond button:hover {
+  border-bottom: 2px #fed542 solid;
 }
 
 .ProductWindow__ButtonsContainer:hover {

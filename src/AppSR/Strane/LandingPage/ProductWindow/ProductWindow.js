@@ -31,7 +31,9 @@ function ProductWindow() {
           <img src="https://www.drutex.eu/static/layout2017/img/grupy-produktow/okna-pvc.jpg" alt="window img" />
           <div className="ProductWindow__ButtonsContainer">
             <div className="ProductWindow__Buttons">
-              {windowsPvc ? <button onClick={() => selectProduct("windowsPvc")}>Pvc Prozori</button> : null}
+              <button className={windowsPvc ? "buttonClose" : "buttonOpen"} onClick={() => selectProduct("windowsPvc")}>
+                Pvc Prozori
+              </button>
               {windowsPvc ? null : (
                 <div className="ProductWindow__ButtonsSecond">
                   {/* <button onClick={() => setWindowsPvc(true)}>Back</button> */}
@@ -41,9 +43,13 @@ function ProductWindow() {
               )}
             </div>
             <div className="ProductWindow__Buttons">
-              {windowsWoodAluminium ? (
-                <button onClick={() => selectProduct("windowsWoodAluminium")}>Aluminium Drvo Prozori</button>
-              ) : null}
+              <button
+                className={windowsWoodAluminium ? "buttonClose" : "buttonOpen"}
+                onClick={() => selectProduct("windowsWoodAluminium")}
+              >
+                Aluminium Drvo Prozori
+              </button>
+
               {windowsWoodAluminium ? null : (
                 <div className="ProductWindow__ButtonsSecond">
                   {/* <button onClick={() => setWindowsWoodAluminium(true)}>Back</button> */}
@@ -52,9 +58,13 @@ function ProductWindow() {
               )}
             </div>
             <div className="ProductWindow__Buttons">
-              {windowsAluminium ? (
-                <button onClick={() => selectProduct("windowsAluminium")}>Aluminium Prozori</button>
-              ) : null}
+              <button
+                className={windowsAluminium ? "buttonClose" : "buttonOpen"}
+                onClick={() => selectProduct("windowsAluminium")}
+              >
+                Aluminium Prozori
+              </button>
+
               {windowsAluminium ? null : (
                 <div className="ProductWindow__ButtonsSecond">
                   {/* <button onClick={() => setWindowsAluminium(true)}>Back</button> */}
@@ -67,27 +77,150 @@ function ProductWindow() {
           </div>
         </div>
         <div className="ProductWindow__product">
-          <img src="https://www.drutex.eu/static/layout2017/img/grupy-produktow/okna-drewniane.jpg" alt="window img" />
+          <img src="https://www.drutex.eu/static/layout2017/img/grupy-produktow/okna-pvc.jpg" alt="window img" />
           <div className="ProductWindow__ButtonsContainer">
-            <button>Button 1</button>
+            <div className="ProductWindow__Buttons">
+              <button className={windowsPvc ? "buttonClose" : "buttonOpen"} onClick={() => selectProduct("windowsPvc")}>
+                Pvc Prozori
+              </button>
+              {windowsPvc ? null : (
+                <div className="ProductWindow__ButtonsSecond">
+                  {/* <button onClick={() => setWindowsPvc(true)}>Back</button> */}
+                  <button>Veka 70</button>
+                  <button>Veka 82</button>
+                </div>
+              )}
+            </div>
+            <div className="ProductWindow__Buttons">
+              <button
+                className={windowsWoodAluminium ? "buttonClose" : "buttonOpen"}
+                onClick={() => selectProduct("windowsWoodAluminium")}
+              >
+                Aluminium Drvo Prozori
+              </button>
+
+              {windowsWoodAluminium ? null : (
+                <div className="ProductWindow__ButtonsSecond">
+                  {/* <button onClick={() => setWindowsWoodAluminium(true)}>Back</button> */}
+                  <button>Aluminium Drvo Prozori 1</button>
+                </div>
+              )}
+            </div>
+            <div className="ProductWindow__Buttons">
+              <button
+                className={windowsAluminium ? "buttonClose" : "buttonOpen"}
+                onClick={() => selectProduct("windowsAluminium")}
+              >
+                Aluminium Prozori
+              </button>
+
+              {windowsAluminium ? null : (
+                <div className="ProductWindow__ButtonsSecond">
+                  {/* <button onClick={() => setWindowsAluminium(true)}>Back</button> */}
+                  <button>Aluminium Prozor 1</button>
+                  <button>Aluminium Prozor 2</button>
+                  <button>Aluminium Prozor 2</button>
+                </div>
+              )}
+            </div>
           </div>
         </div>
         <div className="ProductWindow__product">
-          <img src="https://www.drutex.eu/static/layout2017/img/grupy-produktow/okna-aluminiowe.jpg" alt="window img" />
+          <img src="https://www.drutex.eu/static/layout2017/img/grupy-produktow/okna-pvc.jpg" alt="window img" />
           <div className="ProductWindow__ButtonsContainer">
-            <button>Button 1</button>
-            <button>Button 2</button>
-            <button>Button 3</button>
-            <button>Button 4</button>
+            <div className="ProductWindow__Buttons">
+              <button className={windowsPvc ? "buttonClose" : "buttonOpen"} onClick={() => selectProduct("windowsPvc")}>
+                Pvc Prozori
+              </button>
+              {windowsPvc ? null : (
+                <div className="ProductWindow__ButtonsSecond">
+                  {/* <button onClick={() => setWindowsPvc(true)}>Back</button> */}
+                  <button>Veka 70</button>
+                  <button>Veka 82</button>
+                </div>
+              )}
+            </div>
+            <div className="ProductWindow__Buttons">
+              <button
+                className={windowsWoodAluminium ? "buttonClose" : "buttonOpen"}
+                onClick={() => selectProduct("windowsWoodAluminium")}
+              >
+                Aluminium Drvo Prozori
+              </button>
+
+              {windowsWoodAluminium ? null : (
+                <div className="ProductWindow__ButtonsSecond">
+                  {/* <button onClick={() => setWindowsWoodAluminium(true)}>Back</button> */}
+                  <button>Aluminium Drvo Prozori 1</button>
+                </div>
+              )}
+            </div>
+            <div className="ProductWindow__Buttons">
+              <button
+                className={windowsAluminium ? "buttonClose" : "buttonOpen"}
+                onClick={() => selectProduct("windowsAluminium")}
+              >
+                Aluminium Prozori
+              </button>
+
+              {windowsAluminium ? null : (
+                <div className="ProductWindow__ButtonsSecond">
+                  {/* <button onClick={() => setWindowsAluminium(true)}>Back</button> */}
+                  <button>Aluminium Prozor 1</button>
+                  <button>Aluminium Prozor 2</button>
+                  <button>Aluminium Prozor 2</button>
+                </div>
+              )}
+            </div>
           </div>
         </div>
         <div className="ProductWindow__product">
-          <img src="https://www.drutex.eu/static/layout2017/img/grupy-produktow/systemy-hs.jpg" alt="window img" />
+          <img src="https://www.drutex.eu/static/layout2017/img/grupy-produktow/okna-pvc.jpg" alt="window img" />
           <div className="ProductWindow__ButtonsContainer">
-            <button>Button 1</button>
-            <button>Button 2</button>
-            <button>Button 3</button>
-            <button>Button 4</button>
+            <div className="ProductWindow__Buttons">
+              <button className={windowsPvc ? "buttonClose" : "buttonOpen"} onClick={() => selectProduct("windowsPvc")}>
+                Pvc Prozori
+              </button>
+              {windowsPvc ? null : (
+                <div className="ProductWindow__ButtonsSecond">
+                  {/* <button onClick={() => setWindowsPvc(true)}>Back</button> */}
+                  <button>Veka 70</button>
+                  <button>Veka 82</button>
+                </div>
+              )}
+            </div>
+            <div className="ProductWindow__Buttons">
+              <button
+                className={windowsWoodAluminium ? "buttonClose" : "buttonOpen"}
+                onClick={() => selectProduct("windowsWoodAluminium")}
+              >
+                Aluminium Drvo Prozori
+              </button>
+
+              {windowsWoodAluminium ? null : (
+                <div className="ProductWindow__ButtonsSecond">
+                  {/* <button onClick={() => setWindowsWoodAluminium(true)}>Back</button> */}
+                  <button>Aluminium Drvo Prozori 1</button>
+                </div>
+              )}
+            </div>
+            <div className="ProductWindow__Buttons">
+              <button
+                className={windowsAluminium ? "buttonClose" : "buttonOpen"}
+                onClick={() => selectProduct("windowsAluminium")}
+              >
+                Aluminium Prozori
+              </button>
+
+              {windowsAluminium ? null : (
+                <div className="ProductWindow__ButtonsSecond">
+                  {/* <button onClick={() => setWindowsAluminium(true)}>Back</button> */}
+                  <button>Aluminium Prozor 1</button>
+                  <button>Aluminium Prozor 2</button>
+                  <button>Aluminium Prozor 2</button>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </div>
