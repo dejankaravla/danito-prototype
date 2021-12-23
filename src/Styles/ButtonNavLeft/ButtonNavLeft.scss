@@ -5,6 +5,9 @@
   align-items: center;
   transition: 0.3s;
   max-width: 300px;
+  img {
+    width: 60px;
+  }
 }
 
 .ButtonNavLeftTopImg {
@@ -13,7 +16,7 @@
   justify-content: start;
   align-items: center;
   transition: 0.3s;
-  max-width: 300px;
+  max-width: 100%;
   text-align: start;
 }
 

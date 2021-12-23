@@ -2,7 +2,7 @@ const IMAGES = {
   windowImg: require("../../../../Img/ImgProduct/window.png").default,
   doorsImg: require("../../../../Img/ImgProduct/door.png").default,
   roletneImg: require("../../../../Img/ImgProduct/roletne.png").default,
-  fasadeImg: require("../../../../Img/ImgProduct/fasade.png").default,
+  fasadeImg: require("../../../../Img/ImgProduct/fasadaPVC.png").default,
   teraseImg: require("../../../../Img/ImgProduct/terasniSistemi.png").default,
   dodatnoImg: require("../../../../Img/ImgProduct/dodatno.png").default,
 

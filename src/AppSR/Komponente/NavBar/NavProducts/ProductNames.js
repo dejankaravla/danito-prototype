@@ -15,8 +15,8 @@ const PRODUCTS = {
   aluminiumVrata: "ALUMINIUM VRATA",
   sigurnosnaVrata: "SIGURNOSNA VRATA",
 
-  pvcRoletne: "PVC ROLETNE",
-  aluminiumRoletne: "ALUMINIUM ROLETNE",
+  pvcRoletne: "UNUTRASNJE ROLETNE",
+  aluminiumRoletne: "SPOLJASNJE ROLETNE",
 
   fundermaxFasade: "FUNDERMAX FASADE",
   ventilisaneAlucobondFasade: "VENTILISANE ALUCOBOND FASADE",
@@ -25,12 +25,11 @@ const PRODUCTS = {
 
   podnoKlizni: "PODIZNO KLIZNI",
   uskocnoKlizni: "USKOČNO KLIZNI",
-  acordianHarmonika: "ACORDION-HARMONIKA",
+  acordianHarmonika: "HARMONIKA",
   allProducts: {
     // PVC Prozori
-    pvcProzor1: "Veka 70",
-    pvcProzor2: "Veka 82",
-
+    pvcProzor1: "VEKA 70",
+    pvcProzor2: "VEKA 82",
     //Drvo Aluminium Prozori
     drvoAluminiumProzor1: "DRVO ALUMINIUM PROZOR 1",
     // Aluminium Prozori
@@ -41,14 +40,15 @@ const PRODUCTS = {
     // PVC Vrata
     ulaznaVrata: "ULAZNA VRATA",
     pregradnaVrata: "PREGRADNA VRATA",
-    celicnaVrata: "Celicna vrata sa celicnim sacem oblozena MDF-om u razlicitim dekorima",
+    // Celicna Vrata
+    celicnaVrata: "SIGURNOSNA VRATA PO MERI",
     // ALU Vrata
-    vrataHladanProfil: "VRATA HLADAN PROFIL",
-    vrataProfilTermo: "VRATA PROFIL SA TERMOPREKIDOM",
+    vrataHladanProfil: "PROFIL BEZ TERMOPREKIDA",
+    vrataProfilTermo: "PROFIL SA TERMOPREKIDOM",
     vrataSkrivenoKrilo: "VRATA SA SKRIVENIM KRILOM",
     // PVC ROLETNE
-    pvcRoletne1: "PVC ROLETNE 1",
-    pvcRoletne2: "PVC ROLETNE 2",
+    pvcRoletne1: "UNUTRASNJA ROLETNA BELA",
+    pvcRoletne2: "UNUTRASNJA ROLETNA U BOJI",
     // ALU ROLETNE
     spoljneRoletne: "SPOLJASNJE ROLETNE",
     unutrasnjeRoletne: "UNUTRASNJE NADGRADNE ROLETNE",
@@ -60,13 +60,14 @@ const PRODUCTS = {
     standardna: "STANDARDNA",
     granit: "GRANIT FASADE",
     // Terasni Sistemi
-    pvcVekaSlide: "PVC - Veka slide 82",
-    aluUltraGlide: "ALU - Ultra glide aliplast",
+    pvcVekaSlide: "PVC - VEKA SLIDE",
+    aluUltraGlide: "ALU - ULTRA GLIDE",
+    aluVgPlus: "ALU- VG PLUS",
     pvcVekaSoft: "PVC - VEKA SOFTLINE 70/82",
-    aluVisoglide: "ALU - VISOGLIDE ALIPLAST",
-    pvcSmatiaM9800: "PVC SMARTIA M9800",
-    pvcSmatiaM1980: "PVC SMARTIA M1980",
-    panoramaAliplast: "PANORAMA ALIPLAST",
+    aluVisoglide: "ALU - USKOCNO KLIZNI",
+    pvcSmatiaM9800: "PVC - HRAMONIKA",
+    pvcSmatiaM1980: "ALU - SMARTIA M9800",
+    panoramaAliplast: "ALU - SMARTIA M19800",
   },
 };
 

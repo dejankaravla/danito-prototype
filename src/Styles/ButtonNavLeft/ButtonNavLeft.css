@@ -6,6 +6,9 @@
   transition: 0.3s;
   max-width: 300px;
 }
+.ButtonNavLeft img {
+  width: 60px;
+}
 
 .ButtonNavLeftTopImg {
   display: flex;
@@ -13,7 +16,7 @@
   justify-content: start;
   align-items: center;
   transition: 0.3s;
-  max-width: 300px;
+  max-width: 100%;
   text-align: start;
 }
 

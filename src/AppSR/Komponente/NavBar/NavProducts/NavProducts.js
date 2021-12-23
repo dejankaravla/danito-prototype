@@ -34,7 +34,7 @@ function NavProducts({ navRightOpen, setPathTo, setPageName, setData }) {
     IMAGES.windowImg,
     IMAGES.doorsImg,
     IMAGES.roletneImg,
-    IMAGES.fasadeImg,
+    IMAGES.fasadePVC,
     IMAGES.teraseImg,
   ]);
   const [imgClass, setImgClass] = useState("");
@@ -44,8 +44,8 @@ function NavProducts({ navRightOpen, setPathTo, setPageName, setData }) {
 
     // Prozori
     if (selected === PRODUCTS.prozori) {
-      setButtons([PRODUCTS.pvcProzori, PRODUCTS.drvoAluminiumProzori, PRODUCTS.aluminiumProzori]);
-      setImg([IMAGES.windowPvcImg, IMAGES.windowWoodAluminiumImg, IMAGES.windowAluminiumImg]);
+      setButtons([PRODUCTS.pvcProzori, PRODUCTS.aluminiumProzori, PRODUCTS.drvoAluminiumProzori]);
+      setImg([IMAGES.windowPvcImg, IMAGES.windowAluminiumImg, IMAGES.windowWoodAluminiumImg]);
       setImgClass("ButtonNavLeftTopImg");
     }
     // Vrata
@@ -68,7 +68,7 @@ function NavProducts({ navRightOpen, setPathTo, setPageName, setData }) {
         PRODUCTS.stakleneFasade,
         PRODUCTS.granitFasade,
       ]);
-      setImg([IMAGES.fasadePVC, IMAGES.fasadeALUMINIUM, IMAGES.fasadePVC, IMAGES.fasadeALUMINIUM]);
+      setImg([IMAGES.fasadePVC, IMAGES.fasadePVC, IMAGES.fasadePVC, IMAGES.fasadePVC]);
       setImgClass("ButtonNavLeftTopImg");
     }
     // Terasni Sistemi
@@ -150,7 +150,11 @@ function NavProducts({ navRightOpen, setPathTo, setPageName, setData }) {
 
     // Terasni Sistemi
     if (selected === PRODUCTS.podnoKlizni) {
-      setButtons([PRODUCTS.allProducts.pvcVekaSlide, PRODUCTS.allProducts.aluUltraGlide]);
+      setButtons([
+        PRODUCTS.allProducts.pvcVekaSlide,
+        PRODUCTS.allProducts.aluUltraGlide,
+        PRODUCTS.allProducts.aluVgPlus,
+      ]);
       setImg("");
     }
     if (selected === PRODUCTS.uskocnoKlizni) {

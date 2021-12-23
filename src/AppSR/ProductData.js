@@ -597,6 +597,29 @@ export const ProductData = [
     ],
   },
   {
+    name: PRODUCTS.allProducts.aluVgPlus,
+    imgCover: IMAGE.aluUltraGlide,
+    imgVideo: "https://www.drutex.eu/media/_upload/produkty/drzwi-iglo5-psk/video/iglo_uchylno_przesowne.mp4",
+    options: {
+      firstOption:
+        "Perfect solution that ensures big access to daylight both in small and big room, maintaining great thermal insulation at the same time.",
+      secondOption: [
+        "Design that reflects innovativeness and unconventionality.",
+        "High safety level guaranteed by the application of four anti-burglary bolts in standard.",
+        "Possibility to customize the interior as the result of the wide range of colours; ",
+        "Very good thermal parameters ensure heat saving thanks to optimal structure and EPDM sealing.",
+        "Good parameters in sound insulation that guarantee acoustic comfort.",
+        "The possibility to execute in the so-called thin wielding technology (V-Perfect), that allows to connect the profiles perfectly and it guarantees better clamp and wielding control, and, as a result, very good parameters in the resistance tests of the corners (Iglo 5 Classic).",
+      ],
+      thirdOption: ["IGLO LIGHT PSK", "IGLO ENERGY PSK", "MB-70/ MB-70HI PSK", "DUOLINE PSK", "Softline PSK"],
+    },
+    material: [
+      "5-chamber frame and sash profiles made exclusively of prime material in A-class with installation width  70 mm.",
+      "One-chamber glass package with thermal transmittance Ug=1,0 W/(m²K) according to the PN-EN674 norm in standard. The possibility to apply three-glass package with Ug = 0,7 W/(m²K). Maximal glazing thickness up to 36 mm. The possibility to apply glasses with enhanced sound insulation, tempered, safety, anti-burglary, ornament or solar protective.",
+      "The possibility to apply automatic fitting that supports tilt closing. Four anti-burglary bolts in standard.",
+    ],
+  },
+  {
     name: PRODUCTS.allProducts.pvcVekaSoft,
     imgCover: IMAGE.pvcVekaSoft,
     imgVideo: "https://www.drutex.eu/media/_upload/produkty/mb-77-up/video/mb_70_uchylno-przesuwne.mp4",

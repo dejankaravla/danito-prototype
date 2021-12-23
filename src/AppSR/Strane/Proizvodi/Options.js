@@ -51,7 +51,7 @@ function BasicTabs({ pageName, optionsContent }) {
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
           <Tab label="OPIS" {...a11yProps(0)} />
           <Tab label="PREDNOSTI" {...a11yProps(1)} />
-          <Tab label="DRUGO" {...a11yProps(2)} />
+          <Tab label="COLOR" {...a11yProps(2)} />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
