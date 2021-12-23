@@ -1,3 +1,11 @@
+.ProductWindow__Accordion {
+  background-color: none;
+  color: white;
+}
+.ProductWindow__Accordion h2 {
+  color: white;
+}
+
 .ProductWindow__container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -13,7 +21,7 @@
   width: 100%;
 }
 
-.ProductWindow__productButton {
+.ProductWindow__ButtonsContainer {
   position: absolute;
   top: 0;
   display: flex;
@@ -27,15 +35,31 @@
   opacity: 0;
   transition: 0.3s;
 }
+.ProductWindow__ButtonsContainer .ProductWindow__Buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.ProductWindow__ButtonsContainer .ProductWindow__Buttons .ProductWindow__ButtonsSecond {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.ProductWindow__ButtonsContainer .ProductWindow__Buttons .ProductWindow__ButtonsSecond button {
+  font-size: 18px;
+  font-weight: normal;
+}
 
-.ProductWindow__productButton:hover {
+.ProductWindow__ButtonsContainer:hover {
   opacity: 1;
 }
 
-.ProductWindow__productButton button {
+.ProductWindow__ButtonsContainer button {
   background-color: transparent;
   border: none;
-  font-size: 1.7em;
+  font-size: 20px;
   color: white;
   width: 250px;
   height: 50px;
@@ -45,7 +69,7 @@
   transition: 0.3s;
 }
 
-.ProductWindow__productButton button:hover {
+.ProductWindow__ButtonsContainer button:hover {
   border: 1px solid #fed542;
 }
 
