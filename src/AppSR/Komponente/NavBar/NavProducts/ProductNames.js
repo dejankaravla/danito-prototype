@@ -28,8 +28,8 @@ const PRODUCTS = {
   acordianHarmonika: "HARMONIKA",
   allProducts: {
     // PVC Prozori
-    pvcProzor1: "VEKA 70",
-    pvcProzor2: "VEKA 82",
+    pvcProzor1: "VEKA 70 EFFECTLINE",
+    pvcProzor2: "VEKA 82 SOFTLINE",
     //Drvo Aluminium Prozori
     drvoAluminiumProzor1: "DRVO ALUMINIUM PROZOR 1",
     // Aluminium Prozori
@@ -38,8 +38,8 @@ const PRODUCTS = {
     aluminiumProzor3: "ALUMINIUM PROZOR 3",
     aluminiumProzor4: "ALUMINIUM PROZOR 4",
     // PVC Vrata
-    ulaznaVrata: "ULAZNA VRATA",
-    pregradnaVrata: "PREGRADNA VRATA",
+    ulaznaVrata: "VEKA SOFTLINE 70 AD",
+    pregradnaVrata: "VEKA SOFTLINE 70 AD Isti naziv ima",
     // Celicna Vrata
     celicnaVrata: "SIGURNOSNA VRATA PO MERI",
     // ALU Vrata
