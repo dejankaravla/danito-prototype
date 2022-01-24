@@ -18,7 +18,11 @@ export const ProductData = [
     },
     options: {
       firstOption:
+<<<<<<< HEAD
         "Šestokomorni štok sa petokomornim krilom obezbeđuju optimalnu termičku izolaciju,što omogućava značajnu uštedu energije pri grejanju i hlađenju. Sistem specijalizovan za upotrebu u stambenim i poslovnim objektima. Vrhunski kvalitet profila debljine 3 mm. Široka paleta boja dekora profila jednostranog i dvostranog dekora omogućava svaki dizajn enterijera. Koristi dvoslojni paket termopan stakla ispunjen argonom",
+=======
+        "Šestokomorni štok sa petokomornim krilom obezbeđuju optimalnu termičku izolaciju,što omogućava značajnu uštedu energije pri grejanju i hlađenju. Sistem specijalizovan za upotrebu u stambenim i poslovnim objektima. Vrhunski kvalitet profila debljine 3 mm. Široka paleta boja dekora profila jednostranog i dvostranog dekora omogućava svaki dizajn enterijera. Koristi dvoslojni paket termopan stakla ispunjen argonom.",
+>>>>>>> 133a49cab99d1be7c5fbc64b6abf08057506e089
       secondOption: [
         " Moderan dizajn i odlični parametri u pogledu energetske efikasnosti,    vodootpornosti, otpornosti na vetar i propustljivosti vazduha!",
         "Visok nivo bezbednosti obezbeđen je visokokvalitetnim petokomornim profilima A klase, napravljenim isključivo od prvoklasnog materijala.",
@@ -37,6 +41,14 @@ export const ProductData = [
       third:
         "Koristimo najkvalitetniji nemacki okov renomiranog proizvođača ROTO, koji osigurava kvalitetno zatvaranje i poseduje veći stepen protivprovalne zaštite.",
     },
+<<<<<<< HEAD
+=======
+    material: [
+      "5 – komorni profil sa osnovnom dubinom ugradnje od 70 mm. U standarnoj varijanti usklađeno za dvostruko termo-staklo debljine 24 mm. Debljina zida profila 3mm, u skladu sa najvišim RAL standardom kvaliteta (prema DIN EN 12608, klasa A).",
+      "Jednokomorni staklopaket sa koeficijentom toplotne propusnosti Ug =1,0 V/(m2K) prema PN-EN674 u standardu. Mogućnost nanošenja stakla sa pojačanom zvučnom izolacijom, kaljeno, sigurnosno, protivprovalno, ukrasno, solarno zaštitno",
+      "Koristimo najkvalitetniji nemacki okov renomiranog proizvođača ROTO, koji osigurava kvalitetno zatvaranje i poseduje veći stepen protivprovalne zaštite.",
+    ],
+>>>>>>> 133a49cab99d1be7c5fbc64b6abf08057506e089
   },
   {
     name: PRODUCTS.allProducts.pvcProzor2,
@@ -51,7 +63,11 @@ export const ProductData = [
     },
     options: {
       firstOption:
+<<<<<<< HEAD
         "Sedmokomorni štok, šestokomorno krilo, sa čeličnim ojačanjima, sa tri dihtung gume. Energetska efikasnost prve klase: prozori za kuće sa niskom potrošnjom energije kao i za pasivne kuće. Vrhunski kvalitet profila debljine 3 mm. Široka paleta boja dekora profila jednostranog i dvostranog dekora omogućava svaki dizajn enterijera. Koristi troslojni paket termopan stakla ispunjen argonom. Rastojanje prozorskih stakala od 28 mm smanjuje pojavu toplotnog mosta. Dodatna srednja guma, neprekidno postavljena duž obima rama prozora  pouzdano štiti i od niskih i od visokih temperatura, promaje i vlage",
+=======
+        "Sedmokomorni štok, šestokomorno krilo, sa čeličnim ojačanjima, sa tri dihtung gume. Energetska efikasnost prve klase: prozori za kuće sa niskom potrošnjom energije kao i za pasivne kuće. Vrhunski kvalitet profila debljine 3 mm. Široka paleta boja dekora profila jednostranog i dvostranog dekora omogućava svaki dizajn enterijera. Koristi troslojni paket termopan stakla ispunjen argonom. Rastojanje prozorskih stakala od 28 mm smanjuje pojavu toplotnog mosta. Dodatna srednja guma, neprekidno postavljena duž obima rama prozora  pouzdano štiti i od niskih i od visokih temperatura, promaje i vlage.",
+>>>>>>> 133a49cab99d1be7c5fbc64b6abf08057506e089
       secondOption: [
         "Inovativni višekomorni sistem osnovne ugradne dubine od 82mm za vrhunsku toplotnu izolaciju.",
         "Harmonično se uklapa u sve građevinske stilove, od moderne novogradnje do saniranih starih objekata.",
@@ -71,6 +87,14 @@ export const ProductData = [
       third:
         "Koristimo najkvalitetniji nemacki okov renomiranog proizvođača ROTO, koji osigurava kvalitetno zatvaranje i poseduje veći stepen protivprovalne zaštite.",
     },
+<<<<<<< HEAD
+=======
+    material: [
+      "Inovativni višekomorni sistem osnovne ugradne dubine od 82mm za vrhunsku toplotnu izolaciju.Koeficijent prolaska toplote čak i do Uw = 0,67 W/(m²K) upotrebom termo –trostrukog stakla sa Ug = 0,4 W/(m²K). Rastojanje prozorskih stakala od 28 mm smanjuje pojavu toplotnog mosta. Tri nivoa zaptivanja pouzdano štite i od niskih i od visokih temperatura, promaje i vlage. Vrhunski VEKA profili u skladu sa najvišim RAL standardom kvaliteta – klasa A prema DIN EN 12608. Mogućnost odabira svih boja iz RAL - palete upotrebom al - obloga.",
+      "Maksimalna debljina zastakljenja do 48 mm. Staklopaket 4/16/4/16/4 sa toplotnom propusnošću Ug = 0,5 V/(m2K) u standardu. Mogućnost nanošenja stakla sa pojačanom zvučnom izolacijom, kaljeno, sigurnosno, protivprovalno, ukrasno, solarno zaštitno.",
+      "Koristimo najkvalitetniji nemacki okov renomiranog proizvođača ROTO, koji osigurava kvalitetno zatvaranje i poseduje veći stepen protivprovalne zaštite.",
+    ],
+>>>>>>> 133a49cab99d1be7c5fbc64b6abf08057506e089
   },
   {
     name: PRODUCTS.allProducts.drvoAluminiumProzor1,

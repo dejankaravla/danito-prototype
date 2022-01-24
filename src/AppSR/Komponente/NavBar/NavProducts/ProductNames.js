@@ -28,8 +28,8 @@ const PRODUCTS = {
   acordianHarmonika: "HARMONIKA",
   allProducts: {
     // PVC Prozori
-    pvcProzor1: "VEKA 70",
-    pvcProzor2: "VEKA 82",
+    pvcProzor1: "VEKA 70 EFFECTLINE",
+    pvcProzor2: "VEKA 82 SOFTLINE",
     //Drvo Aluminium Prozori
     drvoAluminiumProzor1: "DRVO ALUMINIUM PROZOR 1",
     // Aluminium Prozori
