@@ -38,21 +38,23 @@ const PRODUCTS = {
     aluminiumProzor3: "ALUMINIUM PROZOR 3",
     aluminiumProzor4: "ALUMINIUM PROZOR 4",
     // PVC Vrata
-    ulaznaVrata: "ULAZNA VRATA",
-    pregradnaVrata: "PREGRADNA VRATA",
+    ulaznaVrata: "VEKA SOFTLINE 70 AD",
+    pregradnaVrata: "VEKA SOFTLINE 70 AD Isti naziv ima",
     // Celicna Vrata
     celicnaVrata: "SIGURNOSNA VRATA PO MERI",
     // ALU Vrata
     vrataHladanProfil: "PROFIL BEZ TERMOPREKIDA",
     vrataProfilTermo: "PROFIL SA TERMOPREKIDOM",
     vrataSkrivenoKrilo: "VRATA SA SKRIVENIM KRILOM",
-    // PVC ROLETNE
+    // Unutrasnje ROLETNE
     pvcRoletne1: "UNUTRASNJA ROLETNA BELA",
     pvcRoletne2: "UNUTRASNJA ROLETNA U BOJI",
-    // ALU ROLETNE
+    // Spoljasnje ROLETNE
     spoljneRoletne: "SPOLJASNJE ROLETNE",
     unutrasnjeRoletne: "UNUTRASNJE NADGRADNE ROLETNE",
     podvasadneRoletne: "PODFASADNE ROLETNE",
+    // Venecijaneri
+    solmaticVenecijaneri: "SOLOMATIC VENECIJANERI",
     // Fasade
     FunderFasade: "FUNDERMAX FASADE",
     VentilFasade: "VENTILISANE ALUCOBOND FASADE",

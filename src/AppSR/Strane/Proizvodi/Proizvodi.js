@@ -28,7 +28,7 @@ function ProductPage({ scroll, pageName, data }) {
             <video autoPlay src={data.imgVideo}></video>
           </div>
           <div className="ProductPage__optionsContainer">
-            <Options optionsContent={data.options} pageName={pageName} />
+            <Options optionsContent={data} pageName={pageName} />
           </div>
         </div>
         <LineAnimation header1={"Karakteristike"} scroll={scroll} scrollY={1000} />

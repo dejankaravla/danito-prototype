@@ -44,7 +44,6 @@ function BasicTabs({ pageName, optionsContent }) {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-
   return (
     <Box sx={{ width: "100%" }}>
       <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
@@ -56,7 +55,9 @@ function BasicTabs({ pageName, optionsContent }) {
       </Box>
       <TabPanel value={value} index={0}>
         <h2>{pageName}</h2>
-        <p>{optionsContent.firstOption}</p>
+        {optionsContent.firstOption.split(".").map((data) => {
+          return <li>{data}.</li>;
+        })}
       </TabPanel>
       <TabPanel value={value} index={1}>
         <ul>
