@@ -4,7 +4,7 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-
+import "../../../Styles/Options/Options.css";
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -48,30 +48,40 @@ function BasicTabs({ pageName, optionsContent }) {
     <Box sx={{ width: "100%" }}>
       <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-          <Tab label="OPIS" {...a11yProps(0)} />
-          <Tab label="PREDNOSTI" {...a11yProps(1)} />
-          <Tab label="COLOR" {...a11yProps(2)} />
+          <Tab label={optionsContent.optionHeaders.first} {...a11yProps(0)} />
+          <Tab label={optionsContent.optionHeaders.second} {...a11yProps(1)} />
+          <Tab label={optionsContent.optionHeaders.third} {...a11yProps(2)} />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
-        <h2>{pageName}</h2>
-        {optionsContent.firstOption.split(".").map((data) => {
-          return <li>{data}.</li>;
+        <h2>{optionsContent.nameHeader}</h2>
+        {optionsContent.options.firstOption.map((data) => {
+          return <li>{data}</li>;
         })}
       </TabPanel>
       <TabPanel value={value} index={1}>
         <ul>
-          {optionsContent.secondOption.map((data) => {
+          {optionsContent.options.secondOption.map((data) => {
             return <li>{data}</li>;
           })}
         </ul>
       </TabPanel>
       <TabPanel value={value} index={2}>
         <ul>
-          {optionsContent.thirdOption.map((data) => {
-            return <li>{data}</li>;
-          })}
+          <li>{optionsContent.options.thirdOption.opis}</li>
         </ul>
+        {optionsContent.options.thirdOption.boje ? (
+          <div className="options__colorContainer">
+            {optionsContent.options.thirdOption.boje.map((data) => {
+              return (
+                <div className="options__colors">
+                  <p>{data.text}</p>
+                  <img src={data.image} alt="" />
+                </div>
+              );
+            })}
+          </div>
+        ) : null}
       </TabPanel>
     </Box>
   );

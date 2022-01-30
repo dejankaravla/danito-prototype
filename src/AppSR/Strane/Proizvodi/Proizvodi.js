@@ -15,7 +15,7 @@ function ProductPage({ scroll, pageName, data }) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [data]);
-
+  console.log(data);
   return (
     <div className="ProductPage">
       <div className="ProductPage__container">
@@ -33,7 +33,7 @@ function ProductPage({ scroll, pageName, data }) {
         </div>
         <LineAnimation header1={"Karakteristike"} scroll={scroll} scrollY={1000} />
         <div className="ProductPage__materialContainer">
-          {data.material.map((data, i) => {
+          {/* {data.material.map((data, i) => {
             return (
               <div className="ProductPage__material">
                 <img src={icons[i]} alt="profile icon" />
@@ -41,7 +41,22 @@ function ProductPage({ scroll, pageName, data }) {
                 <p>{data}</p>
               </div>
             );
-          })}
+          })} */}
+          <div className="ProductPage__material">
+            <img src={icons[0]} alt="profile icon" />
+            <div className="ProductPage__Line"></div>
+            <p>{data.material.first}</p>
+          </div>
+          <div className="ProductPage__material">
+            <img src={icons[1]} alt="profile icon" />
+            <div className="ProductPage__Line"></div>
+            <p>{data.material.second}</p>
+          </div>
+          <div className="ProductPage__material">
+            <img src={icons[2]} alt="profile icon" />
+            <div className="ProductPage__Line"></div>
+            <p>{data.material.third}</p>
+          </div>
         </div>
         {data.profiles ? <LineAnimation header1={"Paneli"} scroll={scroll} scrollY={1600} /> : null}
         {data.profiles ? (

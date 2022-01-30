@@ -14,9 +14,10 @@ const PRODUCTS = {
   pvcVrata: "PVC VRATA",
   aluminiumVrata: "ALUMINIUM VRATA",
   sigurnosnaVrata: "SIGURNOSNA VRATA",
-
+  
   pvcRoletne: "UNUTRASNJE ROLETNE",
   aluminiumRoletne: "SPOLJASNJE ROLETNE",
+  solomaticVenecijaneri: "SOLOMATIC VENECIJANERI",
 
   fundermaxFasade: "FUNDERMAX FASADE",
   ventilisaneAlucobondFasade: "VENTILISANE ALUCOBOND FASADE",
@@ -28,8 +29,8 @@ const PRODUCTS = {
   acordianHarmonika: "HARMONIKA",
   allProducts: {
     // PVC Prozori
-    pvcProzor1: "VEKA 70 EFFECTLINE",
-    pvcProzor2: "VEKA 82 SOFTLINE",
+    pvcProzor1: "VEKA 70",
+    pvcProzor2: "VEKA 82",
     //Drvo Aluminium Prozori
     drvoAluminiumProzor1: "DRVO ALUMINIUM PROZOR 1",
     // Aluminium Prozori
@@ -38,8 +39,8 @@ const PRODUCTS = {
     aluminiumProzor3: "ALUMINIUM PROZOR 3",
     aluminiumProzor4: "ALUMINIUM PROZOR 4",
     // PVC Vrata
-    ulaznaVrata: "VEKA SOFTLINE 70 AD",
-    pregradnaVrata: "VEKA SOFTLINE 70 AD Isti naziv ima",
+    ulaznaVrata: "ULAZNA VRATA",
+    pregradnaVrata: "PREGRADNA VRATA",
     // Celicna Vrata
     celicnaVrata: "SIGURNOSNA VRATA PO MERI",
     // ALU Vrata
@@ -47,14 +48,14 @@ const PRODUCTS = {
     vrataProfilTermo: "PROFIL SA TERMOPREKIDOM",
     vrataSkrivenoKrilo: "VRATA SA SKRIVENIM KRILOM",
     // Unutrasnje ROLETNE
-    pvcRoletne1: "UNUTRASNJA ROLETNA BELA",
-    pvcRoletne2: "UNUTRASNJA ROLETNA U BOJI",
+    pvcRoletne1: "ALU TERMO ROLETNE",
+    pvcRoletne2: "PVC ROLETNE",
     // Spoljasnje ROLETNE
-    spoljneRoletne: "SPOLJASNJE ROLETNE",
-    unutrasnjeRoletne: "UNUTRASNJE NADGRADNE ROLETNE",
-    podvasadneRoletne: "PODFASADNE ROLETNE",
+    spoljneRoletne: "ALU SPOLJNA ROLETNA ZAOBLJENA",
+    unutrasnjeRoletne: "ALU SPOLJNA ROLETNA PETOUGAONA",
     // Venecijaneri
-    solmaticVenecijaneri: "SOLOMATIC VENECIJANERI",
+    spoljniVenecijaneri: "SPOLJNI VENECIJANERI",
+    podfasadniVenecijaneri: "PODFASADNI VENECIJANERI",
     // Fasade
     FunderFasade: "FUNDERMAX FASADE",
     VentilFasade: "VENTILISANE ALUCOBOND FASADE",

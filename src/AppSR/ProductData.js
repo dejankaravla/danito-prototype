@@ -7,7 +7,7 @@ import PvcPregradnaVrata from "../Video/PvcPregradnaVrata.mp4";
 export const ProductData = [
   {
     name: PRODUCTS.allProducts.pvcProzor1,
-    nameHeader: "VEKA 70 EFFECTLINE ",
+    nameHeader: "VEKA 70 EFFECTLINE",
     imgCover: IMAGE.pvcProzor1CoverImg,
     video: veka70Video,
     imgVideo: "https://www.drutex.eu/media/_upload/produkty/iglo_light/video/iglo_light.mp4",
@@ -17,12 +17,13 @@ export const ProductData = [
       third: "VEKA 70/DEKORI",
     },
     options: {
-      firstOption:
-<<<<<<< HEAD
-        "Šestokomorni štok sa petokomornim krilom obezbeđuju optimalnu termičku izolaciju,što omogućava značajnu uštedu energije pri grejanju i hlađenju. Sistem specijalizovan za upotrebu u stambenim i poslovnim objektima. Vrhunski kvalitet profila debljine 3 mm. Široka paleta boja dekora profila jednostranog i dvostranog dekora omogućava svaki dizajn enterijera. Koristi dvoslojni paket termopan stakla ispunjen argonom",
-=======
-        "Šestokomorni štok sa petokomornim krilom obezbeđuju optimalnu termičku izolaciju,što omogućava značajnu uštedu energije pri grejanju i hlađenju. Sistem specijalizovan za upotrebu u stambenim i poslovnim objektima. Vrhunski kvalitet profila debljine 3 mm. Široka paleta boja dekora profila jednostranog i dvostranog dekora omogućava svaki dizajn enterijera. Koristi dvoslojni paket termopan stakla ispunjen argonom.",
->>>>>>> 133a49cab99d1be7c5fbc64b6abf08057506e089
+      firstOption: [
+        "Šestokomorni štok sa petokomornim krilom obezbeđuju optimalnu termičku izolaciju,što omogućava značajnu uštedu energije pri grejanju i hlađenju.",
+        " Sistem specijalizovan za upotrebu u stambenim i poslovnim objektima.",
+        "Vrhunski kvalitet profila debljine 3 mm.",
+        "Široka paleta boja dekora profila jednostranog i dvostranog dekora omogućava svaki dizajn enterijera.",
+        "Koristi dvoslojni paket termopan stakla ispunjen argonom.",
+      ],
       secondOption: [
         " Moderan dizajn i odlični parametri u pogledu energetske efikasnosti,    vodootpornosti, otpornosti na vetar i propustljivosti vazduha!",
         "Visok nivo bezbednosti obezbeđen je visokokvalitetnim petokomornim profilima A klase, napravljenim isključivo od prvoklasnog materijala.",
@@ -30,25 +31,28 @@ export const ProductData = [
       ],
       thirdOption: {
         opis: "Veka 70 profil može biti u jednostranom i dvostranom dekoru. Pored velikog broja dekora izdvajamo standard dekore koji su trenutno u trendu i sa najboljom cenom.",
-        boje: ["Nussbaum (orah)", "Golden Oak (svetli hrast)", "Antracit (tamno siva)", "Mahagoni"],
+        boje: [
+          { text: "Nussbaum (orah)", image: "https://www.drutex.eu/media/_upload/kolory/okleiny/bialy-fx.jpg" },
+          {
+            text: "Golden Oak (svetli hrast)",
+            image: "https://www.drutex.eu/media/_upload/kolory/okleiny/bialy-fx.jpg",
+          },
+          {
+            text: "Antracit (tamno siva)",
+            image: "https://www.drutex.eu/media/_upload/kolory/okleiny/winchester_kk.jpg",
+          },
+          { text: "Mahagoni", image: "https://www.drutex.eu/media/_upload/kolory/okleiny/szary-kwarcytowy.jpg" },
+        ],
       },
     },
     material: {
       first:
-        "5 – komorni profil sa osnovnom dubinom ugradnje od 70 mm. U standarnoj varijanti usklađeno za dvostruko termo-staklo debljine 24 mm. Debljina zida profila 3mm, u skladu sa najvišim RAL standardom kvaliteta (prema DIN EN 12608, klasa A)",
+        "Štok je izradjen od  čeličnih kutija 60x40/2.0mm. Krilo izradjeno od ramovske konstrukcije (kutija 50x30), spolja je ugradjen čelični lim 1,5mm sa vertikalnim ojačanjima  od L profila.Ukupna debljina krila je 72mm.",
       second:
-        "Jednokomorni staklopaket sa koeficijentom toplotne propusnosti Ug =1,0 V/(m2K) prema PN-EN674 u standardu. Mogućnost nanošenja stakla sa pojačanom zvučnom izolacijom, kaljeno, sigurnosno, protivprovalno, ukrasno, solarno zaštitno.",
+        "Završna obrada – krilo obostrano obloženo MDFom po 8mm u dekoru po izboru (u ponudi 7 dezena). Štok,prag i svi vidni metalni delovi plastificirani u boju po izboru (boja u prahu nanosi se na metal elektrostatičkim putem, a zatim se vrši pečenje na temperature polimerizacije).",
       third:
-        "Koristimo najkvalitetniji nemacki okov renomiranog proizvođača ROTO, koji osigurava kvalitetno zatvaranje i poseduje veći stepen protivprovalne zaštite.",
+        "Brava – Doro, sigurnosna sa Italijanskim cilindrom ISEO. Uz cilindar isporučuju se pet ključeva. Cilindar pokreće bravu koja zaključava u 4 tačke bočno, 2 tačke (gore/dole) + 3 šipa koja se nalaze na strani šarki i koja su fiksna. Okov – Hoppe (Nemačka); kvaka/kugla, nikl, špijunka širokougaona 180º.",
     },
-<<<<<<< HEAD
-=======
-    material: [
-      "5 – komorni profil sa osnovnom dubinom ugradnje od 70 mm. U standarnoj varijanti usklađeno za dvostruko termo-staklo debljine 24 mm. Debljina zida profila 3mm, u skladu sa najvišim RAL standardom kvaliteta (prema DIN EN 12608, klasa A).",
-      "Jednokomorni staklopaket sa koeficijentom toplotne propusnosti Ug =1,0 V/(m2K) prema PN-EN674 u standardu. Mogućnost nanošenja stakla sa pojačanom zvučnom izolacijom, kaljeno, sigurnosno, protivprovalno, ukrasno, solarno zaštitno",
-      "Koristimo najkvalitetniji nemacki okov renomiranog proizvođača ROTO, koji osigurava kvalitetno zatvaranje i poseduje veći stepen protivprovalne zaštite.",
-    ],
->>>>>>> 133a49cab99d1be7c5fbc64b6abf08057506e089
   },
   {
     name: PRODUCTS.allProducts.pvcProzor2,
@@ -62,12 +66,15 @@ export const ProductData = [
       third: "VEKA 82/DEKORI",
     },
     options: {
-      firstOption:
-<<<<<<< HEAD
-        "Sedmokomorni štok, šestokomorno krilo, sa čeličnim ojačanjima, sa tri dihtung gume. Energetska efikasnost prve klase: prozori za kuće sa niskom potrošnjom energije kao i za pasivne kuće. Vrhunski kvalitet profila debljine 3 mm. Široka paleta boja dekora profila jednostranog i dvostranog dekora omogućava svaki dizajn enterijera. Koristi troslojni paket termopan stakla ispunjen argonom. Rastojanje prozorskih stakala od 28 mm smanjuje pojavu toplotnog mosta. Dodatna srednja guma, neprekidno postavljena duž obima rama prozora  pouzdano štiti i od niskih i od visokih temperatura, promaje i vlage",
-=======
-        "Sedmokomorni štok, šestokomorno krilo, sa čeličnim ojačanjima, sa tri dihtung gume. Energetska efikasnost prve klase: prozori za kuće sa niskom potrošnjom energije kao i za pasivne kuće. Vrhunski kvalitet profila debljine 3 mm. Široka paleta boja dekora profila jednostranog i dvostranog dekora omogućava svaki dizajn enterijera. Koristi troslojni paket termopan stakla ispunjen argonom. Rastojanje prozorskih stakala od 28 mm smanjuje pojavu toplotnog mosta. Dodatna srednja guma, neprekidno postavljena duž obima rama prozora  pouzdano štiti i od niskih i od visokih temperatura, promaje i vlage.",
->>>>>>> 133a49cab99d1be7c5fbc64b6abf08057506e089
+      firstOption: [
+        "Sedmokomorni štok, šestokomorno krilo, sa čeličnim ojačanjima, sa tri dihtung gume.",
+        "Energetska efikasnost prve klase: prozori za kuće sa niskom potrošnjom energije kao i za pasivne kuće.",
+        "Vrhunski kvalitet profila debljine 3 mm.",
+        "Široka paleta boja dekora profila jednostranog i dvostranog dekora omogućava svaki dizajn enterijera.",
+        "Koristi troslojni paket termopan stakla ispunjen argonom.",
+        "Rastojanje prozorskih stakala od 28 mm smanjuje pojavu toplotnog mosta. Dodatna srednja guma, neprekidno postavljena duž obima rama prozora  pouzdano štiti i od niskih i od visokih temperatura, promaje i vlage.",
+        "Dodatna srednja guma, neprekidno postavljena duž obima rama prozora  pouzdano štiti i od niskih i od visokih temperatura, promaje i vlage.",
+      ],
       secondOption: [
         "Inovativni višekomorni sistem osnovne ugradne dubine od 82mm za vrhunsku toplotnu izolaciju.",
         "Harmonično se uklapa u sve građevinske stilove, od moderne novogradnje do saniranih starih objekata.",
@@ -76,7 +83,18 @@ export const ProductData = [
       ],
       thirdOption: {
         opis: "Veka 82 profil može biti u jednostranom i dvostranom dekoru.  Pored velikog broja dekora izdvajamo standard dekore koji su trenutno u trendu i sa najboljom cenom.",
-        boje: ["IGLO Light", "IGLO Energy Classic", "IGLO 5", "IGLO 5 Classic"],
+        boje: [
+          { text: "Nussbaum (orah)", image: "https://www.drutex.eu/media/_upload/kolory/okleiny/bialy-fx.jpg" },
+          {
+            text: "Golden Oak (svetli hrast)",
+            image: "https://www.drutex.eu/media/_upload/kolory/okleiny/bialy-fx.jpg",
+          },
+          {
+            text: "Antracit (tamno siva)",
+            image: "https://www.drutex.eu/media/_upload/kolory/okleiny/winchester_kk.jpg",
+          },
+          { text: "Mahagoni", image: "https://www.drutex.eu/media/_upload/kolory/okleiny/szary-kwarcytowy.jpg" },
+        ],
       },
     },
     material: {
@@ -87,14 +105,6 @@ export const ProductData = [
       third:
         "Koristimo najkvalitetniji nemacki okov renomiranog proizvođača ROTO, koji osigurava kvalitetno zatvaranje i poseduje veći stepen protivprovalne zaštite.",
     },
-<<<<<<< HEAD
-=======
-    material: [
-      "Inovativni višekomorni sistem osnovne ugradne dubine od 82mm za vrhunsku toplotnu izolaciju.Koeficijent prolaska toplote čak i do Uw = 0,67 W/(m²K) upotrebom termo –trostrukog stakla sa Ug = 0,4 W/(m²K). Rastojanje prozorskih stakala od 28 mm smanjuje pojavu toplotnog mosta. Tri nivoa zaptivanja pouzdano štite i od niskih i od visokih temperatura, promaje i vlage. Vrhunski VEKA profili u skladu sa najvišim RAL standardom kvaliteta – klasa A prema DIN EN 12608. Mogućnost odabira svih boja iz RAL - palete upotrebom al - obloga.",
-      "Maksimalna debljina zastakljenja do 48 mm. Staklopaket 4/16/4/16/4 sa toplotnom propusnošću Ug = 0,5 V/(m2K) u standardu. Mogućnost nanošenja stakla sa pojačanom zvučnom izolacijom, kaljeno, sigurnosno, protivprovalno, ukrasno, solarno zaštitno.",
-      "Koristimo najkvalitetniji nemacki okov renomiranog proizvođača ROTO, koji osigurava kvalitetno zatvaranje i poseduje veći stepen protivprovalne zaštite.",
-    ],
->>>>>>> 133a49cab99d1be7c5fbc64b6abf08057506e089
   },
   {
     name: PRODUCTS.allProducts.drvoAluminiumProzor1,
@@ -222,50 +232,105 @@ export const ProductData = [
       third: "ULAZNA VRATA/DEKORI",
     },
     options: {
-      firstOption:
-        "Klasičan dizajn sa elegantno zaobljenim ivicama. Sistem ulaznih vrata sa ugradnom dubinom od 70 mm. Profil VEKA SOFTLINE 70 AD specijalno namenjen za izradu vrata, sa ojačanim čelicima u krilu, sa specijalnim ugaonim spojnicama koje omogućavaju jedinstvenost vara i daju dodatnu čvrstinu vratima. Dublja površina zastakljivanja omogućava upotrebu velikog izbora ispuna za vrata i time pruža brojne mogućnosti izbora. Termički odvojen prag garantuje perfektnu izolaciju čak i u donjem predelu vrata.",
+      firstOption: [
+        "Klasičan dizajn sa elegantno zaobljenim ivicama.",
+        "Sistem ulaznih vrata sa ugradnom dubinom od 70 mm.",
+        "Profil VEKA SOFTLINE 70 AD specijalno namenjen za izradu vrata, sa ojačanim čelicima u krilu, sa specijalnim ugaonim spojnicama koje omogućavaju jedinstvenost vara i daju dodatnu čvrstinu vratima.",
+        "Dublja površina zastakljivanja omogućava upotrebu velikog izbora ispuna za vrata i time pruža brojne mogućnosti izbora.",
+        "Termički odvojen prag garantuje perfektnu izolaciju čak i u donjem predelu vrata.",
+      ],
       secondOption: [
         "Ulazna vrata su najbitniji stilski element svake fasade i moraju zadovoljiti sve Vaše visoke zahteve. Oni moraju da apsolutno pouzdano funkcionišu, da Vas štite od vremenskih nepogoda i da pružaju najviši nivo sigurnosti. VEKA sistemi ulaznih vrata Vam ne samo zbog vrhunskog kvaliteta profila mogu pružiti sve to.",
         "Pomoću dodatnog ojačanja, specijalnih okova i stakla se dodatno može povećati nivo sigurnosti i zaštita od provale. Neiscrpan asortiman oblika i kombinacija vrata – individualna i po Vašoj meri – ispuniće i Vaše najviše zahteve. ",
         "Jednokrilna, dvokrilna ili vrata sa više elemenata za velike kuće, klasičnog ili modernog stila, sa ispunom od stakla ili ukrasnih panela, sa jednim ili više elemenata sa strane, modernih neobičnih linija ili jednostavno elegantne - VEKA sistemi ulaznih vrata su idealno rešenje za najrazličitije situacije ugradnje kako pri novogradnji tako i za renoviranje.",
       ],
-      thirdOption: ["IGLO Energy"],
+      thirdOption: {
+        opis: "Profil VEKA SOFTLINE 70 AD profil može biti u jednostranom i dvostranom dekoru. Pored velikog broja dekora izdvajamo standard dekore koji su trenutno u trendu i sa najboljom cenom.",
+        boje: {
+          Nussbaum: ["Nussbaum (orah)", "https://www.drutex.eu/media/_upload/kolory/okleiny/bialy-fx.jpg"],
+          goldenOak: [
+            "Golden Oak (svetli hrast)",
+            "https://www.drutex.eu/media/_upload/kolory/okleiny/ciemno-zielony.jpg",
+          ],
+          Antracit: ["Antracit (tamno siva)", "https://www.drutex.eu/media/_upload/kolory/okleiny/winchester_kk.jpg"],
+          Mahagoni: ["Mahagoni", "https://www.drutex.eu/media/_upload/kolory/okleiny/szary-kwarcytowy.jpg"],
+        },
+      },
     },
-    material: [
-      "Sistem ulaznih vrata sa ugradnom dubinom od 70 mm opciono 82mm. U standarnoj varijanti usklađeno za dvostruko termo-staklo ili ispuna ukrasnim panelima. Debljina zida profila 3mm,  u skladu sa najvišim RAL standardom kvaliteta (prema DIN EN 12608, klasa A). Profil specijalno namenjen za izradu vrata, sa ojačanim čelicima u krilu, sa specijalnim ugaonim spojnicama koje omogućavaju jedinstvenost vara i daju izuzetnu čvrstinu vratima.",
-      "Neiscrpan asortiman oblika i kombinacija vrata – individualna i po meri – ispuniće i najviše zahteve. Jednokrilna, dvokrilna ili vrata sa više elemenata za velike kuće, klasičnog ili modernog stila, sa ispunom od stakla ili ukrasnih panela, sa jednim ili više elemenata sa strane.",
-      "Koristimo najkvalitetniji nemacki okov renomiranog proizvođača ROTO, koji osigurava kvalitetno zatvaranje i poseduje veći stepen protivprovalne zaštite.",
-    ],
+    material: {
+      first:
+        "Sistem ulaznih vrata sa ugradnom dubinom od 70 mm opciono 82mm. U standarnoj varijanti usklađeno za dvostruko termo-staklo ili ispuna ukrasnim panelima. Debljina zida profila 3mm, u skladu sa najvišim RAL standardom kvaliteta (prema DIN EN 12608, klasa A). Profil specijalno namenjen za izradu vrata, sa ojačanim čelicima u krilu, sa specijalnim ugaonim spojnicama koje omogućavaju jedinstvenost vara i daju izuzetnu čvrstinu vratima.",
+      second:
+        "Neiscrpan asortiman oblika i kombinacija vrata – individualna i po meri – ispuniće i najviše zahteve. Jednokrilna, dvokrilna ili vrata sa više elemenata za velike kuće, klasičnog ili modernog stila, sa ispunom od stakla ili ukrasnih panela, sa jednim ili više elemenata sa strane.",
+      third:
+        "Koristimo najkvalitetniji nemacki okov renomiranog proizvođača ROTO, koji osigurava kvalitetno zatvaranje i poseduje veći stepen protivprovalne zaštite.",
+    },
     profiles: true,
   },
   {
     name: PRODUCTS.allProducts.pregradnaVrata,
+    nameHeader: "VEKA SOFTLINE 70 AD",
     imgCover: IMAGE.pregradnaVrataCoverImg,
+    video: PvcPregradnaVrata,
     imgVideo: "https://www.drutex.eu/media/_upload/produkty/drzwi-iglo-energy/video/drzwi_iglo_energy.mp4",
+    optionHeaders: {
+      first: "PREGRADNA VRATA/OPIS",
+      second: "PREGRADNA VRATA/PREDNOSTI",
+      third: "PREGRADNA VRATA/DEKORI",
+    },
     options: {
-      firstOption:
-        "Klasičan dizajn sa elegantno zaobljenim ivicama. Sistem pegradnih vrata sa ugradnom dubinom od 70 mm. Profil VEKA SOFTLINE 70 AD specijalno namenjen za izradu vrata, sa ojačanim čelicima u krilu, sa specijalnim ugaonim spojnicama koje omogućavaju jedinstvenost vara i daju dodatnu čvrstinu vratima.",
+      firstOption: [
+        "Klasičan dizajn sa elegantno zaobljenim ivicama.",
+        "Sistem pegradnih vrata sa ugradnom dubinom od 70 mm.",
+        "Profil VEKA SOFTLINE 70 AD specijalno namenjen za izradu vrata, sa ojačanim čelicima u krilu, sa specijalnim ugaonim spojnicama koje omogućavaju jedinstvenost vara i daju dodatnu čvrstinu vratima.",
+      ],
       secondOption: [
         "Ulazna vrata su najbitniji stilski element svake fasade i moraju zadovoljiti sve Vaše visoke zahteve. Oni moraju da apsolutno pouzdano funkcionišu, da Vas štite od vremenskih nepogoda i da pružaju najviši nivo sigurnosti. VEKA sistemi ulaznih vrata Vam ne samo zbog vrhunskog kvaliteta profila mogu pružiti sve to.",
         "Pomoću dodatnog ojačanja, specijalnih okova i stakla se dodatno može povećati nivo sigurnosti i zaštita od provale. Neiscrpan asortiman oblika i kombinacija vrata – individualna i po Vašoj meri – ispuniće i Vaše najviše zahteve.",
         "Jednokrilna, dvokrilna ili vrata sa više elemenata za velike kuće, klasičnog ili modernog stila, sa ispunom od stakla ili ukrasnih panela, sa jednim ili više elemenata sa strane, modernih neobičnih linija ili jednostavno elegantne - VEKA sistemi ulaznih vrata su idealno rešenje za najrazličitije situacije ugradnje kako pri novogradnji tako i za renoviranje.",
       ],
-      thirdOption: ["IGLO 5"],
+      thirdOption: {
+        opis: "Profil VEKA SOFTLINE 70 AD profil može biti u jednostranom i dvostranom dekoru. Pored velikog broja dekora izdvajamo standard dekore koji su trenutno u trendu i sa najboljom cenom.",
+        boje: [
+          { text: "Nussbaum (orah)", image: "https://www.drutex.eu/media/_upload/kolory/okleiny/bialy-fx.jpg" },
+          {
+            text: "Golden Oak (svetli hrast)",
+            image: "https://www.drutex.eu/media/_upload/kolory/okleiny/bialy-fx.jpg",
+          },
+          {
+            text: "Antracit (tamno siva)",
+            image: "https://www.drutex.eu/media/_upload/kolory/okleiny/winchester_kk.jpg",
+          },
+          { text: "Mahagoni", image: "https://www.drutex.eu/media/_upload/kolory/okleiny/szary-kwarcytowy.jpg" },
+        ],
+      },
     },
-    material: [
-      "Sistem pregradnih vrata sa ugradnom dubinom od 70 mm. U standarnoj varijanti usklađeno za dvostruko termo-staklo ili ispuna panelima. Debljina zida profila 3mm, u skladu sa najvišim RAL standardom kvaliteta (prema DIN EN 12608, klasa A). Profil specijalno namenjen za izradu vrata, sa ojačanim čelicima u krilu, sa specijalnim ugaonim spojnicama koje omogućavaju jedinstvenost vara i daju izuzetnu čvrstinu vratima.",
-      "Neiscrpan asortiman oblika i kombinacija vrata – individualna i po meri – ispuniće i najviše zahteve. Jednokrilna, dvokrilna ili vrata sa više elemenata za velike kuće, klasičnog ili modernog stila, sa ispunom od stakla ili ukrasnih panela, sa jednim ili više elemenata sa strane.",
-      "Koristimo najkvalitetniji nemacki okov renomiranog proizvođača ROTO, koji osigurava kvalitetno zatvaranje i poseduje veći stepen protivprovalne zaštite.",
-    ],
+    material: {
+      first:
+        "Sistem pregradnih vrata sa ugradnom dubinom od 70 mm. U standarnoj varijanti usklađeno za dvostruko termo-staklo ili ispuna panelima. Debljina zida profila 3mm, u skladu sa najvišim RAL standardom kvaliteta (prema DIN EN 12608, klasa A). Profil specijalno namenjen za izradu vrata, sa ojačanim čelicima u krilu, sa specijalnim ugaonim spojnicama koje omogućavaju jedinstvenost vara i daju izuzetnu čvrstinu vratima.",
+      second:
+        "Neiscrpan asortiman oblika i kombinacija vrata – individualna i po meri – ispuniće i najviše zahteve. Jednokrilna, dvokrilna ili vrata sa više elemenata za velike kuće, klasičnog ili modernog stila, sa ispunom od stakla ili ukrasnih panela, sa jednim ili više elemenata sa strane.",
+      third:
+        "Koristimo najkvalitetniji nemacki okov renomiranog proizvođača ROTO, koji osigurava kvalitetno zatvaranje i poseduje veći stepen protivprovalne zaštite.",
+    },
     profiles: true,
   },
   {
     name: PRODUCTS.allProducts.vrataHladanProfil,
+    nameHeader: PRODUCTS.allProducts.vrataHladanProfil,
     imgCover: IMAGE.vrataHladanProfilCoverImg,
     imgVideo: "https://www.drutex.eu/media/_upload/produkty/mb-45/video-drzwi/drzwi-mb-45.mp4",
+    optionHeaders: {
+      first: "OPIS",
+      second: "PREDNOSTI",
+      third: "DEKORI",
+    },
     options: {
-      firstOption:
-        "Moderan i stabilan aluminijumski profil omogućava postizanje efekta istog nivoa rama i krila spolja nakon zatvaranja vrata. Mogućnost prilagođavanja enterijera kao rezultat širokog spektra RAL boja.  Sistem hladnog profila je kompatibilan sa ostalim aluminijumskim sistemima iz Danito ponude.",
+      firstOption: [
+        "Moderan i stabilan aluminijumski profil omogućava postizanje efekta istog nivoa rama i krila spolja nakon zatvaranja vrata.",
+        "Mogućnost prilagođavanja enterijera kao rezultat širokog spektra RAL boja.",
+        "Sistem hladnog profila je kompatibilan sa ostalim aluminijumskim sistemima iz Danito ponude.",
+      ],
       secondOption: [
         "Sistem omogućava primenu raznih ispuna staklenih kao i ukrasnih panela.",
         "Nepropusnost se obezbeđuje primenom specijalnih zaptivki od sintetičke EPDM gume. ",
@@ -273,74 +338,145 @@ export const ProductData = [
         "U ponudi su vrata dostupna sa niskim pragom ili bez njega.",
         "Okovi visoke klase koji se primenjuju u aluminijumskim vratima pružaju odličnu zaštitu od provale.",
       ],
-      thirdOption: ["MB-70HI", "IMB-86SI", "MB-70", "MB-78EI Fire-Doors"],
+      thirdOption: {
+        opis: "Mogućnost izbora iz širokog spektra RAL boja.",
+      },
     },
-    material: [
-      "Moderan i stabilan aluminijumski profil omogućava postizanje efekta istog nivoa rama i krila spolja nakon zatvaranja vrata. Mogućnost prilagođavanja enterijera kao rezultat širokog spektra RAL boja. Sistem hladnog profila je kompatibilan sa ostalim aluminijumskim sistemima iz Danito ponude.",
-      "Neiscrpan asortiman oblika i kombinacija vrata – individualna i po meri – ispuniće i najviše zahteve. Jednokrilna, dvokrilna ili vrata sa ispunom od stakla ili ukrasnih panela, sa jednim ili više elemenata sa strane.",
-      "Okovi visoke klase koji se primenjuju u aluminijumskim vratima pružaju odličnu zaštitu od provale.",
-    ],
+    material: {
+      first:
+        "Moderan i stabilan aluminijumski profil omogućava postizanje efekta istog nivoa rama i krila spolja nakon zatvaranja vrata. Mogućnost prilagođavanja enterijera kao rezultat širokog spektra RAL boja. Sistem hladnog profila je kompatibilan sa ostalim aluminijumskim sistemima iz Danito ponude.",
+      second:
+        "Neiscrpan asortiman oblika i kombinacija vrata – individualna i po meri – ispuniće i najviše zahteve. Jednokrilna, dvokrilna ili vrata sa ispunom od stakla ili ukrasnih panela, sa jednim ili više elemenata sa strane.",
+      third: "Okovi visoke klase koji se primenjuju u aluminijumskim vratima pružaju odličnu zaštitu od provale.",
+    },
     profiles: true,
   },
   {
     name: PRODUCTS.allProducts.vrataProfilTermo,
+    nameHeader: PRODUCTS.allProducts.vrataProfilTermo,
     imgCover: IMAGE.vrataProfilTermoCoverImg,
     imgVideo: "https://www.drutex.eu/media/_upload/produkty/mb-70/video-drzwi/drzwi_mb_70_.mp4",
+    optionHeaders: {
+      first: "OPIS",
+      second: "PREDNOSTI",
+      third: "DEKORI",
+    },
     options: {
-      firstOption:
+      firstOption: [
         "Vrata u sistemu profila sa termoprekidom odlikuju se višim stepenom toplotne izolacije usled primene specijalnih izolacionih umetaka i termičkih prekida, kao i zaptivki od EPDM dvokomponentne sintetičke gume: čvrste i ćelijske.",
+      ],
       secondOption: [
         "Vrata napravljena u ovom sistemu su odlično rešenje i za energetski efikasnu zgradu. Mogućnost izbora iz širokog spektra RAL boja.",
         "Okovi visoke klase koji se primenjuju u aluminijumskim vratima pružaju odličnu zaštitu od provale.",
       ],
-      thirdOption: ["MB-70HI", "MB-86SI", "MB-45", "MB-78EI Fire-Doors"],
+      thirdOption: {
+        opis: "Mogućnost izbora iz širokog spektra RAL boja.",
+      },
     },
-    material: [
-      "Vrata u sistemu profila sa termoprekidom odlikuju se višim stepenom toplotne izolacije usled primene specijalnih izolacionih umetaka i termičkih prekida, kao i zaptivki od EPDM dvokomponentne sintetičke gume: čvrste i ćelijske. Vrata napravljena u ovom sistemu su odlično rešenje i za energetski efikasnu zgradu. Mogućnost izbora iz širokog spektra RAL boja. Okovi visoke klase koji se primenjuju u aluminijumskim vratima pružaju odličnu zaštitu od provale.",
-      "Neiscrpan asortiman oblika i kombinacija vrata – individualna i po meri – ispuniće i najviše zahteve. Jednokrilna, dvokrilna ili vrata sa ispunom od stakla ili ukrasnih panela, sa jednim ili više elemenata sa strane.",
-      "Okovi visoke klase koji se primenjuju u aluminijumskim vratima pružaju odličnu zaštitu od provale.",
-    ],
+    material: {
+      first:
+        "Vrata u sistemu profila sa termoprekidom odlikuju se višim stepenom toplotne izolacije usled primene specijalnih izolacionih umetaka i termičkih prekida, kao i zaptivki od EPDM dvokomponentne sintetičke gume: čvrste i ćelijske. Vrata napravljena u ovom sistemu su odlično rešenje i za energetski efikasnu zgradu. Mogućnost izbora iz širokog spektra RAL boja. Okovi visoke klase koji se primenjuju u aluminijumskim vratima pružaju odličnu zaštitu od provale.",
+      second:
+        "Neiscrpan asortiman oblika i kombinacija vrata – individualna i po meri – ispuniće i najviše zahteve. Jednokrilna, dvokrilna ili vrata sa ispunom od stakla ili ukrasnih panela, sa jednim ili više elemenata sa strane.",
+      third: "Okovi visoke klase koji se primenjuju u aluminijumskim vratima pružaju odličnu zaštitu od provale.",
+    },
     profiles: true,
   },
   {
     name: PRODUCTS.allProducts.vrataSkrivenoKrilo,
+    nameHeader: PRODUCTS.allProducts.vrataSkrivenoKrilo,
     imgCover: IMAGE.vrataSkrivenoKriloCoverImg,
     imgVideo: "https://www.drutex.eu/media/_upload/produkty/mb-70hi/video-drzwi/drzwi_mb_70_hi.webm",
+    optionHeaders: {
+      first: "OPIS",
+      second: "PREDNOSTI",
+      third: "DEKORI",
+    },
     options: {
-      firstOption:
-        "Vrata sa skrivenim krilom mogu se koristiti i na pojedinačnim zgradama i na aluminijumskim fasadama. Povećana toplotna izolacija postignuta je primenom dodatne komore u termičkom prekidu. Veoma dobar koeficijent propusnosti toplote (U-vrednost) zahvaljujući primeni termičkih prekida.",
+      firstOption: [
+        "Vrata sa skrivenim krilom mogu se koristiti i na pojedinačnim zgradama i na aluminijumskim fasadama.",
+        "Povećana toplotna izolacija postignuta je primenom dodatne komore u termičkom prekidu.",
+        "Veoma dobar koeficijent propusnosti toplote (U-vrednost) zahvaljujući primeni termičkih prekida.",
+        "Veliki izbor boja u standardnoj paleti boja, omogućava da se zadovolje i najzahtevniji klijenti",
+      ],
       secondOption: [
         "Oblik profila omogućava dobijanje tankih i izdržljivih konstrukcija prozora i vrata.",
         "Nepropusnost je obezbeđena primenom specijalnih zaptivki od dvokomponentne EPDM sintetičke gume: čvrste i celularne, što garantuje otpornost na starenje tokom godina eksploatacije kao i odličnu toplotnu izolaciju.",
       ],
-      thirdOption: ["MB-86SI", "MB-70", "MB-45", "MB-78EI Fire-Doors"],
+      thirdOption: {
+        opis: "Mogućnost izbora iz širokog spektra RAL boja. Širok raspon debljina punjenja garantuje mogućnost primene bilo kojih standardnih i nestandardnih stakala i ukrasnih panela.",
+      },
     },
-    material: [
-      "Vrata sa skrivenim krilom mogu se koristiti i na pojedinačnim zgradama i na aluminijumskim fasadama. Povećana toplotna izolacija postignuta je primenom dodatne komore u termičkom prekidu. Veoma dobar koeficijent propusnosti toplote (U-vrednost) zahvaljujući primeni termičkih prekida. Veliki izbor boja u standardnoj paleti boja, omogućava da se zadovolje i najzahtevniji klijenti",
-      "Mogućnost izbora iz širokog spektra RAL boja. Širok raspon debljina punjenja garantuje mogućnost primene bilo kojih standardnih i nestandardnih stakala i ukrasnih panela.",
-      "Okovi visoke klase koji se primenjuju u aluminijumskim vratima pružaju odličnu zaštitu od provale.",
-    ],
+    material: {
+      first:
+        "Vrata sa skrivenim krilom mogu se koristiti i na pojedinačnim zgradama i na aluminijumskim fasadama. Povećana toplotna izolacija postignuta je primenom dodatne komore u termičkom prekidu. Veoma dobar koeficijent propusnosti toplote (U-vrednost) zahvaljujući primeni termičkih prekida. Veliki izbor boja u standardnoj paleti boja, omogućava da se zadovolje i najzahtevniji klijenti",
+      second:
+        "Mogućnost izbora iz širokog spektra RAL boja. Širok raspon debljina punjenja garantuje mogućnost primene bilo kojih standardnih i nestandardnih stakala i ukrasnih panela.",
+      third: "Okovi visoke klase koji se primenjuju u aluminijumskim vratima pružaju odličnu zaštitu od provale.",
+    },
     profiles: true,
   },
   {
     name: PRODUCTS.allProducts.celicnaVrata,
+    nameHeader: PRODUCTS.allProducts.celicnaVrata,
+    optionHeaders: {
+      first: "OPIS",
+      second: "PREDNOSTI",
+      third: "DEKORI",
+    },
     imgCover: IMAGE.vrataSkrivenoKriloCoverImg,
     imgVideo: "https://www.drutex.eu/media/_upload/produkty/drzwi-softline/video/drzwi_softline_68.mp4",
     options: {
-      firstOption:
-        "Štok je izradjen od  čeličnih kutija 60x40/2.0mm. Krilo izradjeno od ramovske konstrukcije (kutija 50x30), spolja je ugradjen čelični lim 1,5mm sa vertikalnim ojačanjima  od L profila. Ukupna debljina krila je 72mm. Krilo je okačeno na štok preko dve šarke Ø22 od punog metala sa aksijalnim ležajem. Izolacija je tvrdo presovana kamena vuna debljine 5cm, pruža optimalnu zvučnu i termičku zaštitu koja nosi vatrootpornu oznaku A1. Brava – Doro, sigurnosna sa Italijanskim cilindrom ISEO. Uz cilindar isporučuju se pet ključeva. Cilindar pokreće bravu koja zaključava u 4 tačke bočno, 2 tačke (gore/dole) + 3 šipa koja se nalaze na strani šarki i koja su fiksna. Okov – Hoppe (Nemačka); kvaka/kugla, nikl, špijunka širokougaona 180º. Završna obrada – krilo obostrano obloženo MDFom po 8mm u dekoru po izboru (u ponudi 7 dezena). Štok,prag i svi vidni metalni delovi plastificirani u boju po izboru (boja u prahu nanosi se na metal elektrostatičkim putem, a zatim se vrši pečenje na temperature polimerizacije).",
+      firstOption: [
+        "Štok je izradjen od  čeličnih kutija 60x40/2.0mm.",
+        "Krilo izradjeno od ramovske konstrukcije (kutija 50x30), spolja je ugradjen čelični lim 1,5mm sa vertikalnim ojačanjima od L profila.",
+        "Ukupna debljina krila je 72mm.",
+        "Krilo je okačeno na štok preko dve šarke Ø22 od punog metala sa aksijalnim ležajem.",
+        "Izolacija je tvrdo presovana kamena vuna debljine 5cm, pruža optimalnu zvučnu i termičku zaštitu koja nosi vatrootpornu oznaku A1.",
+        "Brava – Doro, sigurnosna sa Italijanskim cilindrom ISEO. Uz cilindar isporučuju se pet ključeva. Cilindar pokreće bravu koja zaključava u 4 tačke bočno, 2 tačke (gore/dole) + 3 šipa koja se nalaze na strani šarki i koja su fiksna.",
+        "Okov – Hoppe (Nemačka); kvaka/kugla, nikl, špijunka širokougaona 180º.",
+        "Završna obrada – krilo obostrano obloženo MDFom po 8mm u dekoru po izboru (u ponudi 7 dezena).",
+        "Štok,prag i svi vidni metalni delovi plastificirani u boju po izboru (boja u prahu nanosi se na metal elektrostatičkim putem, a zatim se vrši pečenje na temperature polimerizacije).",
+      ],
       secondOption: [
         "Sigurnosna vrata domaće proizvodnje.",
         "Izrađuje se isključivo po zahtevanim merama.",
         "Dvostruko dihtovanje i odlična termo i zvučna izolovanost od 40dB. Garancija na sigurnosna vrata – 24 meseca.",
       ],
-      thirdOption: ["IGLO Energy", "IGLO Energy Classic", "IGLO 5", "IGLO 5 Classic"],
+      thirdOption: {
+        opis: "Štok,prag i svi vidni metalni delovi plastificirani u boju po izboru (boja u prahu nanosi se na metal elektrostatičkim putem, a zatim se vrši pečenje na temperature polimerizacije). Završna obrada – krilo obostrano obloženo MDFom po 8mm u dekoru po izboru:",
+
+        boje: [
+          { text: "Bela kora", image: "https://www.drutex.eu/media/_upload/kolory/okleiny/bialy-fx.jpg" },
+          {
+            text: "Bela sa texturom drveta",
+            image: "https://www.drutex.eu/media/_upload/kolory/okleiny/bialy-fx.jpg",
+          },
+          {
+            text: "Crna",
+            image: "https://www.drutex.eu/media/_upload/kolory/okleiny/winchester_kk.jpg",
+          },
+          { text: "Wenge", image: "https://www.drutex.eu/media/_upload/kolory/okleiny/szary-kwarcytowy.jpg" },
+          { text: "Hrast natur", image: "https://www.drutex.eu/media/_upload/kolory/okleiny/szary-kwarcytowy.jpg" },
+          { text: "Hrast rover", image: "https://www.drutex.eu/media/_upload/kolory/okleiny/szary-kwarcytowy.jpg" },
+          {
+            text: "Hrast rover sivi",
+            image: "https://www.drutex.eu/media/_upload/kolory/okleiny/szary-kwarcytowy.jpg",
+          },
+          { text: "Rover toskana", image: "https://www.drutex.eu/media/_upload/kolory/okleiny/szary-kwarcytowy.jpg" },
+          { text: "Kamen", image: "https://www.drutex.eu/media/_upload/kolory/okleiny/szary-kwarcytowy.jpg" },
+          { text: "Tresnja", image: "https://www.drutex.eu/media/_upload/kolory/okleiny/szary-kwarcytowy.jpg" },
+        ],
+      },
     },
-    material: [
-      "Štok je izradjen od  čeličnih kutija 60x40/2.0mm. Krilo izradjeno od ramovske konstrukcije (kutija 50x30), spolja je ugradjen čelični lim 1,5mm sa vertikalnim ojačanjima  od L profila. Ukupna debljina krila je 72mm .",
-      "Završna obrada – krilo obostrano obloženo MDFom po 8mm u dekoru po izboru (u ponudi 7 dezena). Štok,prag i svi vidni metalni delovi plastificirani u boju po izboru (boja u prahu nanosi se na metal elektrostatičkim putem, a zatim se vrši pečenje na temperature polimerizacije).",
-      "Brava – Doro, sigurnosna sa Italijanskim cilindrom ISEO. Uz cilindar isporučuju se pet ključeva. Cilindar pokreće bravu koja zaključava u 4 tačke bočno, 2 tačke (gore/dole) + 3 šipa koja se nalaze na strani šarki i koja su fiksna. Okov – Hoppe (Nemačka); kvaka/kugla, nikl, špijunka širokougaona 180º",
-    ],
+    material: {
+      first:
+        "5 – komorni profil sa osnovnom dubinom ugradnje od 70 mm. U standarnoj varijanti usklađeno za dvostruko termo-staklo debljine 24 mm. Debljina zida profila 3mm, u skladu sa najvišim RAL standardom kvaliteta (prema DIN EN 12608, klasa A).",
+      second:
+        "Jednokomorni staklopaket sa koeficijentom toplotne propusnosti Ug =1,0 V/(m2K) prema PN-EN674 u standardu. Mogućnost nanošenja stakla sa pojačanom zvučnom izolacijom, kaljeno, sigurnosno, protivprovalno, ukrasno, solarno zaštitno.",
+      third:
+        "Koristimo najkvalitetniji nemacki okov renomiranog proizvođača ROTO, koji osigurava kvalitetno zatvaranje i poseduje veći stepen protivprovalne zaštite.",
+    },
     profiles: true,
   },
   {
@@ -348,17 +484,13 @@ export const ProductData = [
     imgCover: IMAGE.pvcRoletne1Img,
     imgVideo: "https://www.drutex.eu/media/_upload/produkty/rolety-adaptacyjne/video/roleta-pologragla_WmBlhir.mp4",
     options: {
-      firstOption: "Perfect solutions for the whole year – Energy efficiency, safety, privacy.",
-      secondOption: [
-        "Roller shutters installed on the window or in the wall, both during the house construction and in already existing buildings.",
-        "They provide a perfect protection against noise and significantly improve the quality of life in the flat.",
-        "They decrease heat energy needs in the building, reducing heating and air-conditioning costs in the building.",
-        "Through application of a mosquito net they give a perfect protection against insects, mosquitos etc.",
-        "They increase safety level as an extra anti-burglary protection.",
-        "Manual and automatic control possibilty.",
-        "Wide colour range allows to match to the colours of the building, windows etc.",
+      firstOption: [
+        "Napravljene su od termo aluminijumske kutije dimenzija: 14.7, 17.2 i 19.5cm sa aluminijumskim zastorom, aluminijumskom završnom lamelom u koju je uvucena guma balonka(MO60) i aluminijumskim vodjicama sa četkicama.",
       ],
-      thirdOption: ["MB-70HI", "MB-70", "MB-45", "MB-78EI Fire-Doors"],
+      secondOption: ["tralala.", "tralala.", "tralala.", "tralala.", "tralala.", "tralala.", "tralala."],
+      thirdOption: {
+        opis: "Mogućnost izbora iz širokog spektra RAL boja.",
+      },
     },
     material: [
       "The system profiles have a three-chamber structure with the structural depth of the door 77  mm with a thermal break made of polyamide, that is reinforced with fiberglass. ",

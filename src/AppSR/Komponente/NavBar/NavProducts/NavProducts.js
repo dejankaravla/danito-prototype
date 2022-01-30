@@ -56,7 +56,7 @@ function NavProducts({ navRightOpen, setPathTo, setPageName, setData }) {
     }
     // Roletne
     if (selected === PRODUCTS.roletne) {
-      setButtons([PRODUCTS.pvcRoletne, PRODUCTS.aluminiumRoletne]);
+      setButtons([PRODUCTS.pvcRoletne, PRODUCTS.aluminiumRoletne, PRODUCTS.solomaticVenecijaneri]);
       setImg([IMAGES.roletnePVCImg, IMAGES.roletneAluminiumImg]);
       setImgClass("ButtonNavLeftTopImg");
     }
@@ -127,6 +127,10 @@ function NavProducts({ navRightOpen, setPathTo, setPageName, setData }) {
         PRODUCTS.allProducts.unutrasnjeRoletne,
         PRODUCTS.allProducts.podvasadneRoletne,
       ]);
+      setImg("");
+    }
+    if (selected === PRODUCTS.solomaticVenecijaneri) {
+      setButtons([PRODUCTS.allProducts.spoljniVenecijaneri, PRODUCTS.allProducts.podfasadniVenecijaneri]);
       setImg("");
     }
 
