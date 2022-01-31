@@ -13,7 +13,6 @@ function NavFirst() {
             <p>construction</p>
           </div>
         </a>
-        <a href="/EN">EN</a>
       </div>
     </div>
   );

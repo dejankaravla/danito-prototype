@@ -3,13 +3,10 @@ import "../../../Styles/Proizvodi/Proizvodi.css";
 
 import LineAnimation from "../../Komponente/LineAnimation/LineAnimation";
 import Options from "./Options";
-import IMAGESprofile from "../../../ImgProfile";
 
 import ProfileIcon from "../../../Img/Icons/Profile.png";
 import GlassIcon from "../../../Img/Icons/Glass.png";
 import FittingsIcon from "../../../Img/Icons/Fittings.png";
-
-const icons = [ProfileIcon, GlassIcon, FittingsIcon];
 
 function ProductPage({ scroll, pageName, data }) {
   useEffect(() => {
@@ -33,51 +30,40 @@ function ProductPage({ scroll, pageName, data }) {
         </div>
         <LineAnimation header1={"Karakteristike"} scroll={scroll} scrollY={1000} />
         <div className="ProductPage__materialContainer">
-          {/* {data.material.map((data, i) => {
-            return (
-              <div className="ProductPage__material">
-                <img src={icons[i]} alt="profile icon" />
-                <div className="ProductPage__Line"></div>
-                <p>{data}</p>
-              </div>
-            );
-          })} */}
           <div className="ProductPage__material">
-            <img src={icons[0]} alt="profile icon" />
+            <img src={ProfileIcon} alt="profile icon" />
             <div className="ProductPage__Line"></div>
             <p>{data.material.first}</p>
           </div>
           <div className="ProductPage__material">
-            <img src={icons[1]} alt="profile icon" />
+            <img src={GlassIcon} alt="profile icon" />
             <div className="ProductPage__Line"></div>
             <p>{data.material.second}</p>
           </div>
           <div className="ProductPage__material">
-            <img src={icons[2]} alt="profile icon" />
+            <img src={FittingsIcon} alt="profile icon" />
             <div className="ProductPage__Line"></div>
             <p>{data.material.third}</p>
           </div>
         </div>
-        {data.profiles ? <LineAnimation header1={"Paneli"} scroll={scroll} scrollY={1600} /> : null}
-        {data.profiles ? (
+        {data.panel ? <LineAnimation header1={"Paneli"} scroll={scroll} scrollY={1600} /> : null}
+        {data.panel ? (
           <div className="ProductPage__profiles">
-            {IMAGESprofile.map((data) => {
+            {data.panel.map((panel) => {
               return (
-                <div className="ProductPage__profile">
-                  <img src={data} alt="img profile" />
+                <div className="ProductPage__panelContainer">
                   <div className="ProductPage__profileInfo">
-                    <h3>Profile Name: PROFIL</h3>
-                    <p>
-                      Profile info: Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
-                      piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,
-                      a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin
-                      words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in
-                      classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32
-                      and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written
-                      in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance.
-                      The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section
-                      1.10.32.
-                    </p>
+                    <h2>{panel.name}</h2>
+                    <p>{panel.text}</p>
+                  </div>
+                  <div className="ProductPage__profileImgContainer">
+                    {panel.image.map((img) => {
+                      return (
+                        <div className="ProductPage__profile">
+                          <img src={img} alt="img profile" />
+                        </div>
+                      );
+                    })}
                   </div>
                 </div>
               );

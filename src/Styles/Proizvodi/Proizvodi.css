@@ -42,28 +42,36 @@
   justify-content: center;
   align-items: center;
   padding: 40px 0;
-  background-color: #272727;
-  gap: 20px;
+  gap: 50px;
 }
-.ProductPage__profiles img {
-  width: 150px;
-}
-.ProductPage__profiles .ProductPage__profile {
-  background-color: #ffff;
-  width: 75%;
-  margin: auto;
+.ProductPage__profiles .ProductPage__panelContainer {
   display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 80%;
+  margin: auto;
+}
+.ProductPage__profiles .ProductPage__panelContainer .ProductPage__profileInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding: 40px;
   gap: 20px;
-  border-radius: 40px;
+}
+.ProductPage__profiles .ProductPage__panelContainer .ProductPage__profileImgContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.ProductPage__profiles .ProductPage__panelContainer .ProductPage__profileImgContainer img {
+  width: 150px;
+  transition: 0.5s ease-in-out;
+  border: 1px solid black;
+}
+.ProductPage__profiles .ProductPage__panelContainer .ProductPage__profileImgContainer img:hover {
   box-shadow: 5px 5px 15px 5px #000000;
-}
-.ProductPage__profiles .ProductPage__profile h3 {
-  border-bottom: 2px solid yellow;
-  display: inline;
-  padding-bottom: 5px;
-}
-.ProductPage__profiles .ProductPage__profile p {
-  padding-top: 20px;
+  transform: scale(1.05);
+  transition: 0.5s ease-in-out;
 }/*# sourceMappingURL=Proizvodi.css.map */

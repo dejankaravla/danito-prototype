@@ -57,7 +57,7 @@ function NavProducts({ navRightOpen, setPathTo, setPageName, setData }) {
     // Roletne
     if (selected === PRODUCTS.roletne) {
       setButtons([PRODUCTS.pvcRoletne, PRODUCTS.aluminiumRoletne, PRODUCTS.solomaticVenecijaneri]);
-      setImg([IMAGES.roletnePVCImg, IMAGES.roletneAluminiumImg]);
+      setImg([IMAGES.roletnePVCImg, IMAGES.roletneAluminiumImg, IMAGES.solomaticVenecijaneri]);
       setImgClass("ButtonNavLeftTopImg");
     }
     // Fasade
@@ -118,7 +118,7 @@ function NavProducts({ navRightOpen, setPathTo, setPageName, setData }) {
     }
     // Roletne
     if (selected === PRODUCTS.pvcRoletne) {
-      setButtons(["PVC ROLETNE 1", "PVC ROLETNE 2"]);
+      setButtons([PRODUCTS.allProducts.pvcRoletne1, PRODUCTS.allProducts.pvcRoletne2]);
       setImg("");
     }
     if (selected === PRODUCTS.aluminiumRoletne) {

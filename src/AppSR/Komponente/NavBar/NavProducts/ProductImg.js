@@ -15,8 +15,9 @@ const IMAGES = {
   doorAluminiumImg: require("../../../../Img/ImgProduct/doorALUMINIUM.png").default,
   doorSafeImg: require("../../../../Img/ImgProduct/doorWOOD.png").default,
 
-  roletnePVCImg: require("../../../../Img/ImgProduct/roletneAluminium.png").default,
-  roletneAluminiumImg: require("../../../../Img/ImgProduct/roletnePvc.png").default,
+  roletneAluminiumImg: require("../../../../Img/ImgProduct/roletneAluminium.png").default,
+  roletnePVCImg: require("../../../../Img/ImgProduct/roletnePvc.png").default,
+  solomaticVenecijaneri: require("../../../../Img/ImgProduct/solomaticVenecijaneri.png").default,
 
   fasadePVC: require("../../../../Img/ImgProduct/fasadaPVC.png").default,
   fasadeALUMINIUM: require("../../../../Img/ImgProduct/fasadaAluminium.png").default,

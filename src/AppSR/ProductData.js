@@ -1,4 +1,5 @@
 import IMAGE from "../ProductImg";
+import PANEL from "../ImgPanels";
 import PRODUCTS from "./Komponente/NavBar/NavProducts/ProductNames";
 import veka70Video from "../Video/VEKA70.mp4";
 import veka82Video from "../Video/VEKA82.mp4";
@@ -265,7 +266,6 @@ export const ProductData = [
       third:
         "Koristimo najkvalitetniji nemacki okov renomiranog proizvođača ROTO, koji osigurava kvalitetno zatvaranje i poseduje veći stepen protivprovalne zaštite.",
     },
-    profiles: true,
   },
   {
     name: PRODUCTS.allProducts.pregradnaVrata,
@@ -313,7 +313,6 @@ export const ProductData = [
       third:
         "Koristimo najkvalitetniji nemacki okov renomiranog proizvođača ROTO, koji osigurava kvalitetno zatvaranje i poseduje veći stepen protivprovalne zaštite.",
     },
-    profiles: true,
   },
   {
     name: PRODUCTS.allProducts.vrataHladanProfil,
@@ -349,7 +348,23 @@ export const ProductData = [
         "Neiscrpan asortiman oblika i kombinacija vrata – individualna i po meri – ispuniće i najviše zahteve. Jednokrilna, dvokrilna ili vrata sa ispunom od stakla ili ukrasnih panela, sa jednim ili više elemenata sa strane.",
       third: "Okovi visoke klase koji se primenjuju u aluminijumskim vratima pružaju odličnu zaštitu od provale.",
     },
-    profiles: true,
+    panel: [
+      {
+        name: "Inox",
+        image: PANEL.inox,
+        text: "Aluminijumski paneli sa INOX aplikacijama.",
+      },
+      {
+        name: "Elegant",
+        image: PANEL.elegant,
+        text: "Mogu biti sastavljeni od dve aluminijumske table sa različitim bojama, aplikacije mogu biti od aluminijuma ili inoxa. Najčešće staklo koje se ugradjuje je flot + saten.",
+      },
+      {
+        name: "Aluminium",
+        image: PANEL.aluminium,
+        text: "Aluminijumski paneli sa kornizama.",
+      },
+    ],
   },
   {
     name: PRODUCTS.allProducts.vrataProfilTermo,
@@ -380,8 +395,25 @@ export const ProductData = [
         "Neiscrpan asortiman oblika i kombinacija vrata – individualna i po meri – ispuniće i najviše zahteve. Jednokrilna, dvokrilna ili vrata sa ispunom od stakla ili ukrasnih panela, sa jednim ili više elemenata sa strane.",
       third: "Okovi visoke klase koji se primenjuju u aluminijumskim vratima pružaju odličnu zaštitu od provale.",
     },
-    profiles: true,
+    panel: [
+      {
+        name: "Inox",
+        image: PANEL.inox,
+        text: "Aluminijumski paneli sa INOX aplikacijama.",
+      },
+      {
+        name: "Elegant",
+        image: PANEL.elegant,
+        text: "Mogu biti sastavljeni od dve aluminijumske table sa različitim bojama, aplikacije mogu biti od aluminijuma ili inoxa. Najčešće staklo koje se ugradjuje je flot + saten.",
+      },
+      {
+        name: "Aluminium",
+        image: PANEL.aluminium,
+        text: "Aluminijumski paneli sa kornizama.",
+      },
+    ],
   },
+
   {
     name: PRODUCTS.allProducts.vrataSkrivenoKrilo,
     nameHeader: PRODUCTS.allProducts.vrataSkrivenoKrilo,
@@ -414,7 +446,14 @@ export const ProductData = [
         "Mogućnost izbora iz širokog spektra RAL boja. Širok raspon debljina punjenja garantuje mogućnost primene bilo kojih standardnih i nestandardnih stakala i ukrasnih panela.",
       third: "Okovi visoke klase koji se primenjuju u aluminijumskim vratima pružaju odličnu zaštitu od provale.",
     },
-    profiles: true,
+
+    panel: [
+      {
+        name: "Premium",
+        image: PANEL.premium,
+        text: "Paneli iz PREMIUM kolekcije su pogodni za izradu vrata sa skrivenim krilom.Prilikom izrade, odnosno u proizvodnji, aluminijumski lim ukrasnog panela se lepi za krilo i time se dobija efekat skrivenog krila. Efekat skrivenog krila se, u stvari, odnosi na ravnomernu povrsinu ploce ukrasnog panela koja je integrisana na celokupnoj povrsini krila(ne vide se uglovi profila) i time se pospesuje vizuelni efekat.",
+      },
+    ],
   },
   {
     name: PRODUCTS.allProducts.celicnaVrata,
@@ -477,11 +516,16 @@ export const ProductData = [
       third:
         "Koristimo najkvalitetniji nemacki okov renomiranog proizvođača ROTO, koji osigurava kvalitetno zatvaranje i poseduje veći stepen protivprovalne zaštite.",
     },
-    profiles: true,
   },
   {
     name: PRODUCTS.allProducts.pvcRoletne1,
+    nameHeader: PRODUCTS.allProducts.pvcRoletne1,
     imgCover: IMAGE.pvcRoletne1Img,
+    optionHeaders: {
+      first: "OPIS",
+      second: "PREDNOSTI",
+      third: "DEKORI",
+    },
     imgVideo: "https://www.drutex.eu/media/_upload/produkty/rolety-adaptacyjne/video/roleta-pologragla_WmBlhir.mp4",
     options: {
       firstOption: [
@@ -492,11 +536,11 @@ export const ProductData = [
         opis: "Mogućnost izbora iz širokog spektra RAL boja.",
       },
     },
-    material: [
-      "The system profiles have a three-chamber structure with the structural depth of the door 77  mm with a thermal break made of polyamide, that is reinforced with fiberglass. ",
-      "Glass packages up to 55mm; in standard the one-chamber glass package with heat transfer coefficient Ug = 1,0 W/(m2K) according to the PN-EN674 norm; the possibility to apply a three-glass package with Ug= 0,5 W/(m2K) coefficient or a four-glass package filled with krypton and Ug=0,3 W/(m2K);   the possibility to apply glasses with increased acoustic insulation, tempered, safety, anti-burglary, ornament or solar protective.",
-      "3-point automatic espagnolette MACO; hinges made of aluminum which stands out with great durability. Optionally lock with one point latch bolt.",
-    ],
+    material: {
+      first: "tralala.",
+      second: "tralala.",
+      third: "tralala.",
+    },
   },
   {
     name: PRODUCTS.allProducts.pvcRoletne2,
@@ -719,30 +763,36 @@ export const ProductData = [
   },
   {
     name: PRODUCTS.allProducts.pvcVekaSlide,
+    nameHeader: "PRODUCTS.allProducts.pvcVekaSlide",
     imgCover: IMAGE.pvcVekaSlide,
     imgVideo: "https://www.drutex.eu/media/_upload/produkty/iglo_pks/video/iglo_uchylno_przesowne.mp4",
-    options: {
-      firstOption:
-        "Perfect solution, that ensures big access to daylight both in small and big rooms, maintaining great thermal insulation at the same time.",
-      secondOption: [
-        "Great solution for small rooms. It does not take up usable space while opening.",
-        "Big glazing surface ensures more daylight in the room.",
-        "Energy efficiency, thanks to the optimal structure of the profile, specially designed EPDM sealing system and glass packages with low thermal transmittance coefficients. ",
-        "Modern design, ensured by the slim and round-shaped profiles.",
-        "High safety level guaranteed by  four anti-burglary bolts in standard. ",
-        "Wide range of colour range, that enables numerous interior design styles.",
-        "Very good parameters of sound insulation ensure acoustic comfort even in places with intense traffic.",
-        "Great parameters of air permeability and water resistance as a result of triple sealing.",
-        "Thanks to optimal reinforcement the system offers great reistance to the wind load.",
-        "The possibility to execute in the so-called thin wielding technology (V-Perfect), that allows to connect the profiles perfectly and it guarantees better clamp and wielding control, and, as a result, very good parameters in the resistance tests of the corners (Iglo Energy Classic).",
-      ],
-      thirdOption: ["IGLO LIGHT PSK", "IGLO5 PSK", "MB-70/ MB-70HI PSK", "DUOLINE PSK", "Softline PSK"],
+    optionHeaders: {
+      first: "OPIS",
+      second: "PREDNOSTI",
+      third: "DEKORI",
     },
-    material: [
-      "7-chamber frame and sash profiles are made exclusively of a prime material in A-class with installation depth of 82 mm.",
-      "Glass package of 4/18/4/18/4 with thermal transmittance  Ug = 0,5 W/(m2K) in standard. The possibility to apply four-glass package filled with krypton and Ug = 0,3 W/(m2K); maximal glazing thickness up to 48 mm. The possibility to apply the glasses with enhanced sound insulation, tempered, safety, anti-burglary, ornament, or solar protective. ",
-      "Maco Multi Matic KS fittings. There is a possibility to apply automatic fittings, that support tilt closing. Four anti-burlgary bolts.",
-    ],
+    options: {
+      firstOption: [
+        "Izvrsna toplotna izolacija Uf = 1,6 W/(m²K).",
+        "Debljina zastakljivanja i do 42 mm omogućava upotrebu trostrukog izolacionog stakla, a time se postiže optimalna vrednost Ud = 0,8 W/(m²K).",
+      ],
+      secondOption: [
+        "Dupli prekid termičkog mosta u pragu garantuje vrhunsku toplotnu izolaciju, kao i prag 'bez barijere', skoro u nivou sa podom (50 mm visine).",
+        "Klasičan dizajn sa elegantno zaobljenim konturama.",
+        "Mogućnost oplemenjivanja površine aluminijumskim oblogama. ",
+      ],
+      thirdOption: {
+        opis: "Standardni dekori za pvc profile kao i mogućnost izbora iz širokog spektra RAL boja koid varijante sa Alu oblogama.",
+      },
+    },
+    material: {
+      first:
+        "Izvrsna toplotna izolacija Uf = 1,6 W/(m²K). Debljina zastakljivanja i do 42 mm omogućava upotrebu trostrukog izolacionog stakla, a time se postiže optimalna vrednost Ud = 0,8 W/(m²K)",
+      second:
+        "Dostupni stakleni paketi do 42 mm. Jednokomorni staklopaket sa toplotnom propusnošću - Ug =1,0 V/(m2K) prema normi PN-EN674 u standardu. Mogućnost primene trostaklopaketa sa koeficijentom Ug = 0,5 V/(m2K) mogućnost primene stakala sa pojačanom zvučnom izolacijom, kaljenih, sigurnosnih, protivprovalnih, ukrasnih ili solarnih zaštitnih. Čelični pocinkovani odstojni okvir u standardnoj verziji, opciono Svisspacer Ultimate dostupan u različitim bojama.",
+      third:
+        "Podizanje i klizanje, dve tačke zaključavanja i mikro ventilacioni vijak u standardu; mogućnost izrade krila težine 400 kg.",
+    },
   },
   {
     name: PRODUCTS.allProducts.aluUltraGlide,
