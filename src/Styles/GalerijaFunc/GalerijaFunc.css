@@ -24,6 +24,7 @@
 }
 .Images__selectedImgContainer img {
   border-radius: 6px;
+  cursor: pointer;
 }
 .Images__selectedImgContainer .svg__IconLeft,
 .Images__selectedImgContainer .svg__IconRight {

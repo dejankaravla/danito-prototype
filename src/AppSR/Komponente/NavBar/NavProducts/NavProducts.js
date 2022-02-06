@@ -189,7 +189,7 @@ function NavProducts({ navRightOpen, setPathTo, setPageName, setData }) {
     setData(...newData);
     Object.values(PRODUCTS.allProducts).forEach((product) => {
       if (product === value) {
-        setPathTo(`/${product}`);
+        setPathTo(`/${product.replace(/\s/g, "")}`);
         setPageName(value);
       } else return "";
     });
@@ -211,15 +211,14 @@ function NavProducts({ navRightOpen, setPathTo, setPageName, setData }) {
       )}
       <div className="Nav__productsContainer">
         {buttons.map((but, i) => {
+          console.log(i);
+          console.log(
+            `/${Object.values(PRODUCTS.allProducts).filter((product) => {
+              return product === but ? but : "";
+            })}`
+          );
           return (
-            <Link
-              to={`/${Object.values(PRODUCTS.allProducts).filter((product) => {
-                if (product === but) {
-                  return but;
-                } else return "";
-              })}`}
-              onClick={() => setProductPath(but, ProductData[i])}
-            >
+            <Link to={`/${but.replace(/\s/g, "")}`} onClick={() => setProductPath(but, ProductData[i])}>
               <ButtonNavLeft
                 imgClass={imgClass}
                 img={img[i]}
