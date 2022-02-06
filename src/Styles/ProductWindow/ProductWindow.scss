@@ -3,6 +3,10 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   width: 100%;
   position: relative;
+  button,
+  a {
+    letter-spacing: 2px;
+  }
 }
 
 .ProductWindow__product {
@@ -95,5 +99,6 @@
 }
 
 .ProductWindow__productHeaders p {
+  letter-spacing: 1px;
   font-size: 22px;
 }

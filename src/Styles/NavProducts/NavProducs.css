@@ -11,6 +11,9 @@
   transition: 0.5s;
   opacity: 0;
 }
+.Nav__productsHiden p {
+  letter-spacing: 1px;
+}
 
 .Nav__productsVisible {
   display: flex;
@@ -23,6 +26,9 @@
   gap: 20px;
   transition: 0.5s;
   width: 300px;
+}
+.Nav__productsVisible p {
+  letter-spacing: 1px;
 }
 
 .Nav__searchContainer {
@@ -55,13 +61,14 @@
   font-weight: 500;
 }
 
-.Nav__productsVisible svg {
+.Nav__productsSelectedSvg {
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.5s !important;
 }
 
-.Nav__productsVisible svg:hover {
+.Nav__productsSelectedSvg:hover {
   opacity: 0.5;
+  transition: 0.5s;
 }
 
 .Nav__productsContainer {

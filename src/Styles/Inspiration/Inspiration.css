@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   padding: 60px 0;
+  letter-spacing: 1px;
 }
 
 .Inspiration__containerImg {
@@ -31,11 +32,11 @@
 
 .Inspiration__containerImg div {
   background-color: black;
-  height: 1px;
-  width: 150px;
+  height: 2px;
+  width: 50px;
   margin: auto;
   transition: 0.5s;
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 .Inspiration__containerImg:hover > img {
@@ -48,7 +49,7 @@
 
 .Inspiration__containerImg:hover > div {
   width: 250px;
-  height: 3px;
+  height: 2px;
   background: #f7fb3f;
   opacity: 1;
 }/*# sourceMappingURL=Inspiration.css.map */

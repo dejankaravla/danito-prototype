@@ -17,7 +17,7 @@
 .Kontakt__infoContainer {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 30px;
 }
 
 .Kontakt__infoLogo {
@@ -39,7 +39,22 @@
 .Kontakt__phoneEmail {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 15px;
+
+  p,
+  a {
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #272727;
+    cursor: pointer;
+    border-bottom: 1px solid gold;
+    transition: 0.5s ease-in-out;
+  }
+  p:hover,
+  a:hover {
+    opacity: 0.5;
+    transition: 0.5s ease-in-out;
+  }
 }
 
 .Kontakt__radnoVremeConatiner {
@@ -47,6 +62,7 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
+  letter-spacing: 1px;
 }
 
 .Kontakt__radnoVremeDays {

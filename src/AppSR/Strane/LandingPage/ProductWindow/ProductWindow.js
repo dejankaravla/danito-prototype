@@ -5,7 +5,7 @@ import { ProductData } from "../../../ProductData";
 import PRODUCTS from "../../../Komponente/NavBar/NavProducts/ProductNames";
 import IMAGES from "../../../Komponente/NavBar/NavProducts/ProductImg";
 
-function ProductWindow({ setPageName, pathTo, setPathTo, setData, pageName }) {
+function ProductWindow({ setPageName, setPathTo, setData }) {
   const [windowsPvc, setWindowsPvc] = useState(true);
   const [windowsWoodAluminium, setWindowsWoodAluminium] = useState(true);
   const [windowsAluminium, setWindowsAluminium] = useState(true);

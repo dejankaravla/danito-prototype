@@ -194,11 +194,13 @@ function NavProducts({ navRightOpen, setPathTo, setPageName, setData }) {
       } else return "";
     });
   };
+
+  console.log(buttons);
   return (
     <div className={navRightOpen ? "Nav__productsVisible" : "Nav__productsHiden"}>
       {selected ? (
         <div className="Nav__productsSelected">
-          <ArrowBackIosIcon onClick={backHandler} sx={{ fontSize: 35 }} />
+          <ArrowBackIosIcon className="Nav__productsSelectedSvg" onClick={backHandler} sx={{ fontSize: 35 }} />
           <p>{selected}</p>
         </div>
       ) : (
@@ -211,12 +213,6 @@ function NavProducts({ navRightOpen, setPathTo, setPageName, setData }) {
       )}
       <div className="Nav__productsContainer">
         {buttons.map((but, i) => {
-          console.log(i);
-          console.log(
-            `/${Object.values(PRODUCTS.allProducts).filter((product) => {
-              return product === but ? but : "";
-            })}`
-          );
           return (
             <Link to={`/${but.replace(/\s/g, "")}`} onClick={() => setProductPath(but, ProductData[i])}>
               <ButtonNavLeft

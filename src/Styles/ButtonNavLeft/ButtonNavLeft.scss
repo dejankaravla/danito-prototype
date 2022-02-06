@@ -22,11 +22,16 @@
 
 .ButtonNavLeft__button {
   height: 50px;
+  letter-spacing: 1px;
   cursor: pointer;
   border: none;
+  border-bottom: 1px solid transparent;
   background-color: transparent;
+  transition: 0.3s ease-in-out;
+  border-bottom-width: 0;
 }
 
-.ButtonNavLeft:hover .ButtonNavLeftTopImg:hover {
+.ButtonNavLeft__button:hover {
   opacity: 0.5;
+  transition: 0.3s ease-in-out;
 }
