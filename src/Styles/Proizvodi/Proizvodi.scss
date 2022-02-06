@@ -5,6 +5,10 @@
 .ProductPage__videoOptionsContainer {
   display: flex;
   justify-content: space-around;
+  img {
+    width: 450px;
+    margin: 20px 0;
+  }
 }
 
 .ProductPage__optionsContainer {

@@ -48,9 +48,9 @@ function BasicTabs({ pageName, optionsContent }) {
     <Box sx={{ width: "100%" }}>
       <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-          <Tab label={optionsContent.optionHeaders.first} {...a11yProps(0)} />
-          <Tab label={optionsContent.optionHeaders.second} {...a11yProps(1)} />
-          <Tab label={optionsContent.optionHeaders.third} {...a11yProps(2)} />
+          <Tab label={optionsContent.optionHeaders?.first || "OPIS"} {...a11yProps(0)} />
+          <Tab label={optionsContent.optionHeaders?.second || "PREDNOSTI"} {...a11yProps(1)} />
+          <Tab label={optionsContent.optionHeaders?.third || "DEKORI"} {...a11yProps(2)} />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>

@@ -6,6 +6,10 @@
   display: flex;
   justify-content: space-around;
 }
+.ProductPage__videoOptionsContainer img {
+  width: 450px;
+  margin: 20px 0;
+}
 
 .ProductPage__optionsContainer {
   padding-top: 80px;

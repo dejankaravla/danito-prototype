@@ -22,7 +22,11 @@ function ProductPage({ scroll, pageName, data }) {
         <LineAnimation header1={pageName} scroll={scroll} scrollY={200} />
         <div className="ProductPage__videoOptionsContainer">
           <div className="ProductPage__videoContainer">
-            <video autoPlay src={data.imgVideo}></video>
+            {data.video || data.imgVideo ? (
+              <video autoPlay src={data.video || data.imgVideo}></video>
+            ) : (
+              <img src={data.videoImg} alt="" />
+            )}
           </div>
           <div className="ProductPage__optionsContainer">
             <Options optionsContent={data} pageName={pageName} />

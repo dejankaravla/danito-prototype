@@ -3,13 +3,11 @@ import "../../../Styles/Galerija/Galerija.css";
 import LineAnimation from "../../Komponente/LineAnimation/LineAnimation";
 import GalerijaFunc from "./GalerijaFunc";
 import ImgObjekti from "../../../ImgObjekti";
-import ImgCover from "../../../Img/ImgProduct/ImgPageProduct/DoorImg1.jpg";
 
 function Galerija({ scroll }) {
   return (
     <div className="Galerija">
       <div className="Galerija__container">
-        {/* <img src={ImgCover} alt="some img" /> */}
         <LineAnimation header1={"Galerija"} scroll={scroll} scrollY={400} />
         <div className="Galerija__objekti">
           <div className="Galerija__objekat">

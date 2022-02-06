@@ -7,12 +7,18 @@ import CompanyPresentation from "./CompanyPresentation/CompanyPresentation";
 import Tips from "./Tips/Tips";
 import Footer from "./Footer/Footer";
 
-function LandingPage({ scroll, setTipsData, setPathToTipsPage }) {
+function LandingPage({ scroll, setTipsData, setPathToTipsPage, setPageName, pathTo, setPathTo, setData, pageName }) {
   return (
     <div>
       <Slider />
       <LineAnimation header1={"Select your windows"} scroll={scroll} scrollY={200} />
-      <ProductWindow />
+      <ProductWindow
+        setPageName={setPageName}
+        pathTo={pathTo}
+        setPathTo={setPathTo}
+        setData={setData}
+        pageName={pageName}
+      />
       <LineAnimation header1={"Inspiration"} scroll={scroll} scrollY={800} />
       <Inspiration />
       <CompanyPresentation scroll={scroll} scrollY={2000} />

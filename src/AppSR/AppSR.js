@@ -64,7 +64,16 @@ function AppSR() {
                 <Kontakt scroll={scroll} />
               </Route>
               <Route path="/">
-                <LandingPage setTipsData={setTipsData} setPathToTipsPage={setPathToTipsPage} scroll={scroll} />
+                <LandingPage
+                  setPageName={setPageName}
+                  pathTo={pathTo}
+                  setPathTo={setPathTo}
+                  setTipsData={setTipsData}
+                  setData={setData}
+                  setPathToTipsPage={setPathToTipsPage}
+                  scroll={scroll}
+                  pageName={pageName}
+                />
               </Route>
             </Switch>
           </div>
